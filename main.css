@@ -5,7 +5,8 @@
 .outer {
   padding-top: 3.333333em;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.62;
 }
 
 .mon {
@@ -25,7 +26,7 @@ a .icon {
 }
 
 blockquote {
-  font-size: 1.22222222em; 
+  font-size: 2em; 
 }
 
 .btn-primary {

@@ -3,10 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 .outer {
-  padding-top: 3.333333em;
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
   line-height: 1.62;
+  margin-top: 70px;
 }
 
 .mon {
@@ -17,7 +16,7 @@
   font-family: 'Pacifico', cursive;
 }
 
-a .icon {
+a > .icon {
   padding-right: 0.55555556em;
 }
 
@@ -25,11 +24,7 @@ a .icon {
   color: red;
 }
 
-blockquote {
-  font-size: 2em; 
-}
-
-.btn-primary {
+.btn-lg {
   margin-top: 0.555555556em;
 }
 .colored {

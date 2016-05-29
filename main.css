@@ -31,14 +31,12 @@ a > .icon {
   font-size: 4.444444444em;
 }
 
-.stuff {
-  display: block;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  color: white;
-  font-size: 4rem;
-  font-family: "Montserrat";
+img[alt="CS:GO"] {
+  background-color: black;
+}
+
+img {
+  border: 5px solid green;
 }
 
 

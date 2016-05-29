@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
-
 .outer {
   font-family: 'Lato', sans-serif;
   line-height: 1.62;
@@ -27,6 +26,22 @@ a > .icon {
 .btn-lg {
   margin-top: 0.555555556em;
 }
+
 .colored {
-  font-size: 4.444444444em; 
+  font-size: 4.444444444em;
+}
+
+.stuff {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Montserrat";
+}
+
+#civ {
+  background-image: url("http://s3.amazonaws.com/dogfish-uploads/uploadcare/c1ff39fb-995f-4deb-9f44-381b1c87ba08/SidMeiersCivilizationVGodsKings.jpg");
+  background-position: center;
 }

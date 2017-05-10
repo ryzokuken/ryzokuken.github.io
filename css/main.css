@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   /*.dark-primary-color    { background: #7B1FA2; }
+   .default-primary-color { background: #9C27B0; }
+   .light-primary-color   { background: #E1BEE7; }
+   .text-primary-color    { color: #FFFFFF; }
+   .accent-color          { background: #FF5722; }
+   .primary-text-color    { color: #212121; }
+   .secondary-text-color  { color: #757575; }
+   .divider-color         { border-color: #BDBDBD; }*/
+
+body {
+  background: #9C27B0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container > header {
+  color: #fff;
+  background: #7B1FA2;
+  text-align: center;
+  padding: 20% 10px;
+}
+
+.container > header > h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+.container > header > h3 {
+  font-size: 2.2em;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-monospace {
+  font-family: 'Inconsolata', monospace;
+}
+
+.font-highlighted {
+  background: yellow;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.quote {
+  font-family: 'Yesteryear', cursive;
+  font-size: 2em;
+  border-left: 5px solid #BDBDBD;
+  border-right: 5px solid #BDBDBD;
+  padding: 5%;
+  margin: 2%;
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.button-github, .button-github:active {
+  background: #333;
+  color: white !important;
+}
+
+.button-github:hover {
+  color: #333 !important;
+  background: white;
+}
+
+.button-twitter, .button-twitter:active {
+  padding: 14px 21px !important;
+  background: #1da1f2;
+  color: white !important;
+}
+
+.button-twitter:hover {
+  color: #1da1f2 !important;
+  background: white;
+}
+
+.button-fcc, .button-fcc:active {
+  padding: 14px 14px !important;
+  background: #006400;
+  color: white !important;
+}
+
+.button-fcc:hover {
+  color: #006400 !important;
+  background: white;
+}
+
+.button-steam, .button-steam:active {
+  padding: 14px 19.5px !important;
+  background: #000000;
+  color: white !important;
+}
+
+.button-steam:hover {
+  color: #000000 !important;
+  background: white;
+}
+
+a.button {
+  padding: 14px 22px;
+  font-size: 2.4em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+section {
+  margin: 100px 10%;
+}
+
+section > header {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  margin: 20px 0;
+}
+
+.line-text {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #BDBDBD;
+   line-height: 0em;
+   margin: 10px 0 20px;
+   position: relative;
+}
+
+.line-text span {
+    background:#fff;
+    padding:0 10px;
+    font-size: 2em;
+    position: absolute;
+    top: -0.5em;
+}
+
+.line-top {
+  margin-top: 50px !important;
+}
+
+section > article > h3 {
+  margin: 20px auto;
+}
+
+.row img {
+  width: 100%;
+}
+
+footer {
+  background: #000;
+  color: yellow;
+  margin: 0;
+}
+
+footer > h3 {
+  margin: 0;
+  padding: 20px;
+}
+
+.fa-heart {
+  color: crimson;
+}

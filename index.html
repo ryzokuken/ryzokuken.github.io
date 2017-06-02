@@ -6,7 +6,7 @@
     <link rel='stylesheet' href="main.css" />
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/flatly/bootstrap.min.css" type="text/css" />
-    
+
     <title>Ryzokuken</title>
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe94AAEpSAABKUgAAe94AAAAAAAB73gAAe9IAAHvSAAB73gAAAAAAAHveAAB6XgAAel4AAHveAAAAAAAA" rel="icon" type="image/x-icon" />
@@ -18,13 +18,13 @@
     <div class="container outer">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header"> <a class="navbar-brand mon" href="#home">Ryzokuken</a> </div>
+                <div class="navbar-header"> <a class="navbar-brand mon" href="#home" class="smoothScroll">Ryzokuken</a> </div>
                 <ul class="nav navbar-nav hidden-xs">
-                    <li><a href="#about">About</a>
+                    <li><a href="#about" class="smoothScroll">About</a>
                     </li>
-                    <li><a href="#skills">Skills</a>
+                    <li><a href="#skills" class="smoothScroll">Skills</a>
                     </li>
-                    <li><a href="#contact">Contact</a>
+                    <li><a href="#contact" class="smoothScroll">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
@@ -39,25 +39,25 @@
                 </ul>
             </div>
         </nav>
-        <a name="home"></a>
+        <span class="anchor" id="home"></span>
         <header class="jumbotron text-center">
             <div class="container">
-                <h1> <span class="mon">Ujjwal "Ryzokuken" Sharma</span><br><small>Half Boy, Half <code>JavaScript Framework</code></small> </h1> <a class="btn btn-danger btn-lg" href="https://twitter.com/Ryzokuken" target="_blank" role="button"><i class="icon ion-social-twitter"></i>Twitter</a> <a class="btn btn-danger btn-lg" href="http://stickysheeptheorist.tumblr.com/" target="_blank"
-                role="button"><i class="icon ion-social-tumblr"></i>Tumblr</a> <a class="btn btn-danger btn-lg" href="https://github.com/ryzokuken" target="_blank" role="button"><i class="icon ion-social-github"></i>Github</a> <a class="btn btn-danger btn-lg"
-                href="http://steamcommunity.com/id/ryzokuken/" target="_blank" role="button"><i class="icon ion-steam"></i>Steam</a> </div>
+                <h1> <span class="mon">Ujjwal "Ryzokuken" Sharma</span><br><small>Half Boy, Half <code>JavaScript Framework</code></small> </h1> <a class="btn btn-danger btn-lg" href="https://twitter.com/Ryzokuken" target="_blank" role="button" id="sarabutton"><i class="icon ion-social-twitter"></i>Twitter</a> <a class="btn btn-danger btn-lg" href="http://stickysheeptheorist.tumblr.com/" target="_blank"
+                role="button" id="sarabutton"><i class="icon ion-social-tumblr"></i>Tumblr</a> <a class="btn btn-danger btn-lg" href="https://github.com/ryzokuken" target="_blank" role="button" id="sarabutton"><i class="icon ion-social-github"></i>Github</a> <a class="btn btn-danger btn-lg"
+                href="http://steamcommunity.com/id/ryzokuken/" target="_blank" role="button" id="sarabutton"><i class="icon ion-steam"></i>Steam</a> </div>
         </header>
         <main>
-            <blockquote> Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+            <blockquote> <b>Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</b>
                 <footer><cite>Abraham Lincoln</cite>
                 </footer>
             </blockquote>
             <div class="calendar" style="margin: 20px auto">
                 Loading the data just for you.
             </div>
-            <a name="about"></a>
+            <span class="anchor" id="about"></span>
             <section class="panel panel-primary">
                 <header class="pac text-center panel-heading">
-                    <h1>About Me</h1> </header>
+                    <h1>About Me</h1></header>
                 <div class="panel-body">
                     <p class="lead">Hello, Guten Tag and Здравствуйте. I am Ujjwal Sharma, an Indian teenage University student. I love tinkering with things, and I definitely love to make <em>(and as of recently, break <strong>into</strong>)</em>                        stuff. Also, I am <abbr title="I find myself at a loss when asked to differentiate between light green and pale green">colorblind</abbr>.</p>
                     <p>It would be really stupid of me if I mentioned that I am an enthusiast of free speech and universal human rights <em>(who isn't?)</em>. I am a supporter of Open Source Software and of the Open Access Movement. I belive that Information,
@@ -68,7 +68,7 @@
                         a coder can do developing games without 3D designers to maintain him a fresh supply of needed art, and I was always really bad at Photoshop.</p>
                 </div>
             </section>
-            <a name="skills"></a>
+          <span class="anchor" id="skills"></span>
             <section class="panel panel-primary">
                 <header class="pac text-center panel-heading">
                     <h1>My Skills</h1> </header>
@@ -79,7 +79,7 @@
                     <h2 class="pac">Scripting</h2> <i class="devicon-ruby-plain-wordmark colored"></i> <i class="devicon-python-plain-wordmark colored"></i>
                     <h2 class="pac">Programming Languages</h2> <i class="devicon-c-plain-wordmark colored"></i> <i class="devicon-cplusplus-plain-wordmark colored"></i> <i class="devicon-csharp-plain-wordmark colored"></i> </div>
             </section>
-            <a name="contact"></a>
+            <span class="anchor" id="contact"></span>
             <section class="panel panel-primary">
                 <header class="pac text-center panel-heading">
                     <h1>Contact Me</h1> </header>
@@ -116,6 +116,10 @@
 
     <script>
         GitHubCalendar(".calendar", "ryzokuken");
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="smoothscroll.js"></script>
+
     </script>
 </body>
 

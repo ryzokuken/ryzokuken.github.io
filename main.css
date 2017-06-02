@@ -26,6 +26,17 @@ a > .icon {
 .btn-lg {
   margin-top: 0.555555556em;
 }
+#sarabutton
+{
+  background-color: #e71919;
+  opacity:0.95;
+}
+#sarabutton:hover{
+  color:#e71919;
+  background-color: white;
+  border:1px solid #e71919;
+
+}
 
 .colored {
   font-size: 4.444444444em;
@@ -41,4 +52,10 @@ img {
 
 .calendar {
   margin: 20px;
+}
+.anchor{
+  display: block;
+  height: 120px; /*same height as header*/
+  margin-top: -120px; /*same height as header*/
+  visibility: hidden;
 }

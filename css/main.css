@@ -35,7 +35,42 @@ body {
   color: #fff;
   background: #7B1FA2;
   text-align: center;
-  padding: 20% 10px;
+  padding: 12% 10px;
+}
+
+header a:link {
+  color: #fff;
+}
+
+.certs > .fa-free-code-camp {
+  text-align: center;
+  font-size: 5em;
+  display: block;
+}
+
+.certis a {
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.certis a i {
+  margin: 10px;
+}
+
+.certis .front {
+  background: #FEC901;
+}
+
+.certis .data {
+  background: #41778F;
+}
+
+.certis .back, .certis .full {
+  background: #888;
 }
 
 .container > header > h1 {
@@ -45,6 +80,10 @@ body {
 
 .container > header > h3 {
   font-size: 2.2em;
+}
+
+.container > header > h4 {
+  font-size: 1.6em;
 }
 
 h1, h2, h3 {
@@ -220,4 +259,8 @@ footer > h3 {
 
 .card-body {
   height: 100px;
+}
+
+.label-gsoc {
+  background: #FBBC05;
 }

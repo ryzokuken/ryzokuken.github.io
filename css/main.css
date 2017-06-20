@@ -87,7 +87,7 @@ h1, h2, h3 {
 }
 
 .button-twitter, .button-twitter:active {
-  padding: 14px 21px !important;
+  padding: 11px 21px !important;
   background: #1da1f2;
   color: white !important;
 }
@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 .button-fcc, .button-fcc:active {
-  padding: 14px 14px !important;
+  padding: 11px 14px !important;
   background: #006400;
   color: white !important;
 }
@@ -109,7 +109,7 @@ h1, h2, h3 {
 }
 
 .button-steam, .button-steam:active {
-  padding: 14px 19.5px !important;
+  padding: 11px 19.5px !important;
   background: #000000;
   color: white !important;
 }
@@ -120,7 +120,7 @@ h1, h2, h3 {
 }
 
 a.button {
-  padding: 14px 22px;
+  padding: 11px 22px;
   font-size: 2.4em;
   border-radius: 50%;
   display: inline-block;

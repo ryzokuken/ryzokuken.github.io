@@ -179,3 +179,45 @@ footer > h3 {
 .fa-heart {
   color: crimson;
 }
+
+.card {
+  border: 1px solid #BDBDBD;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px -2px;
+}
+
+.card-footer>span {
+  margin: 5px;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+}
+
+.dot-yellow {
+  background: #f1e05a;
+}
+
+.dot-red {
+  background: #701516;
+}
+
+.dot-blue {
+  background: #0298c3;
+}
+
+.fcc h4 {
+  font-size: 17px;
+}
+
+.ufg h4 {
+  font-size: 16px;
+}
+
+.card-body {
+  height: 100px;
+}

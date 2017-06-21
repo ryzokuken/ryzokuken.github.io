@@ -221,9 +221,24 @@ footer > h3 {
 
 .card {
   border: 1px solid #BDBDBD;
-  padding: 10px;
+  padding: 16px;
   border-radius: 5px;
-  margin: 5px -2px;
+  margin: 5px -10px;
+  display: block;
+}
+
+.card, .card:hover, .card:visited, .card:active, .card:focus {
+  color: #212121;
+  text-decoration: none;
+  /*cursor: pointer;*/
+}
+
+.card, .certs {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover, .certs:hover {
+  box-shadow: 0 5px 15px #bbb;
 }
 
 .card-footer>span {

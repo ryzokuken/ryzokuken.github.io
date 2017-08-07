@@ -1,0 +1,86 @@
+/* Layout */
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+nav > .brand, nav > .nav-links {
+  flex-grow: 1;
+}
+
+nav ul.nav-links li {
+  flex-grow: 1;
+}
+
+nav ul.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+main {
+  height: 300vh;
+}
+
+/* Typography */
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 5em;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: url(images/title-bg.jpg) no-repeat center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand {
+  font-size: 2em;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: url(images/title-bg.jpg) no-repeat center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 32px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+header h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.nav-links {
+  font-size: 2em;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}

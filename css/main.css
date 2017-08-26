@@ -1,0 +1,96 @@
+/* Color */
+
+header {
+	color: white;
+	background: #159957;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0 3px 20px rgba(0.3, 0.3, 0.3, 1);
+}
+
+.icons-social i:hover {
+	text-shadow: 1px 0 white, 0 1px white, -1px 0 white, 0 -1px white;	
+}
+
+i.fa-twitter:hover {
+	color: #1da1f2;
+}
+
+i.fa-github:hover {
+	color: #333;
+}
+
+i.fa-free-code-camp:hover {
+	color: #006400;
+}
+
+i.fa-linkedin:hover {
+	color: #0077b5;
+}
+
+nav i {
+	color: white;
+}
+
+/*nav i:hover {
+	text-shadow: 1px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+	opacity: 0;
+}*/
+
+/* Layout */
+
+body {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+}
+
+nav {
+	position: fixed;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+nav > ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+nav i {
+	margin: 20px 0;
+}
+
+.icons-social i {
+	margin: 5px;
+}
+
+/* Typography */
+
+html {
+	font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+.icons-social {
+	font-size: 2.7em;
+}
+
+.icons-navigation {
+	font-size: 2em;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}

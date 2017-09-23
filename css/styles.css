@@ -21,14 +21,21 @@ html {
 
 h1 {
 	font-size: 3em;
+	font-weight: 400;
+}
+
+h1 .heavier {
+	font-weight: 700;
 }
 
 h2 {
 	font-size: 2em;
+	font-weight: 400;
 }
 
 h3 {
 	font-size: 1.5em;
+	font-weight: 300;
 }
 
 @media (min-width: 576px) {
@@ -69,7 +76,7 @@ header {
 	justify-content: center;
 	background-color: #349a3f;
 	color: white;
-	padding: 10px;
+	padding: 30px 0;
 }
 
 header > h1 {

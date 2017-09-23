@@ -11,10 +11,11 @@
 
 header {
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
+	text-align: center;
 }
 
 html {
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Merriweather', serif;
 }
 
@@ -28,6 +29,30 @@ h2 {
 
 h3 {
 	font-size: 1.5em;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
 }
 
 /* Layout */
@@ -44,6 +69,7 @@ header {
 	justify-content: center;
 	background-color: #349a3f;
 	color: white;
+	padding: 10px;
 }
 
 header > h1 {

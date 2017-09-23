@@ -1,0 +1,51 @@
+/* Typography */
+
+.icons-social i {
+	font-size: 3em;
+	padding: 10px;
+}
+
+.icons-social a {
+	color: white;
+}
+
+header {
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+/* Layout */
+
+body {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #1fa67a;
+	color: white;
+}
+
+header > h1 {
+	margin-bottom: -5px;
+}

@@ -75,7 +75,7 @@ header {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	padding: 30px 0;
+	padding: 0 30px;
 }
 
 header > h1 {

@@ -5,10 +5,6 @@
 	padding: 10px;
 }
 
-.icons-social a {
-	color: white;
-}
-
 header {
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
 	text-align: center;
@@ -55,6 +51,18 @@ h3 {
 	}
 }
 
+h1, h2 {
+	font-weight: 400;
+}
+
+h1 .heavier {
+	font-weight: 700;
+}
+
+h3, html {
+	font-weight: 300;
+}
+
 /* Layout */
 
 body {
@@ -67,11 +75,20 @@ header {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background-color: #349a3f;
-	color: white;
-	padding: 10px;
+	padding: 30px 0;
 }
 
 header > h1 {
 	margin-bottom: -5px;
+}
+
+/* Color */
+
+header {
+	background-color: #349a3f;
+	color: white;
+}
+
+.icons-social a {
+	color: white;
 }

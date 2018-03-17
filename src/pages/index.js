@@ -8,7 +8,7 @@ injectGlobal`
   body {
     margin: 0;
     background: var(--yellow);
-    color: var(--indigo);
+    color: var(--indigo) !important;
   }
 
   :root {
@@ -54,6 +54,15 @@ const StyledFAIcon = styled(FontAwesomeIcon)`
   }
 `;
 
+const Button = styled.button`
+  background: var(--indigo);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px;
+`;
+
 const openLink = link => {
   window.open(link, '_blank');
 };
@@ -97,6 +106,7 @@ export default () => (
             onClick={() => openLink('https://codepen.io/ryzokuken/')}
           />
         </div>
+        <Button onClick={() => openLink('/static/ujjwal-cv-2017-2.pdf')}>My Resume</Button>
       </div>
     </Main>
   </Container>

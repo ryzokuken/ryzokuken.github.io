@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  width: auto;
+  width: 0;
   height: 100vh;
   margin: 0;
 `;

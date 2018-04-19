@@ -36,7 +36,7 @@ const Main = styled.div`
   background: white;
   padding: 5%;
   height: 100vh;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 `;
 
 const Header = styled.h1`
@@ -63,6 +63,14 @@ const Button = styled.button`
   padding: 10px;
   border-radius: 3px;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--indigo);
+
+  &:hover {
+    background: var(--yellow);
+    color: var(--indigo);
+    transform: scale(1.1);
+  }
 `;
 
 const openLink = link => {

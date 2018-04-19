@@ -17,14 +17,14 @@ injectGlobal`
   }
 
   html {
-    font-size: 16px;
+    font-size: 16px !important;
 
     @media (min-width: 400px) {
-      font-size: 20px;
+      font-size: 20px !important;
     }
 
     @media (min-width: 700px) {
-      font-size: 24px;
+      font-size: 24px !important;
     }
   }
 `;

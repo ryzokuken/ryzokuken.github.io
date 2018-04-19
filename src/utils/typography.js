@@ -2,7 +2,14 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '24px',
-  bodyFontFamily: ['Lato', 'sans']
+  googleFonts: [
+    {
+      name: 'Nunito',
+      styles: ['400']
+    }
+  ],
+  bodyFontFamily: ['Nunito', 'sans'],
+  headerFontFamily: ['Nunito', 'sans']
 });
 
 export default typography;

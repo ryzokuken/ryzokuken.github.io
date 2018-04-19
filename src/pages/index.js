@@ -15,6 +15,18 @@ injectGlobal`
     --indigo: #3F51B5;
     --yellow: #FFEB3B;
   }
+
+  html {
+    font-size: 16px;
+
+    @media (min-width: 400px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 700px) {
+      font-size: 24px;
+    }
+  }
 `;
 
 const Container = styled.div`
@@ -26,6 +38,11 @@ const Image = styled.img`
   width: auto;
   height: 100vh;
   margin: 0;
+  display: none;
+
+  @media (min-width: 1079px) {
+    display: block;
+  }
 `;
 
 const Main = styled.div`

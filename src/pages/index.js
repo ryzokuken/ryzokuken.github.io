@@ -77,7 +77,7 @@ export default () => (
         <Header>Ujjwal "Ryzokuken" Sharma</Header>
         <h3>Web Developer &middot; Security Enthusiast &middot; FOSS Freak</h3>
         <p>
-          I am a sophomore in Jaypee Institute of Information Technology, Noida, India.I love
+          I am a sophomore in Jaypee Institute of Information Technology, Noida, India. I love
           building experiences on the web. I like to contribute to open source projects and take
           interest in various domains of information security, especially cryptography.
         </p>

@@ -100,11 +100,22 @@ const Button = styled.button`
 `;
 
 const Logo = styled.img`
-  width: 200px;
-  margin: 50px;
+  width: 100px;
+  margin: 10px 20px;
   transition: all 0.2s ease-in-out;
+
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (min-width: 468px) {
+    width: 150px;
+    margin: 15px 30px;
+  }
+
+  @media (min-width: 1000px) {
+    width: 200px;
+    margin: 25px 50px;
   }
 `;
 

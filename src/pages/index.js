@@ -100,13 +100,16 @@ export default () => (
     <Main>
       <div>
         <Header>Ujjwal "Ryzokuken" Sharma</Header>
-        <h3>Web Developer &middot; Security Enthusiast &middot; FOSS Freak</h3>
+        <h3>Open-Source Wizard &middot; JavaScript Aficionado</h3>
         <p>
-          I am a sophomore in Jaypee Institute of Information Technology, Noida, India. I love
-          building experiences on the web. I like to contribute to open source projects and take
-          interest in various domains of information security, especially cryptography.
+          I am an undergrad student, an open source fanatic and an active member of the JavaScript
+          ecosystem.
         </p>
-        <p>I design for fun.</p>
+        <p>
+          A Node.js core collaborator, Electron maintainer, Google Summer of Code mentor and
+          ex-student, I’ve been working on V8 and TC39 to help make JavaScript better, one commit at
+          a time.
+        </p>
         <div>
           <StyledFAIcon
             icon={['fab', 'twitter']}
@@ -120,7 +123,7 @@ export default () => (
             icon={['fab', 'linkedin']}
             onClick={() => openLink('https://www.linkedin.com/in/ryzokuken/')}
           />
-          <StyledFAIcon
+          {/* <StyledFAIcon
             icon={['fab', 'free-code-camp']}
             onClick={() => openLink('https://www.freecodecamp.org/ryzokuken')}
           />
@@ -131,7 +134,7 @@ export default () => (
           <StyledFAIcon
             icon={['fab', 'codepen']}
             onClick={() => openLink('https://codepen.io/ryzokuken/')}
-          />
+          /> */}
         </div>
         <Button onClick={() => openLink('/static/ujjwal-cv-2018-9.pdf')}>My Resume</Button>
       </div>

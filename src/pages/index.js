@@ -133,7 +133,7 @@ export default () => (
             onClick={() => openLink('https://codepen.io/ryzokuken/')}
           />
         </div>
-        <Button onClick={() => openLink('/static/ujjwal-cv-2018-8.pdf')}>My Resume</Button>
+        <Button onClick={() => openLink('/static/ujjwal-cv-2018-9.pdf')}>My Resume</Button>
       </div>
     </Main>
   </Container>

@@ -56,8 +56,13 @@ const Main = styled.div`
   justify-content: center;
   background: white;
   padding: 5%;
-  height: 100vh;
+  min-height: 100vh;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+`;
+
+const TopMain = styled(Main)`
+  border-left: 2px solid var(--indigo);
+  border-bottom: 2px solid var(--indigo);
 `;
 
 const Header = styled.h1`
@@ -94,44 +99,54 @@ const Button = styled.button`
   }
 `;
 
+const Logo = styled.img`
+  width: 200px;
+  margin: 50px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
 const openLink = link => {
   window.open(link, '_blank');
 };
 
 export default () => (
-  <Container>
-    <Image src="/static/photo.png" />
-    <Main>
-      <div>
-        <Header>Ujjwal "Ryzokuken" Sharma</Header>
-        <h3>Open-Source Wizard &middot; JavaScript Aficionado</h3>
-        <p>
-          I am an undergrad student, an open source fanatic and an active member of the JavaScript
-          ecosystem.
-        </p>
-        <p>
-          A Node.js core collaborator, Electron maintainer, Google Summer of Code mentor and
-          ex-student, I’ve been working on V8 and TC39 to help make JavaScript better, one commit at
-          a time.
-        </p>
+  <div>
+    <Container>
+      <Image src="/static/photo.png" />
+      <TopMain>
         <div>
-          <StyledFAIcon
-            icon={['fab', 'twitter']}
-            onClick={() => openLink('https://twitter.com/ryzokuken')}
-          />
-          <StyledFAIcon
-            icon={['fab', 'github']}
-            onClick={() => openLink('https://github.com/ryzokuken')}
-          />
-          <StyledFAIcon
-            icon={['fab', 'linkedin']}
-            onClick={() => openLink('https://www.linkedin.com/in/ryzokuken/')}
-          />
-          <StyledFAIcon
-            icon="envelope"
-            onClick={() => openLink('mailto://usharma1998@gmail.com')}
-          />
-          {/* <StyledFAIcon
+          <Header>Ujjwal "Ryzokuken" Sharma</Header>
+          <h3>Open-Source Wizard &middot; JavaScript Aficionado</h3>
+          <p>
+            I am an undergrad student, an open source fanatic and an active member of the JavaScript
+            ecosystem.
+          </p>
+          <p>
+            A Node.js core collaborator, Electron maintainer, Google Summer of Code mentor and
+            ex-student, I’ve been working on V8 and TC39 to help make JavaScript better, one commit
+            at a time.
+          </p>
+          <div>
+            <StyledFAIcon
+              icon={['fab', 'twitter']}
+              onClick={() => openLink('https://twitter.com/ryzokuken')}
+            />
+            <StyledFAIcon
+              icon={['fab', 'github']}
+              onClick={() => openLink('https://github.com/ryzokuken')}
+            />
+            <StyledFAIcon
+              icon={['fab', 'linkedin']}
+              onClick={() => openLink('https://www.linkedin.com/in/ryzokuken/')}
+            />
+            <StyledFAIcon
+              icon="envelope"
+              onClick={() => openLink('mailto://usharma1998@gmail.com')}
+            />
+            {/* <StyledFAIcon
             icon={['fab', 'free-code-camp']}
             onClick={() => openLink('https://www.freecodecamp.org/ryzokuken')}
           />
@@ -143,9 +158,25 @@ export default () => (
             icon={['fab', 'codepen']}
             onClick={() => openLink('https://codepen.io/ryzokuken/')}
           /> */}
+          </div>
+          <Button onClick={() => openLink('/static/ujjwal-cv-2018-9.pdf')}>My Resume</Button>
         </div>
-        <Button onClick={() => openLink('/static/ujjwal-cv-2018-9.pdf')}>My Resume</Button>
-      </div>
-    </Main>
-  </Container>
+      </TopMain>
+    </Container>
+    <Container>
+      <Main>
+        <div>
+          <Header>Open Source</Header>
+          <div>
+            <Logo src="/static/logo-node.svg" />
+            <Logo src="/static/logo-electron.svg" />
+            <Logo src="/static/logo-v8.svg" />
+            <Logo src="/static/logo-tc39.svg" />
+            <Logo src="/static/logo-libuv.png" />
+            <Logo src="/static/logo-publiclab.svg" />
+          </div>
+        </div>
+      </Main>
+    </Container>
+  </div>
 );

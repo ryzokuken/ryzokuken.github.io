@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "version": "0.1.0",
-  "description": "Gatsby hello world starter",
+  "name": "ryzokuken.github.io",
+  "version": "1.0.0",
+  "description": "Ryzokuken's personal webpage",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

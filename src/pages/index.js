@@ -1,8 +1,12 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import brands from '@fortawesome/fontawesome-free-brands';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faEnvelope, faGithub, faTwitter, faLinkedin);
 
 injectGlobal`
   body {
@@ -122,6 +126,10 @@ export default () => (
           <StyledFAIcon
             icon={['fab', 'linkedin']}
             onClick={() => openLink('https://www.linkedin.com/in/ryzokuken/')}
+          />
+          <StyledFAIcon
+            icon="envelope"
+            onClick={() => openLink('mailto://usharma1998@gmail.com')}
           />
           {/* <StyledFAIcon
             icon={['fab', 'free-code-camp']}

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy",
-    "dev": "eleventy --serve --formats=html,md,jpg"
+    "deploy": "gh-pages -d _site",
+    "build": "eleventy --formats=md,css,pdf",
+    "dev": "eleventy --serve --formats=md,css,pdf"
   },
   "repository": {
     "type": "git",
@@ -14,12 +14,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ryzokuken/ryzokuken.github.io/issues"
   },
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1"
+    "@11ty/eleventy": "^0.7.1",
+    "gh-pages": "^2.0.1"
   }
 }

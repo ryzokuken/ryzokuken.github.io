@@ -18,7 +18,7 @@ Am I missing something that you'd like to know? [Hit me up on Twitter](https://t
 2. **Color Theme**: I have tried so many color themes in the past, but every since the days of Sublime Text 3, I always find myself coming back to Ayu's Mirage flavor. Currently I am using [vscode-ayu](https://github.com/ayu-theme/vscode-ayu) in VSCode and [an Ayu adaptation for iTerm2](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) for the terminal.
 
 <style>
-li {
+.container li {
   font-size: 1.5rem;
   margin: 2rem 0;
 }

@@ -1,6 +1,12 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Rubik', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {

@@ -4,7 +4,10 @@ title: Ryzokuken's Talks
 ---
 # My Talks
 
+<div id="tables">
+
 ## Past Talks
+
 
 | Talk | Event | Location | Date | Links |
 |---|---|---|---|---|
@@ -22,6 +25,10 @@ title: Ryzokuken's Talks
 | State of Crypto in Node.js | Engineers.sg | Singapore | June 2019 |
 | The *other* spec | JSConf Asia | Singapore | June 2019 |
 
+</div>
+
+<div id="notice"><p>Cannot display on mobile devices. Please view on a bigger screen.</p></div>
+
 <style>
 .container table {
   border-collapse: collapse;
@@ -32,5 +39,19 @@ title: Ryzokuken's Talks
 .container td {
   border: 2px solid black;
   padding: 1rem;
+}
+
+#tables {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #tables {
+    display: block;
+  }
+
+  #notice {
+    display: none;
+  }
 }
 </style>

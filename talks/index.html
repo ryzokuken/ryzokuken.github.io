@@ -22,6 +22,7 @@
   </div>
   <div class="container">
     <h1>My Talks</h1>
+<div id="tables">
 <h2>Past Talks</h2>
 <table>
 <thead>
@@ -106,6 +107,8 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div id="notice"><p>Cannot display on mobile devices. Please view on a bigger screen.</p></div>
 <style>
 .container table {
   border-collapse: collapse;
@@ -116,6 +119,20 @@
 .container td {
   border: 2px solid black;
   padding: 1rem;
+}
+
+#tables {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #tables {
+    display: block;
+  }
+
+  #notice {
+    display: none;
+  }
 }
 </style>
 

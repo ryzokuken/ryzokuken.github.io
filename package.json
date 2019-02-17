@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages --dist _site --branch master",
-    "build": "eleventy --formats=md,css,pdf",
-    "dev": "eleventy --serve --formats=md,css,pdf"
+    "build": "eleventy --formats=md,css,pdf,eot,ttf,svg,woff",
+    "dev": "eleventy --serve --formats=md,css,pdf,eot,ttf,svg,woff"
   },
   "repository": {
     "type": "git",

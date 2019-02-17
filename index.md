@@ -17,15 +17,13 @@ I am a(n):
 
 You can find me on:
 <ul id="social">
-  <li><a href="https://twitter.com/ryzokuken/"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="https://github.com/ryzokuken"><i class="fab fa-github"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/ryzokuken"><i class="fab fa-linkedin"></i></a></li>
-  <li><a href="mailto:usharma1998@gmail.com"><i class="fas fa-envelope"></i></a></li>
+  <li><a href="https://twitter.com/ryzokuken/"><span class="icon-twitter"></span></a></li>
+  <li><a href="https://github.com/ryzokuken"><span class="icon-github"></span></a></li>
+  <li><a href="https://www.linkedin.com/in/ryzokuken"><span class="icon-linkedin"></span></a></li>
+  <li><a href="mailto:usharma1998@gmail.com"><span class="icon-envelop"></span></a></li>
 </ul>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
 
 <style>
   ul#social>li {
@@ -43,5 +41,9 @@ You can find me on:
     list-style: none;
     padding: 0;
     justify-content: center;
+  }
+
+  ul#social a {
+    text-decoration: none;
   }
 </style>

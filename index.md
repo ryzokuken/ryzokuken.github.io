@@ -17,10 +17,10 @@ I am a(n):
 
 You can find me on:
 <ul id="social">
-  <li><i class="fab fa-twitter"></i></li>
-  <li><i class="fab fa-github"></i></li>
-  <li><i class="fab fa-linkedin"></i></li>
-  <li><i class="fas fa-envelope"></i></li>
+  <li><a href="https://twitter.com/ryzokuken/"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://github.com/ryzokuken"><i class="fab fa-github"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/ryzokuken"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="mailto:usharma1998@gmail.com"><i class="fas fa-envelope"></i></a></li>
 </ul>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">

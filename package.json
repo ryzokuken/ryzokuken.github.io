@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d _site",
+    "deploy": "gh-pages --dist _site --branch master",
     "build": "eleventy --formats=md,css,pdf",
     "dev": "eleventy --serve --formats=md,css,pdf"
   },

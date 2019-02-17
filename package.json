@@ -1,0 +1,25 @@
+{
+  "name": "ryzokuken.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "dev": "eleventy --serve --formats=html,md,jpg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzokuken/ryzokuken.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryzokuken/ryzokuken.github.io/issues"
+  },
+  "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}

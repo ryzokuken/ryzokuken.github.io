@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Rubick" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css"
+    integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css"
+    integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css"
+    integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+  <style>
+    html {
+      font-size: 16px;
+      font-family: 'Rubick', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    #footer {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    #navbar {
+      flex-grow: 1;
+      width: 100vw;
+    }
+
+    #navbar ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: space-evenly;
+    }
+
+    a {
+      color: black;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: dodgerblue;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    li {
+      font-size: 1.2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      font-size: 1.5rem;
+    }
+
+    th, td {
+      border: 2px solid black;
+      padding: 1rem;
+    }
+
+    .container {
+      padding: 0 12%;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/talks/">Talks</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/uses/">Uses</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    {{ content | safe }}
+  </div>
+  <div id="footer">
+    <h3>Made with ❤️ by <a href="https://twitter.com/ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.io/">11ty</a>.</h3>
+  </div>
+</body>
+</html>

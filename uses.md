@@ -17,6 +17,10 @@ Am I missing something that you'd like to know? [Hit me up on Twitter](https://t
 1. **Shell**: I use [zsh](http://www.zsh.org/) as my default login shell with the [oh-my-zsh](https://ohmyz.sh/) framework and the [bureau](https://github.com/robbyrussell/oh-my-zsh/wiki/themes#bureau) prompt.
 2. **Color Theme**: I have tried so many color themes in the past, but every since the days of Sublime Text 3, I always find myself coming back to Ayu's Mirage flavor. Currently I am using [vscode-ayu](https://github.com/ayu-theme/vscode-ayu) in VSCode and [an Ayu adaptation for iTerm2](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) for the terminal.
 
+## Hardware
+
+## Software
+
 <style>
 .container li {
   font-size: 1.5rem;

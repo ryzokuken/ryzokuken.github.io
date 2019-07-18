@@ -4,7 +4,7 @@ title: Ryzokuken's Talks
 ---
 # My Talks
 
-<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸</span>
+<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇮🇪</span>
 
 <div id="tables">
 
@@ -12,8 +12,9 @@ title: Ryzokuken's Talks
 
 | Talk | Event | Location | Date | Links |
 |---|---|---|---|---|
-| To `ESM` is human | Node.js Armenia | 🇦🇲 Yerevan, AM | Jul 2019 | [meetup]() [slides](https://www.icloud.com/keynote/0FTx-eXLlxeo8JHfuWM3cY1FQ#To_ESM_is_human)
 | To `ESM` is human | ArmadaJS | 🇷🇸 Novi Sad, SR | Sep 2019 | [conf](https://www.armada-js.com/) [slides]()
+| The battle of the event loops | HolyJS | 🇷🇺 Moscow, RU | Nov 2019 | [conf]() [slides]()
+| To `ESM` is human | NodeConf EU | 🇷🇸 Kilkenny, IE | Nov 2019 | [conf]() [slides]()
 
 ## Past Talks
 
@@ -28,7 +29,8 @@ title: Ryzokuken's Talks
 | To `ESM` is human | HolyJS | 🇷🇺 Saint Petersburg, RU | May 2019 | [conf](https://holyjs-piter.ru/en/) [slides](https://www.icloud.com/keynote/0FTx-eXLlxeo8JHfuWM3cY1FQ#To_ESM_is_human)
 | HOWTO: Crypto in Node.js | SingaporeJS | 🇸🇬 Singapore | Jun 2019 | [meetup]() [slides](https://docs.google.com/presentation/d/16lufN_MUedOxT4fz4D4IkPcMymxfhq6xgxzYLYZYfbI/present?usp=sharing)
 | The *other* spec | JSConf Asia | 🇸🇬 Singapore | Jun 2019 | [conf](https://www.meetup.com/Singapore-JS/events/261294292/) [slides]()
-| State of Crypto in Node.js | NodeConf | 🇨🇴 Medellín, CO | Jun 2019 | [conf](https://colombia.nodeconf.com/) [slides](https://www.icloud.com/keynote/0t_AxOq1suixa5WAH0VK0Nm7A#The_state_of_crypto_in_Nodejs)
+| State of Crypto in Node.js | NodeConf CO | 🇨🇴 Medellín, CO | Jun 2019 | [conf](https://colombia.nodeconf.com/) [slides](https://www.icloud.com/keynote/0t_AxOq1suixa5WAH0VK0Nm7A#The_state_of_crypto_in_Nodejs)
+| To `ESM` is human | Node.js Armenia | 🇦🇲 Yerevan, AM | Jul 2019 | [meetup]() [slides](https://www.icloud.com/keynote/0FTx-eXLlxeo8JHfuWM3cY1FQ#To_ESM_is_human)
 
 </div>
 

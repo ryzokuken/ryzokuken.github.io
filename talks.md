@@ -4,7 +4,11 @@ title: Ryzokuken's Talks
 ---
 # My Talks
 
-<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇮🇪</span>
+<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇺🇦🇮🇪</span>
+
+## Podcasts
+
+<audio data-theme="night" data-src="https://changelog.com/jsparty/86/embed" src="https://cdn.changelog.com/uploads/jsparty/86/js-party-86.mp3" preload="none" class="changelog-episode" controls></audio><p><a href="https://changelog.com/jsparty/86">JS Party 86: How to get into OSS</a> – Listen on <a href="https://changelog.com/">Changelog.com</a></p><script async src="https://cdn.changelog.com/embed.js"></script>
 
 <div id="tables">
 
@@ -13,6 +17,7 @@ title: Ryzokuken's Talks
 | Talk | Event | Location | Date | Links |
 |---|---|---|---|---|
 | To `ESM` is human | ArmadaJS | 🇷🇸 Novi Sad, SR | Sep 2019 | [conf](https://www.armada-js.com/) [slides]()
+| The battle of the event loops | KharkivJS | 🇺🇦 Kharkiv, UA | Oct 2019 | [conf]() [slides]()
 | The battle of the event loops | HolyJS | 🇷🇺 Moscow, RU | Nov 2019 | [conf]() [slides]()
 | To `ESM` is human | NodeConf EU | 🇷🇸 Kilkenny, IE | Nov 2019 | [conf]() [slides]()
 

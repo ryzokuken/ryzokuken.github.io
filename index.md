@@ -2,20 +2,19 @@
 layout: layout.njk
 title: Ryzokuken's Homepage
 ---
+
 # Ujjwal "Ryzokuken" Sharma
 
 I am a(n):
+
+- Compilers Hacker at Igalia
 - Undergrad Student
-- JavaScript and C++ Developer
+- JavaScript, C++ and Rust Developer
 - International Speaker
 - Node.js Core Collaborator
-- Electron.js Maintainer
-- V8 Contributor
-- TC39 Contributor
-- Google Summer of Code 2018 Mentor
-- Google Summer of Code 2017 Student
 
 You can find me on:
+
 <ul id="social">
   <li><a href="https://twitter.com/ryzokuken/"><span class="icon-twitter"></span></a></li>
   <li><a href="https://github.com/ryzokuken"><span class="icon-github"></span></a></li>

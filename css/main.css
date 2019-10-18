@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Sanchez&display=swap");
+
 html {
   font-size: 14px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Sanchez", serif;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,4 +1,6 @@
 {
-  "layout": "blog.njk",
-  "tags": ["post"]
+  "layout": "post.liquid",
+  "tags": [
+    "post"
+  ]
 }

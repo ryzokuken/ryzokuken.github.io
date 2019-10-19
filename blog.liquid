@@ -8,15 +8,22 @@ title: Ryzokuken's Blog
   <li>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     <h3>📅 {{ post.date | date: "%B %d, %Y" }}</h3>
-    {% comment %} <h3>🏷 {{ post.data.tags | slice:1,10 | join: ", "}}</h3> {% endcomment %}
     {% assign tags = post.data.tags | slice:1,10 %}
     <h3>🏷 {%- for tag in tags -%}<a href="/tag/{{tag}}">{{tag}}</a>{%- endfor -%}</h3>
-    <p>{{ post.templateContent | truncate: 256 }}</p>
+    <p>{{ post.templateContent | truncate: 512 }}</p>
   </li>
   {%- endfor -%}
 </ul>
 
 <style>
+h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
 .container li {
   font-size: 1.5rem;
   margin: 2rem 0;

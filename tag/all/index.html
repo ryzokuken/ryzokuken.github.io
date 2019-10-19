@@ -8,6 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/main.css">
+  <style>
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+  </style>
 </head>
 <body>
   <div id="navbar">
@@ -24,9 +44,9 @@
 <ul><li>
     <h2><a href="/blog/new-beginnings/">New Beginnings</a></h2>
   </li><li>
-    <h2><a href="/tag/all/">Posts tagged {{ tag }}</a></h2>
-  </li><li>
     <h2><a href="/blog/">Ryzokuken's Blog</a></h2>
+  </li><li>
+    <h2><a href="/tag/all/">Posts tagged {{ tag }}</a></h2>
   </li><li>
     <h2><a href="/projects/">Ryzokuken's Projects</a></h2>
   </li><li>

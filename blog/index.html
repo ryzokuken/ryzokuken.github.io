@@ -8,6 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/main.css">
+  <style>
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+  </style>
 </head>
 <body>
   <div id="navbar">
@@ -25,13 +45,24 @@
     <h2><a href="/blog/new-beginnings/">New Beginnings</a></h2>
     <h3>📅 October 19, 2019</h3>
     
-    
     <h3>🏷<a href="/tag/igalia">igalia</a><a href="/tag/work">work</a><a href="/tag/personal">personal</a></h3>
-    <p><p>Coming Soon™️</p>
-</p>
+    <p><blockquote>
+<p>Keep your eyes on the stars, and your feet on the ground.
+<em>— Theodore Roosevelt</em></p>
+</blockquote>
+<p>&quot;On the top of the world&quot; is how I describe my current state of mind as I finally conclude my search for something amazing to be a part of in the next chapter of my life, once I'm finally done with school for good.</p>
+<p>After what seemed to be as long as a lifetime of nerve-wracking job applications and interviews with some of the top browser vendors around, I have foun...</p>
   </li></ul>
 
 <style>
+h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
 .container li {
   font-size: 1.5rem;
   margin: 2rem 0;

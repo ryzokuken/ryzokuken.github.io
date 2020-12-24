@@ -6,7 +6,6 @@
   "scripts": {
     "deploy": "gh-pages --dist _site --branch master",
     "build": "eleventy --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid",
-    "build:slides": "marp ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html",
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
     "dev": "eleventy --serve --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid"
   },
@@ -23,8 +22,8 @@
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
-    "@marp-team/marp-cli": "^0.17.3",
-    "gh-pages": "^2.0.1",
+    "@marp-team/marp-cli": "^0.17.4",
+    "gh-pages": "^2.2.0",
     "watch": "^1.0.2"
   }
 }

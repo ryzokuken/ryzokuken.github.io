@@ -8,10 +8,11 @@ title: Ryzokuken's Homepage
 I am a(n):
 
 - Compilers Hacker at Igalia
-- Undergrad Student
+- TC39 Delegate
+- Node.js Core Collaborator
+- HolyJS Program Committee Member
 - JavaScript, C++ and Rust Developer
 - International Speaker
-- Node.js Core Collaborator
 
 You can find me on:
 

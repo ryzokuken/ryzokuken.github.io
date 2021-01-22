@@ -9,7 +9,9 @@ title: Ryzokuken's Talks
 
 ## Podcasts
 
-<audio data-theme="night" data-src="https://changelog.com/jsparty/86/embed" src="https://cdn.changelog.com/uploads/jsparty/86/js-party-86.mp3" preload="none" class="changelog-episode" controls></audio><p><a href="https://changelog.com/jsparty/86">JS Party 86: How to get into OSS</a> – Listen on <a href="https://changelog.com/">Changelog.com</a></p><script async src="https://cdn.changelog.com/embed.js"></script>
+<audio data-theme="night" data-src="https://changelog.com/jsparty/86/embed" src="https://cdn.changelog.com/uploads/jsparty/86/js-party-86.mp3" preload="none" class="changelog-episode" controls></audio><script async src="https://cdn.changelog.com/embed.js"></script>
+
+<iframe id="tc39ers" src="https://anchor.fm/hemanth-hm/embed/episodes/Ujjwal-Sharma-ep12mg/a-a1plh1" frameborder="0" scrolling="no"></iframe>
 
 <div id="tables">
 
@@ -66,6 +68,10 @@ title: Ryzokuken's Talks
 .container table {
   border-collapse: collapse;
   font-size: 1.4rem;
+  width: 100%;
+}
+
+#tc39ers {
   width: 100%;
 }
 

@@ -17,9 +17,10 @@ title: Ryzokuken's Talks
 
 ## Upcoming Talks
 
-| Talk | Event | Location | Date | Links |
-| ---- | ----- | -------- | ---- | ----- |
-
+| Talk                            | Event  | Location  | Date     | Links |
+| ------------------------------- | ------ | --------- | -------- | ----- |
+| How to outsmart time            | HolyJS | 🇷🇺 Online | Apr 2021 |       |
+| ECMAScript Internationalization | IUC 45 | 🇺🇸 Online | Oct 2021 |       |
 
 ## Past Talks
 

@@ -7,12 +7,12 @@ title: Ryzokuken's Homepage
 
 I am a(n):
 
-- Compilers Hacker at Igalia
-- TC39 Delegate
-- Node.js Core Collaborator
-- HolyJS Program Committee Member
-- JavaScript, C++ and Rust Developer
-- International Speaker
+- Compilers Hacker at [Igalia](https://www.igalia.com/)
+- [TC39](https://tc39.es/) Delegate
+- [ECMA-402](https://tc39.es/ecma402/) Editor
+- [Node.js](https://nodejs.org/en/) Core Collaborator
+- [JavaScript, C++ and Rust Developer](/projects)
+- [International Speaker](/talks)
 
 You can find me on:
 

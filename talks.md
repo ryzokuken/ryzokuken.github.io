@@ -17,12 +17,21 @@ title: Ryzokuken's Talks
 
 ## Upcoming Talks
 
-| Talk                            | Event  | Location  | Date     | Links |
-| ------------------------------- | ------ | --------- | -------- | ----- |
-| How to outsmart time            | HolyJS | 🇷🇺 Online | Apr 2021 |       |
-| ECMAScript Internationalization | IUC 45 | 🇺🇸 Online | Oct 2021 |       |
+| Talk                            | Event   | Location  | Date     | Links |
+| ------------------------------- | ------- | --------- | -------- | ----- |
+| How to outsmart time            | WD Code | 🇦🇺 Online | Sep 2021 |       |
+| ECMAScript Internationalization | IUC 45  | 🇺🇸 Online | Oct 2021 |       |
 
 ## Past Talks
+
+### 2021
+
+| Talk                            | Event                | Location  | Date     | Links |
+| ------------------------------- | -------------------- | --------- | -------- | ----- |
+| How to outsmart time            | HolyJS               | 🇷🇺 Online | Apr 2021 |       |
+| ECMAScript Internationalization | Web Engines Hackfest | 🇪🇸 Online | May 2021 |       |
+| How to outsmart time            | JSNation             | 🇳🇱 Online | Jun 2021 |       |
+| TC39 Demystified                | tc39_study           | 🇯🇵 Online | Jul 2021 |       |
 
 ### 2020
 

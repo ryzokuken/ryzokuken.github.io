@@ -17,21 +17,32 @@ title: Ryzokuken's Talks
 
 ## Upcoming Talks
 
-| Talk                            | Event   | Location  | Date     | Links |
-| ------------------------------- | ------- | --------- | -------- | ----- |
-| How to outsmart time            | WD Code | 🇦🇺 Online | Sep 2021 |       |
-| ECMAScript Internationalization | IUC 45  | 🇺🇸 Online | Oct 2021 |       |
+| Talk                               | Event     | Location           | Date      | Links                            |
+| ---------------------------------- | --------- | ------------------ | --------- | -------------------------------- |
+| TBD                                | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022  | [conf](https://www.bejs.io/conf) |
+| The future of Desktop Applications | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022  | [conf](https://12.codefest.ru/)  |
+| Multicore JS                       | EnterJS   | 🇩🇪 Darmstadt, DE   | June 2022 | [conf](https://enterjs.de/)      |
 
 ## Past Talks
 
 ### 2021
 
-| Talk                            | Event                | Location  | Date     | Links |
-| ------------------------------- | -------------------- | --------- | -------- | ----- |
-| How to outsmart time            | HolyJS               | 🇷🇺 Online | Apr 2021 |       |
-| ECMAScript Internationalization | Web Engines Hackfest | 🇪🇸 Online | May 2021 |       |
-| How to outsmart time            | JSNation             | 🇳🇱 Online | Jun 2021 |       |
-| TC39 Demystified                | tc39_study           | 🇯🇵 Online | Jul 2021 |       |
+| Talk                                    | Event                | Location            | Date     | Links                                                                                                                                                     |
+| --------------------------------------- | -------------------- | ------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| How to outsmart time                    | HolyJS               | 🇷🇺 Online           | Apr 2021 |                                                                                                                                                           |
+| ECMAScript Internationalization         | Web Engines Hackfest | 🇪🇸 Online           | May 2021 |                                                                                                                                                           |
+| How to outsmart time                    | JSNation             | 🇳🇱 Online           | Jun 2021 | [conf](https://live.jsnation.com/) [video](https://portal.gitnation.org/contents/how-to-outsmart-time-building-futuristic-javascript-apps-using-temporal) |
+| TC39 Demystified                        | tc39_study           | 🇯🇵 Online           | Jul 2021 |                                                                                                                                                           |
+| TC39 Demystified                        | JSLovers             | 🇮🇳 Online           | Aug 2021 | [meetup](https://www.meetup.com/jslovers/events/280029233/) [slides](https://ryzokuken.dev/slides/2021-08-tc39)                                           |
+| JavaScript and TC39: The Final Frontier | RndTechConf          | 🇷🇺 Rostov-on-Don    | Sep 2021 | [conf](https://rndtech.pro/)                                                                                                                              |
+| TC39 Demystified                        | Rif                  | 🇷🇺 Voronezh         | Sep 2021 | [conf](https://2021.rifvrn.ru/) [slides](https://ryzokuken.dev/slides/2021-09-tc39-rif)                                                                   |
+| TC39 Demystified                        | MoscowJS 50          | 🇷🇺 Moscow           | Sep 2021 | [conf](https://moscowjs.org/events/moscowjs-50/) [slides](https://ryzokuken.dev/slides/2021-09-tc39-moscowjs)                                             |
+| JavaScript and TC39: The Final Frontier | DataArt IT Talks     | 🇷🇺 Saint Petersburg | Sep 2021 | [video](https://youtu.be/BExPpIEl_V4)                                                                                                                     |
+| How to outsmart time                    | WD Code              | 🇦🇺 Online           | Sep 2021 | [slides](https://ryzokuken.dev/slides/2021-09-temporal/)                                                                                                  |
+| TC39 Demystified                        | JetBrains JS Day     | 🌐 Online           | Sep 2021 | [conf](https://pages.jetbrains.com/javascript-day-2021) [slides](https://ryzokuken.dev/slides/2021-10-tc39-jetbrains/)                                    |
+| Multicore JS                            | HolyJS               | 🇷🇺 Online           | Nov 2021 | [conf](https://holyjs-moscow.ru/) [slides](https://ryzokuken.dev/slides/2021-11-multicore/)                                                               |
+| Multicore JS                            | JSConf India         | 🇮🇳 Online           | Nov 2021 | [conf](https://www.jsconf.in/) [slides](https://ryzokuken.dev/slides/2021-11-multicore-jsconfin/)                                                         |
+| Multicore JS                            | OSDHack              | 🇮🇳 Online           | Nov 2021 | [conf](https://osdhackjiit.com/) [slides](https://ryzokuken.dev/slides/2021-11-multicore-osdhack/)                                                        |
 
 ### 2020
 

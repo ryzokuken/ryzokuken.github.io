@@ -8,8 +8,8 @@ title: Ryzokuken's Homepage
 I am a(n):
 
 - Compilers Hacker at [Igalia](https://www.igalia.com/)
-- [TC39](https://tc39.es/) Delegate
-- [ECMA-402](https://tc39.es/ecma402/) Editor
+- [TC39](https://tc39.es/) Co-chairperson
+- [ECMA-402](https://tc39.es/ecma402/) Co-editor
 - [Node.js](https://nodejs.org/en/) Core Collaborator
 - [JavaScript, C++ and Rust Developer](/projects)
 - [International Speaker](/talks)

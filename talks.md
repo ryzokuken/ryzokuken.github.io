@@ -5,7 +5,7 @@ title: Ryzokuken's Talks
 
 # My Talks
 
-<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇺🇦🇮🇪🇷🇴🇨🇳🇺🇸</span>
+<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇺🇦🇮🇪🇷🇴🇨🇳🇺🇸🇪🇸🇳🇱🇯🇵🇦🇺🇧🇪🇬🇷</span>
 
 ## Podcasts
 

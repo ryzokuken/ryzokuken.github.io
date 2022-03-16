@@ -17,11 +17,12 @@ title: Ryzokuken's Talks
 
 ## Upcoming Talks
 
-| Talk                               | Event     | Location           | Date      | Links                            |
-| ---------------------------------- | --------- | ------------------ | --------- | -------------------------------- |
-| TBD                                | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022  | [conf](https://www.bejs.io/conf) |
-| The future of Desktop Applications | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022  | [conf](https://12.codefest.ru/)  |
-| Multicore JS                       | EnterJS   | 🇩🇪 Darmstadt, DE   | June 2022 | [conf](https://enterjs.de/)      |
+| Talk                               | Event     | Location           | Date      | Links                                  |
+| ---------------------------------- | --------- | ------------------ | --------- | -------------------------------------- |
+| TBD                                | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022  | [conf](https://www.bejs.io/conf)       |
+| The future of Desktop Applications | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022  | [conf](https://12.codefest.ru/)        |
+| Multicore JS                       | CityJS    | 🇬🇷 Athens, GR      | May 2022  | [conf](https://greece.cityjsconf.org/) |
+| Multicore JS                       | EnterJS   | 🇩🇪 Darmstadt, DE   | June 2022 | [conf](https://enterjs.de/)            |
 
 ## Past Talks
 

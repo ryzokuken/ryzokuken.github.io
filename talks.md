@@ -5,7 +5,7 @@ title: Ryzokuken's Talks
 
 # My Talks
 
-<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇺🇦🇮🇪🇷🇴🇨🇳🇺🇸🇪🇸🇳🇱🇯🇵🇦🇺🇧🇪🇬🇷</span>
+<span id="flags">🇮🇳🇩🇪🇷🇺🇱🇻🇸🇬🇨🇴🇦🇲🇷🇸🇺🇦🇮🇪🇷🇴🇨🇳🇺🇸🇪🇸🇳🇱🇯🇵🇦🇺🇧🇪🇬🇷🇸🇪</span>
 
 ## Podcasts
 
@@ -17,14 +17,20 @@ title: Ryzokuken's Talks
 
 ## Upcoming Talks
 
-| Talk                               | Event     | Location           | Date      | Links                                  |
-| ---------------------------------- | --------- | ------------------ | --------- | -------------------------------------- |
-| TBD                                | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022  | [conf](https://www.bejs.io/conf)       |
-| The future of Desktop Applications | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022  | [conf](https://12.codefest.ru/)        |
-| Multicore JS                       | CityJS    | 🇬🇷 Athens, GR      | May 2022  | [conf](https://greece.cityjsconf.org/) |
-| Multicore JS                       | EnterJS   | 🇩🇪 Darmstadt, DE   | June 2022 | [conf](https://enterjs.de/)            |
+| Talk         | Event     | Location         | Date      | Links                                  |
+| ------------ | --------- | ---------------- | --------- | -------------------------------------- |
+| Multicore JS | CityJS    | 🇬🇷 Athens, GR    | May 2022  | [conf](https://greece.cityjsconf.org/) |
+| Multicore JS | EnterJS   | 🇩🇪 Darmstadt, DE | June 2022 | [conf](https://enterjs.de/)            |
+| Multicore JS | Nordic.js | 🇸🇪 Stockholm, SE | October 2022 | [conf](https://nordicjs.com/2022)            |
 
 ## Past Talks
+
+### 2022
+
+| Talk                                 | Event     | Location           | Date     | Links                            |
+| ------------------------------------ | --------- | ------------------ | -------- | -------------------------------- |
+| Multicore JS                         | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022 | [conf](https://www.bejs.io/conf) |
+| The future of Desktop Applications\* | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022 | [conf](https://12.codefest.ru/)  |
 
 ### 2021
 

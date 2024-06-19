@@ -13,24 +13,26 @@ title: Ryzokuken's Talks
 
 <iframe id="tc39ers" src="https://anchor.fm/hemanth-hm/embed/episodes/Ujjwal-Sharma-ep12mg/a-a1plh1" frameborder="0" scrolling="no"></iframe>
 
+<iframe src="https://player.fireside.fm/v2/XHXVzqW5+5jgcJn8o?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+
 <div id="tables">
 
 ## Upcoming Talks
 
-| Talk         | Event     | Location         | Date      | Links                                  |
-| ------------ | --------- | ---------------- | --------- | -------------------------------------- |
-| Multicore JS | CityJS    | 🇬🇷 Athens, GR    | May 2022  | [conf](https://greece.cityjsconf.org/) |
-| Multicore JS | EnterJS   | 🇩🇪 Darmstadt, DE | June 2022 | [conf](https://enterjs.de/)            |
-| Multicore JS | Nordic.js | 🇸🇪 Stockholm, SE | October 2022 | [conf](https://nordicjs.com/2022)            |
+| Talk         | Event     | Location         | Date         | Links                             |
+| ------------ | --------- | ---------------- | ------------ | --------------------------------- |
+| Multicore JS | Nordic.js | 🇸🇪 Stockholm, SE | October 2022 | [conf](https://nordicjs.com/2022) |
 
 ## Past Talks
 
 ### 2022
 
-| Talk                                 | Event     | Location           | Date     | Links                            |
-| ------------------------------------ | --------- | ------------------ | -------- | -------------------------------- |
-| Multicore JS                         | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022 | [conf](https://www.bejs.io/conf) |
-| The future of Desktop Applications\* | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022 | [conf](https://12.codefest.ru/)  |
+| Talk                                 | Event     | Location           | Date      | Links                                  |
+| ------------------------------------ | --------- | ------------------ | --------- | -------------------------------------- |
+| Multicore JS                         | BeJS Conf | 🇧🇪 Brussels, BE    | May 2022  | [conf](https://www.bejs.io/conf)       |
+| The future of Desktop Applications\* | CodeFest  | 🇷🇺 Novosibirsk, RU | May 2022  | [conf](https://12.codefest.ru/)        |
+| Multicore JS                         | CityJS    | 🇬🇷 Athens, GR      | May 2022  | [conf](https://greece.cityjsconf.org/) |
+| Multicore JS                         | EnterJS   | 🇩🇪 Darmstadt, DE   | June 2022 | [conf](https://enterjs.de/)            |
 
 ### 2021
 

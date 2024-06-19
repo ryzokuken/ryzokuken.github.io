@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages --dist _site --branch master",
-    "build": "eleventy --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg && cp CNAME _site/",
+    "build": "eleventy --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg,js && cp CNAME _site/",
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
     "dev": "eleventy --serve --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg"
   },

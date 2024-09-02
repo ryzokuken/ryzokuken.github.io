@@ -9,10 +9,7 @@
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
     "dev": "eleventy --serve --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryzokuken/ryzokuken.github.io.git"
-  },
+  "repository": "github:ryzokuken/ryzokuken.github.io",
   "keywords": [],
   "author": "",
   "license": "MIT",

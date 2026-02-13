@@ -2,12 +2,11 @@
   "name": "ryzokuken.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d _site -b master",
-    "build": "eleventy --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg,js",
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
-    "dev": "eleventy --serve --formats=md,css,pdf,eot,ttf,svg,woff,njk,liquid,jpg"
+    "build": "eleventy --formats=md,css,pdf,njk,liquid,jpg,js",
+    "dev": "npm run build -- --serve"
   },
   "repository": "github:ryzokuken/ryzokuken.github.io",
   "keywords": [],
@@ -18,8 +17,7 @@
   },
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11",
-    "gh-pages": "^2.2.0",
-    "watch": "^1.0.2"
+    "@11ty/eleventy": "^3.1.2",
+    "gh-pages": "^2.2.0"
   }
 }

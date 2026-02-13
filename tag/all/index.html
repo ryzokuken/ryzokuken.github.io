@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Posts tagged {{ tag }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta property="og:title" content="Posts tagged {{ tag }}">
+  <meta property="og:description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta property="og:type" content="website">
+  <title>Posts tagged {{ tag }}</title>
   <link rel="stylesheet" href="/css/main.css">
-  <style>
-  blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-  blockquote p {
-    display: inline;
-  }
-  </style>
 </head>
 <body>
   <div id="navbar">
@@ -36,7 +20,6 @@
       <li><a href="/talks/">Talks</a></li>
       <li><a href="/slides/">Slides</a></li>
       <li><a href="/projects/">Projects</a></li>
-      <li><a href="/blog/">Blog</a></li>
       <li><a href="/uses/">Uses</a></li>
     </ul>
   </div>
@@ -49,11 +32,11 @@
   </li><li>
     <h2><a href="/talks/">Ryzokuken's Talks</a></h2>
   </li><li>
-    <h2><a href="/tag/all/">Posts tagged {{ tag }}</a></h2>
+    <h2><a href="/tag/post/">Posts tagged {{ tag }}</a></h2>
   </li><li>
     <h2><a href="/projects/">Ryzokuken's Projects</a></h2>
   </li><li>
-    <h2><a href="/">Ryzokuken's Homepage</a></h2>
+    <h2><a href="/">Ujjwal Sharma — Developer Advocate</a></h2>
   </li><li>
     <h2><a href="/blog/new-beginnings/">New Beginnings</a></h2>
   </li><li>
@@ -69,7 +52,7 @@
 
   </div>
   <div id="footer">
-    <h3>Made with ❤️ by <a href="https://twitter.com/ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.io/">11ty</a></h3>
+    <h3>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></h3>
   </div>
 </body>
 </html>

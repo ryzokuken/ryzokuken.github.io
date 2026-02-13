@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ryzokuken&#39;s Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta property="og:title" content="Ryzokuken&#39;s Projects">
+  <meta property="og:description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta property="og:type" content="website">
+  <title>Ryzokuken&#39;s Projects</title>
   <link rel="stylesheet" href="/css/main.css">
-  <style>
-  blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-  blockquote p {
-    display: inline;
-  }
-  </style>
 </head>
 <body>
   <div id="navbar">
@@ -36,38 +20,51 @@
       <li><a href="/talks/">Talks</a></li>
       <li><a href="/slides/">Slides</a></li>
       <li><a href="/projects/">Projects</a></li>
-      <li><a href="/blog/">Blog</a></li>
       <li><a href="/uses/">Uses</a></li>
     </ul>
   </div>
   <div class="container">
     <h1>Projects</h1>
-<h2>Open Source Projects</h2>
-<ul>
-<li><strong><a href="https://github.com/nodejs/node">nodejs/node</a></strong>: Node.js JavaScript runtime ✨🐢🚀✨</li>
-<li><strong><a href="https://github.com/v8/v8">v8/v8</a></strong>: V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++.</li>
-<li><strong><a href="https://github.com/electron/node">electron/node</a></strong>: Electron's Node.js fork.</li>
-<li><strong><a href="https://github.com/tc39/test262">tc39/test262</a></strong>: Official ECMAScript Conformance Test Suite.</li>
-<li><strong><a href="https://github.com/publiclab/plots2">publiclab/plots2</a></strong>: A collaborative knowledge-exchange platform in Rails.</li>
-</ul>
-<h2>Personal Projects</h2>
-<ul>
-<li><strong><a href="https://github.com/ryzokuken/easy-crypto">ryzokuken/easy-crypto</a></strong>: A WIP module aimed at providing a safer, easier to use and beginner friendly crypto API for Node.js</li>
-<li><strong><a href="https://github.com/grofers/grtracer">grofers/grtracer</a></strong>: A set of middlewares to easily and conveniently setup tracing using Jaeger with zero code changes.</li>
-<li><strong><a href="https://github.com/publiclab/plotsbot">publiclab/plotsbot</a></strong>: A bot for Public Lab written in Node.js.</li>
-<li><strong><a href="https://github.com/ryzokuken/harbor">ryzokuken/harbor</a></strong>: A cyberoam client built on web technologies and electron.</li>
-<li><strong><a href="https://github.com/ryzokuken/cyberoam.js">ryzokuken/cyberoam.js</a></strong>: A JavaScript library for accessing cyberoam.</li>
-</ul>
-<style>
-.container li {
-  font-size: 1.5rem;
-  margin: 2rem 0;
-}
-</style>
+<h2>Current</h2>
+<div class="card-grid">
+<div class="card">
+<p><strong><a href="https://github.com/tc39/ecma402">tc39/ecma402</a></strong> — Status, process, and documents for ECMA-402, the JavaScript Internationalization specification. Co-editor.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/tc39/proposal-temporal">tc39/proposal-temporal</a></strong> — Provides standard objects and functions for working with dates and times in JavaScript. Champion.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/unicode-org/message-format-wg">Unicode MessageFormat</a></strong> — Working on the next generation of the Unicode MessageFormat specification for localizable messages.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/ietf-wg-sedate/draft-ietf-sedate-datetime-extended">ietf-wg-sedate</a></strong> — IETF working group for Serialising Extended Data About Times and Events (RFC 3339 calendar annotations).</p>
+</div>
+</div>
+<h2>Past</h2>
+<div class="card-grid past-projects">
+<div class="card">
+<p><strong><a href="https://github.com/nodejs/node">nodejs/node</a></strong> — Node.js JavaScript runtime ✨🐢🚀✨</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/v8/v8">v8/v8</a></strong> — V8 is Google's open source high-performance JavaScript and WebAssembly engine, written in C++.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/electron/node">electron/node</a></strong> — Electron's Node.js fork.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/bytecodealliance/cranelift">bytecodealliance/cranelift</a></strong> — Cranelift code generator.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/tc39/test262">tc39/test262</a></strong> — Official ECMAScript Conformance Test Suite.</p>
+</div>
+<div class="card">
+<p><strong><a href="https://github.com/publiclab/plots2">publiclab/plots2</a></strong> — A collaborative knowledge-exchange platform in Rails.</p>
+</div>
+</div>
 
   </div>
   <div id="footer">
-    <h3>Made with ❤️ by <a href="https://twitter.com/ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.io/">11ty</a></h3>
+    <h3>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></h3>
   </div>
 </body>
 </html>

@@ -21,23 +21,25 @@ title: Ryzokuken's Talks
 
 | Talk | Event | Location | Date | Links |
 | ---- | ----- | -------- | ---- | ----- |
+| Nobody asks "How is JavaScript?" | FOSDEM (JavaScript Devroom) | 🇧🇪 Brussels, BE | Feb 2025 | [conf](https://fosdem.org/2025/schedule/event/fosdem-2025-4286-nobody-asks-how-is-javascript-/) |
+| Solving the world's (localization) problems | FOSDEM (Inclusive Web Devroom) | 🇧🇪 Brussels, BE | Feb 2025 | [conf](https://fosdem.org/2025/schedule/event/fosdem-2025-4552-solving-the-world-s-localization-problems/) |
 | Nobody asks "How is JavaScript?" (keynote) | JSWorld | 🇳🇱 Amsterdam, NL | Mar 2025 | [conf](https://jsworldconference.com/) |
-| Nobody asks "How is JavaScript?" | FOSDEM | 🇧🇪 Brussels, BE | Feb 2025 | [conf](https://fosdem.org/) |
-| Nobody asks "How is JavaScript?" | IndiaFOSS | 🇮🇳 India | 2025 | [conf](https://fossunited.org/c/indiafoss/2025/cfp/5063ce3cc1) |
+| Solving the world's (localization) problems | TC39 Community Event | 🇪🇸 A Coruña, ES | May 2025 | [event](https://www.meetup.com/gpul-labs/events/307842803/) |
 | Nobody asks "How is JavaScript?" | AtlanticaConf | 🇪🇸 A Coruña, ES | Jun 2025 | [conf](https://atlanticaconf.com/schedule.html#session/HEFCDE/) |
+| Nobody asks "How is JavaScript?" | IndiaFOSS | 🇮🇳 India | 2025 | [conf](https://fossunited.org/c/indiafoss/2025/cfp/5063ce3cc1) |
 
 ### 2024
 
 | Talk | Event | Location | Date | Links |
 | ---- | ----- | -------- | ---- | ----- |
-| Nobody asks "How is JavaScript?" + The journeyman's guide to modules in Node.js | Armada JS | 🇷🇸 Novi Sad, RS | Dec 2024 | [conf](https://armada-js.com/) |
+| Nobody asks "How is JavaScript?" | Armada JS | 🇷🇸 Novi Sad, RS | Dec 2024 | [conf](https://armada-js.com/) |
 | Standardization (talk + panel) | Future Frontend | 🇫🇮 Helsinki, FI | Jun 2024 | [conf](https://futurefrontend.com/2024/schedule/#standardization) [video](https://www.youtube.com/watch?v=ZTqNKLZ2vPg) |
 
 ### 2023
 
 | Talk | Event | Location | Date | Links |
 | ---- | ----- | -------- | ---- | ----- |
-| Multicore JavaScript + TC39 Panel | BeJS | 🇧🇪 Brussels, BE | 2023 | [conf](https://www.bejs.io/) |
+| TC39 Panel | BeJS | 🇧🇪 Brussels, BE | 2023 | [conf](https://www.bejs.io/) |
 
 ### 2022
 

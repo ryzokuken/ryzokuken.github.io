@@ -1,0 +1,502 @@
+[
+  {
+    "year": "2025",
+    "talks": [
+      {
+        "title": "Nobody asks \"How is JavaScript?\"",
+        "event": "FOSDEM (JavaScript Devroom)",
+        "location": "Brussels, BE",
+        "flag": "🇧🇪",
+        "date": "Feb 2025",
+        "links": {
+          "conf": "https://fosdem.org/2025/schedule/event/fosdem-2025-4286-nobody-asks-how-is-javascript-/"
+        }
+      },
+      {
+        "title": "Solving the world's (localization) problems",
+        "event": "FOSDEM (Inclusive Web Devroom)",
+        "location": "Brussels, BE",
+        "flag": "🇧🇪",
+        "date": "Feb 2025",
+        "links": {
+          "conf": "https://fosdem.org/2025/schedule/event/fosdem-2025-4552-solving-the-world-s-localization-problems/"
+        }
+      },
+      {
+        "title": "Nobody asks \"How is JavaScript?\" (keynote)",
+        "event": "JSWorld",
+        "location": "Amsterdam, NL",
+        "flag": "🇳🇱",
+        "date": "Mar 2025",
+        "links": {
+          "conf": "https://jsworldconference.com/"
+        }
+      },
+      {
+        "title": "Solving the world's (localization) problems",
+        "event": "TC39 Community Event",
+        "location": "A Coruña, ES",
+        "flag": "🇪🇸",
+        "date": "May 2025",
+        "links": {
+          "event": "https://www.meetup.com/gpul-labs/events/307842803/"
+        }
+      },
+      {
+        "title": "Nobody asks \"How is JavaScript?\"",
+        "event": "AtlanticaConf",
+        "location": "A Coruña, ES",
+        "flag": "🇪🇸",
+        "date": "Jun 2025",
+        "links": {
+          "conf": "https://atlanticaconf.com/schedule.html#session/HEFCDE/"
+        }
+      },
+      {
+        "title": "Nobody asks \"How is JavaScript?\"",
+        "event": "IndiaFOSS",
+        "location": "India",
+        "flag": "🇮🇳",
+        "date": "2025",
+        "links": {
+          "conf": "https://fossunited.org/c/indiafoss/2025/cfp/5063ce3cc1"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "talks": [
+      {
+        "title": "Nobody asks \"How is JavaScript?\"",
+        "event": "Armada JS",
+        "location": "Novi Sad, RS",
+        "flag": "🇷🇸",
+        "date": "Dec 2024",
+        "links": {
+          "conf": "https://armada-js.com/"
+        }
+      },
+      {
+        "title": "Standardization (talk + panel)",
+        "event": "Future Frontend",
+        "location": "Helsinki, FI",
+        "flag": "🇫🇮",
+        "date": "Jun 2024",
+        "links": {
+          "conf": "https://futurefrontend.com/2024/schedule/#standardization",
+          "video": "https://www.youtube.com/watch?v=ZTqNKLZ2vPg"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "talks": [
+      {
+        "title": "TC39 Panel",
+        "event": "BeJS",
+        "location": "Brussels, BE",
+        "flag": "🇧🇪",
+        "date": "2023",
+        "links": {
+          "conf": "https://www.bejs.io/"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "talks": [
+      {
+        "title": "Multicore JS",
+        "event": "Nordic.js",
+        "location": "Stockholm, SE",
+        "flag": "🇸🇪",
+        "date": "Oct 2022",
+        "links": {
+          "conf": "https://nordicjs.com/2022"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "BeJS Conf",
+        "location": "Brussels, BE",
+        "flag": "🇧🇪",
+        "date": "May 2022",
+        "links": {
+          "conf": "https://www.bejs.io/conf"
+        }
+      },
+      {
+        "title": "The future of Desktop Applications\\*",
+        "event": "CodeFest",
+        "location": "Novosibirsk, RU",
+        "flag": "🇷🇺",
+        "date": "May 2022",
+        "links": {
+          "conf": "https://12.codefest.ru/"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "CityJS",
+        "location": "Athens, GR",
+        "flag": "🇬🇷",
+        "date": "May 2022",
+        "links": {
+          "conf": "https://greece.cityjsconf.org/"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "EnterJS",
+        "location": "Darmstadt, DE",
+        "flag": "🇩🇪",
+        "date": "June 2022",
+        "links": {
+          "conf": "https://enterjs.de/"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "talks": [
+      {
+        "title": "How to outsmart time",
+        "event": "JSNation",
+        "location": "Online",
+        "flag": "🇳🇱",
+        "date": "Jun 2021",
+        "links": {
+          "conf": "https://live.jsnation.com/",
+          "video": "https://portal.gitnation.org/contents/how-to-outsmart-time-building-futuristic-javascript-apps-using-temporal"
+        }
+      },
+      {
+        "title": "TC39 Demystified",
+        "event": "JSLovers",
+        "location": "Online",
+        "flag": "🇮🇳",
+        "date": "Aug 2021",
+        "links": {
+          "meetup": "https://www.meetup.com/jslovers/events/280029233/",
+          "slides": "https://ryzokuken.dev/slides/2021-08-tc39"
+        }
+      },
+      {
+        "title": "JavaScript and TC39: The Final Frontier",
+        "event": "RndTechConf",
+        "location": "Rostov-on-Don",
+        "flag": "🇷🇺",
+        "date": "Sep 2021",
+        "links": {
+          "conf": "https://rndtech.pro/"
+        }
+      },
+      {
+        "title": "TC39 Demystified",
+        "event": "Rif",
+        "location": "Voronezh",
+        "flag": "🇷🇺",
+        "date": "Sep 2021",
+        "links": {
+          "conf": "https://2021.rifvrn.ru/",
+          "slides": "https://ryzokuken.dev/slides/2021-09-tc39-rif"
+        }
+      },
+      {
+        "title": "TC39 Demystified",
+        "event": "MoscowJS 50",
+        "location": "Moscow",
+        "flag": "🇷🇺",
+        "date": "Sep 2021",
+        "links": {
+          "conf": "https://moscowjs.org/events/moscowjs-50/",
+          "slides": "https://ryzokuken.dev/slides/2021-09-tc39-moscowjs"
+        }
+      },
+      {
+        "title": "JavaScript and TC39: The Final Frontier",
+        "event": "DataArt IT Talks",
+        "location": "Saint Petersburg",
+        "flag": "🇷🇺",
+        "date": "Sep 2021",
+        "links": {
+          "video": "https://youtu.be/BExPpIEl_V4"
+        }
+      },
+      {
+        "title": "How to outsmart time",
+        "event": "WD Code",
+        "location": "Online",
+        "flag": "🇦🇺",
+        "date": "Sep 2021",
+        "links": {
+          "slides": "https://ryzokuken.dev/slides/2021-09-temporal/"
+        }
+      },
+      {
+        "title": "TC39 Demystified",
+        "event": "JetBrains JS Day",
+        "location": "Online",
+        "flag": "🌐",
+        "date": "Sep 2021",
+        "links": {
+          "conf": "https://pages.jetbrains.com/javascript-day-2021",
+          "slides": "https://ryzokuken.dev/slides/2021-10-tc39-jetbrains/"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "HolyJS",
+        "location": "Online",
+        "flag": "🇷🇺",
+        "date": "Nov 2021",
+        "links": {
+          "conf": "https://holyjs-moscow.ru/",
+          "slides": "https://ryzokuken.dev/slides/2021-11-multicore/"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "JSConf India",
+        "location": "Online",
+        "flag": "🇮🇳",
+        "date": "Nov 2021",
+        "links": {
+          "conf": "https://www.jsconf.in/",
+          "slides": "https://ryzokuken.dev/slides/2021-11-multicore-jsconfin/"
+        }
+      },
+      {
+        "title": "Multicore JS",
+        "event": "OSDHack",
+        "location": "Online",
+        "flag": "🇮🇳",
+        "date": "Nov 2021",
+        "links": {
+          "conf": "https://osdhackjiit.com/",
+          "slides": "https://ryzokuken.dev/slides/2021-11-multicore-osdhack/"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "talks": [
+      {
+        "title": "Tempus Fugit: A story of time\\*",
+        "event": "JSHeroes",
+        "location": "Cluj-Napoca, RO",
+        "flag": "🇷🇴",
+        "date": "Apr 2020",
+        "links": {
+          "slides": "https://docs.google.com/presentation/d/1yJ8SMiw_EwYMh8fHJcL_pVr6ZtNENeSoo9k9bEDXuuI/edit?usp=sharing"
+        }
+      },
+      {
+        "title": "Tempus Fugit: A story of time",
+        "event": "CodeFest",
+        "location": "Online",
+        "flag": "🇷🇺",
+        "date": "May 2020",
+        "links": {
+          "conf": "https://o.codefest.ru/",
+          "slides": "https://docs.google.com/presentation/d/1yJ8SMiw_EwYMh8fHJcL_pVr6ZtNENeSoo9k9bEDXuuI/edit?usp=sharing"
+        }
+      },
+      {
+        "title": "Tempus Fugit: A story of time",
+        "event": "HolyJS",
+        "location": "Online",
+        "flag": "🇷🇺",
+        "date": "Jul 2020",
+        "links": {
+          "conf": "https://2020.holyjs-piter.ru/en/",
+          "slides": "https://docs.google.com/presentation/d/1yJ8SMiw_EwYMh8fHJcL_pVr6ZtNENeSoo9k9bEDXuuI/edit?usp=sharing"
+        }
+      },
+      {
+        "title": "Tempus Fugit: A story of time",
+        "event": "FrontCon",
+        "location": "Online",
+        "flag": "🇱🇻",
+        "date": "Aug 2020",
+        "links": {
+          "conf": "https://2020.frontcon.com/",
+          "slides": "https://docs.google.com/presentation/d/1yJ8SMiw_EwYMh8fHJcL_pVr6ZtNENeSoo9k9bEDXuuI/edit?usp=sharing"
+        }
+      },
+      {
+        "title": "ECMAScript Internationalization",
+        "event": "IUC 44",
+        "location": "Online",
+        "flag": "🇺🇸",
+        "date": "Oct 2020",
+        "links": {
+          "conf": "https://events.omg.org/iuc44/",
+          "slides": "https://docs.google.com/presentation/d/1nEnkIu4BpS9S-_K4WR-glfgB9sbjWEP9DeUXuKnrkkQ/edit?usp=sharing"
+        }
+      },
+      {
+        "title": "TC39 Demystified",
+        "event": "Alibaba D2",
+        "location": "Online",
+        "flag": "🇨🇳",
+        "date": "Dec 2020",
+        "links": {
+          "conf": "https://www.alibabaf2e.com/",
+          "slides": "https://docs.google.com/presentation/d/1kQcq6KzPbgW55BC7KSu7zURhiRcuccqS3EIzewiZHqw/edit?usp=sharing"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2019",
+    "talks": [
+      {
+        "title": "The _other_ spec",
+        "event": "Lectorium POTOK",
+        "location": "Novosibirsk, RU",
+        "flag": "🇷🇺",
+        "date": "Mar 2019",
+        "links": {
+          "meetup": "https://www.meetup.com/%D0%9B%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9-%D0%B1%D0%B0%D1%80-%D0%9F%D0%9E%D0%A2%D0%9E%D0%9A/"
+        }
+      },
+      {
+        "title": "V8 by Example",
+        "event": "CodeFest",
+        "location": "Novosibirsk, RU",
+        "flag": "🇷🇺",
+        "date": "Mar 2019",
+        "links": {
+          "conf": "https://2019.codefest.ru/lecture/1401",
+          "slides": "https://docs.google.com/presentation/d/12z2SzP3fNKnAhPOEOsCywBDwVaofpmtksp5XX0aB_v4/present?usp=sharing"
+        }
+      },
+      {
+        "title": "V8 by Example",
+        "event": "FrontCon",
+        "location": "Riga, LV",
+        "flag": "🇱🇻",
+        "date": "Apr 2019",
+        "links": {
+          "slides": "https://docs.google.com/presentation/d/12z2SzP3fNKnAhPOEOsCywBDwVaofpmtksp5XX0aB_v4/present?usp=sharing"
+        }
+      },
+      {
+        "title": "To `ESM` is human",
+        "event": "HolyJS",
+        "location": "Saint Petersburg, RU",
+        "flag": "🇷🇺",
+        "date": "May 2019",
+        "links": {
+          "conf": "https://holyjs-piter.ru/en/",
+          "slides": "https://www.icloud.com/keynote/0FTx-eXLlxeo8JHfuWM3cY1FQ#To_ESM_is_human"
+        }
+      },
+      {
+        "title": "HOWTO: Crypto in Node.js",
+        "event": "SingaporeJS",
+        "location": "Singapore",
+        "flag": "🇸🇬",
+        "date": "Jun 2019",
+        "links": {
+          "slides": "https://docs.google.com/presentation/d/16lufN_MUedOxT4fz4D4IkPcMymxfhq6xgxzYLYZYfbI/present?usp=sharing"
+        }
+      },
+      {
+        "title": "The _other_ spec",
+        "event": "JSConf Asia",
+        "location": "Singapore",
+        "flag": "🇸🇬",
+        "date": "Jun 2019",
+        "links": {
+          "conf": "https://www.meetup.com/Singapore-JS/events/261294292/"
+        }
+      },
+      {
+        "title": "State of Crypto in Node.js",
+        "event": "NodeConf CO",
+        "location": "Medellín, CO",
+        "flag": "🇨🇴",
+        "date": "Jun 2019",
+        "links": {
+          "conf": "https://colombia.nodeconf.com/",
+          "slides": "https://www.icloud.com/keynote/0t_AxOq1suixa5WAH0VK0Nm7A#The_state_of_crypto_in_Nodejs"
+        }
+      },
+      {
+        "title": "To `ESM` is human",
+        "event": "Node.js Armenia",
+        "location": "Yerevan, AM",
+        "flag": "🇦🇲",
+        "date": "Jul 2019",
+        "links": {
+          "slides": "https://www.icloud.com/keynote/0FTx-eXLlxeo8JHfuWM3cY1FQ#To_ESM_is_human"
+        }
+      },
+      {
+        "title": "To `ESM` is human",
+        "event": "ArmadaJS",
+        "location": "Novi Sad, SR",
+        "flag": "🇷🇸",
+        "date": "Sep 2019",
+        "links": {
+          "conf": "https://www.armada-js.com/"
+        }
+      },
+      {
+        "title": "State of Crypto in Node.js",
+        "event": "Auth0 Meetup",
+        "location": "Online",
+        "flag": "🌐",
+        "date": "Oct 2019",
+        "links": {
+          "meetup": "https://www.meetup.com/Auth0-Online-Meetup/events/265223014/",
+          "slides": "https://docs.google.com/presentation/d/16lufN_MUedOxT4fz4D4IkPcMymxfhq6xgxzYLYZYfbI/present?usp=sharing"
+        }
+      },
+      {
+        "title": "The battle of the event loops\\*",
+        "event": "KharkivJS",
+        "location": "Kharkiv, UA",
+        "flag": "🇺🇦",
+        "date": "Oct 2019",
+        "links": {
+          "conf": "https://kharkivjs.org/"
+        }
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "talks": [
+      {
+        "title": "HOWTO: Crypto in Node.js",
+        "event": "Node.js BLR",
+        "location": "Bangalore, IN",
+        "flag": "🇮🇳",
+        "date": "Nov 2018",
+        "links": {
+          "meetup": "https://www.meetup.com/Polyglot-Languages-Runtimes-Java-JVM-nodejs-Swift/events/256057028/",
+          "slides": "https://docs.google.com/presentation/d/16lufN_MUedOxT4fz4D4IkPcMymxfhq6xgxzYLYZYfbI/present?usp=sharing"
+        }
+      },
+      {
+        "title": "State of Crypto in Node.js",
+        "event": "HolyJS",
+        "location": "Moscow, RU",
+        "flag": "🇷🇺",
+        "date": "Nov 2018",
+        "links": {
+          "conf": "https://holyjs-moscow.ru/en/talks/6g4xjkgsnciuakeawk24a6/",
+          "slides": "https://docs.google.com/presentation/d/16lufN_MUedOxT4fz4D4IkPcMymxfhq6xgxzYLYZYfbI/present?usp=sharing"
+        }
+      }
+    ]
+  }
+]

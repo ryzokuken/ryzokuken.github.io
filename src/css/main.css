@@ -322,44 +322,7 @@ a:hover {
 }
 
 /* ========================================
-   Tables (Talks)
-   ======================================== */
-
-.container table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: var(--font-size-sm);
-  margin: var(--space-md) 0;
-}
-
-.container th,
-.container td {
-  border: 1px solid var(--border);
-  padding: var(--space-sm) var(--space-md);
-  text-align: left;
-}
-
-.container th {
-  background: var(--bg-secondary);
-  font-weight: 600;
-}
-
-.container td a {
-  margin-right: var(--space-sm);
-}
-
-/* Responsive tables */
-@media (max-width: 768px) {
-  .container table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    font-size: var(--font-size-sm);
-  }
-}
-
-/* ========================================
-   Flags
+   Talks & Podcasts
    ======================================== */
 
 #flags {
@@ -367,18 +330,76 @@ a:hover {
   line-height: 2;
 }
 
-/* ========================================
-   Podcasts
-   ======================================== */
-
-#tc39ers {
-  width: 100%;
+.talk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
 }
 
-audio,
-iframe {
-  max-width: 100%;
-  margin: var(--space-sm) 0;
+.talk-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.talk-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.podcast-card {
+  border-left: 3px solid var(--accent);
+}
+
+.talk-card-title {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-xs);
+}
+
+.talk-card-title a {
+  color: var(--text);
+}
+
+.talk-card-title a:hover {
+  color: var(--accent);
+}
+
+.talk-card-event {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.talk-card-meta {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.talk-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.talk-card-links a {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.talk-card-links a:hover {
+  background: var(--bg-secondary);
+  border-color: var(--accent);
 }
 
 /* ========================================

@@ -1,9 +1,0 @@
-{% for year_data in talks %}
-### {{ year_data.year }}
-
-| Talk | Event | Location | Date | Links |
-| ---- | ----- | -------- | ---- | ----- |
-{% for talk in year_data.talks -%}
-| {{ talk.title }} | {{ talk.event }} | {{ talk.flag }} {{ talk.location }} | {{ talk.date }} | {% for link in talk.links %}[{{ link[0] }}]({{ link[1] }}) {% endfor %} |
-{% endfor %}
-{% endfor %}

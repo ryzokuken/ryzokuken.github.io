@@ -2,6 +2,7 @@
   "name": "ryzokuken.github.io",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
     "build:css": "lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",

@@ -1,5 +1,4 @@
 {
   "*.{js,json,css}": ["biome check --write"],
-  "src/**/*.css": ["lightningcss --minify"],
   "*.html": ["markuplint"]
 }

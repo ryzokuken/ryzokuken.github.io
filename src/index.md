@@ -6,8 +6,8 @@ title: Ujjwal Sharma — Developer Advocate
 <div class="hero">
   <img src="/photo.jpg" alt="Ujjwal Sharma" class="hero-photo">
   <h1>Ujjwal Sharma</h1>
-  <p class="hero-subtitle">Developer Relations, Programming Languages and Web Standards</p>
-  <p class="hero-location">📍 A Coruña, Galiza · <a href="https://www.igalia.com/">Igalia</a></p>
+  <p class="hero-subtitle">Developer Relations, Programming Languages and Web Standards @ <a href="https://www.igalia.com/">Igalia</a></p>
+  <p class="hero-location">📍 A Coruña, Galiza</p>
   <ul class="hero-roles">
     <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
     <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>

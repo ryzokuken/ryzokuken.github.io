@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 /* ========================================
    Design Tokens
    ======================================== */
@@ -7,17 +5,18 @@
 :root {
   /* Light mode (default) */
   --bg: #ffffff;
-  --bg-secondary: #f6f8fa;
-  --text: #1a1a2e;
-  --text-secondary: #4a5568;
-  --border: #e2e8f0;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --nav-bg: rgba(255, 255, 255, 0.85);
+  --bg-secondary: #ffffff;
+  --text: #000000;
+  --text-secondary: #333333;
+  --border: #000000;
+  --accent: #FC7C00;
+  /* TC39 Orange */
+  --accent-hover: #ffffff;
+  --accent-bg-hover: #FC7C00;
+  --nav-bg: #ffffff;
   --card-bg: #ffffff;
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --icon-fill: #4a5568;
-  --icon-hover: #2563eb;
+  --icon-fill: #000000;
+  --icon-hover: #FC7C00;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -28,19 +27,20 @@
   --space-2xl: 5rem;
 
   /* Typography */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2rem;
   --font-size-3xl: 2.5rem;
-  --font-size-hero: 3.5rem;
+  --font-size-hero: 4rem;
 
   /* Layout */
   --max-width: 52rem;
-  --nav-height: 3.5rem;
-  --radius: 0.5rem;
+  --nav-height: 4rem;
+  --radius: 0;
+  /* Strict angular shapes */
 }
 
 /* ========================================
@@ -49,18 +49,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1117;
-    --bg-secondary: #161b22;
-    --text: #e6edf3;
-    --text-secondary: #8b949e;
-    --border: #30363d;
-    --accent: #58a6ff;
-    --accent-hover: #79c0ff;
-    --nav-bg: rgba(13, 17, 23, 0.85);
-    --card-bg: #161b22;
-    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    --icon-fill: #8b949e;
-    --icon-hover: #58a6ff;
+    --bg: #000000;
+    --bg-secondary: #000000;
+    --text: #ffffff;
+    --text-secondary: #cccccc;
+    --border: #ffffff;
+    --nav-bg: #000000;
+    --card-bg: #000000;
+    --icon-fill: #ffffff;
   }
 }
 
@@ -83,7 +79,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -103,9 +99,7 @@ body {
   top: 0;
   z-index: 100;
   background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   height: var(--nav-height);
   display: flex;
   align-items: center;
@@ -121,17 +115,40 @@ body {
 }
 
 #navbar a {
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  text-transform: lowercase;
   text-decoration: none;
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
+  color: var(--text);
+  padding: var(--space-xs) var(--space-sm);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#navbar a::before {
+  content: '[';
+  opacity: 0;
+  margin-right: 2px;
+  color: var(--accent);
+  transition: opacity 0.2s ease;
+}
+
+#navbar a::after {
+  content: ']';
+  opacity: 0;
+  margin-left: 2px;
+  color: var(--accent);
+  transition: opacity 0.2s ease;
 }
 
 #navbar a:hover {
-  color: var(--accent);
+  color: var(--text);
+  background: transparent;
+}
+
+#navbar a:hover::before,
+#navbar a:hover::after {
+  opacity: 1;
 }
 
 /* ========================================
@@ -150,24 +167,38 @@ body {
    Typography
    ======================================== */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
 h1 {
   font-size: var(--font-size-3xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   margin-bottom: var(--space-md);
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: var(--font-size-2xl);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
+  border-bottom: 2px solid var(--text);
+  padding-bottom: var(--space-xs);
+  display: inline-block;
 }
 
 h3 {
   font-size: var(--font-size-xl);
-  font-weight: 600;
+  font-weight: 700;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-sm);
 }
@@ -183,13 +214,18 @@ p {
    ======================================== */
 
 a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: all 0.1s ease;
 }
 
 a:hover {
+  background-color: var(--accent);
   color: var(--accent-hover);
+  text-decoration-color: transparent;
 }
 
 /* ========================================
@@ -208,39 +244,58 @@ a:hover {
   line-height: 1.6;
 }
 
+.container ul li::marker {
+  color: var(--accent);
+}
+
 /* ========================================
    Hero Section (Homepage)
    ======================================== */
 
 .hero {
-  text-align: center;
-  padding: var(--space-2xl) 0;
+  text-align: left;
+  padding: var(--space-xl) 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: var(--space-xl);
 }
 
 .hero-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 0;
   object-fit: cover;
-  border: 3px solid var(--border);
+  border: 4px solid var(--border);
   margin-bottom: var(--space-lg);
+  background: var(--text);
 }
 
 .hero h1 {
   font-size: var(--font-size-hero);
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  line-height: 1;
+}
+
+.hero h1::before {
+  content: '>';
+  color: var(--accent);
+  margin-right: var(--space-sm);
 }
 
 .hero-subtitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-2xl);
   color: var(--text-secondary);
   margin-bottom: var(--space-sm);
+  font-weight: 400;
 }
 
 .hero-location {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
   color: var(--text-secondary);
   margin-bottom: var(--space-lg);
+  display: inline-block;
+  background: var(--text);
+  color: var(--bg);
+  padding: var(--space-xs) var(--space-sm);
 }
 
 .hero-roles {
@@ -255,6 +310,11 @@ a:hover {
   color: var(--text);
 }
 
+.hero-roles li::before {
+  content: '- ';
+  color: var(--accent);
+}
+
 /* ========================================
    Social Icons
    ======================================== */
@@ -264,7 +324,7 @@ a:hover {
   list-style: none;
   padding: 0;
   gap: var(--space-lg);
-  justify-content: center;
+  justify-content: flex-start;
   margin: var(--space-lg) 0;
 }
 
@@ -273,17 +333,22 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: var(--icon-fill);
-  transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+  background: transparent;
+  padding: var(--space-xs);
+  border: 2px solid transparent;
 }
 
 .social-links a:hover {
-  color: var(--icon-hover);
-  transform: translateY(-2px);
+  color: var(--bg);
+  background: var(--icon-hover);
+  border-color: var(--icon-hover);
+  border-radius: 0;
 }
 
 .social-links svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   fill: currentColor;
 }
 
@@ -293,31 +358,49 @@ a:hover {
 
 .card-grid {
   display: grid;
-  gap: var(--space-md);
+  gap: var(--space-lg);
   margin: var(--space-md) 0;
 }
 
 .card {
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 2px solid var(--border);
   padding: var(--space-md) var(--space-lg);
-  box-shadow: var(--card-shadow);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent);
+  transition: width 0.2s ease;
+  z-index: 0;
 }
 
 .card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-color: var(--text);
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0 var(--accent);
+}
+
+.card>* {
+  position: relative;
+  z-index: 1;
 }
 
 .card strong {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
 }
 
 .card p {
   font-size: var(--font-size-sm);
-  margin: var(--space-xs) 0 0;
+  margin: var(--space-sm) 0 0;
   color: var(--text-secondary);
 }
 
@@ -328,78 +411,100 @@ a:hover {
 #flags {
   font-size: 2rem;
   line-height: 2;
+  letter-spacing: 0.2em;
 }
 
 .talk-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
   margin: var(--space-md) 0;
+}
+
+@media (min-width: 640px) {
+  .talk-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .talk-card {
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 2px solid var(--border);
   padding: var(--space-md) var(--space-lg);
-  box-shadow: var(--card-shadow);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .talk-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0 var(--text);
 }
 
 .podcast-card {
-  border-left: 3px solid var(--accent);
+  border-left-color: var(--accent);
+  border-left-width: 4px;
 }
 
 .talk-card-title {
-  font-weight: 600;
-  font-size: var(--font-size-base);
-  margin-bottom: var(--space-xs);
+  font-weight: 800;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+  line-height: 1.3;
 }
 
 .talk-card-title a {
+  text-decoration: none;
+  background: none;
   color: var(--text);
 }
 
 .talk-card-title a:hover {
-  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 4px;
 }
 
 .talk-card-event {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  color: var(--text);
   margin-bottom: var(--space-xs);
+  font-weight: 700;
+}
+
+.talk-card-event::before {
+  content: '@ ';
+  color: var(--accent);
 }
 
 .talk-card-meta {
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  flex-grow: 1;
 }
 
 .talk-card-links {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
+  margin-top: auto;
 }
 
 .talk-card-links a {
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--accent);
+  font-size: 0.875rem;
+  padding: var(--space-xs) var(--space-sm);
+  border: 2px solid var(--text);
+  color: var(--text);
   text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
 }
 
 .talk-card-links a:hover {
-  background: var(--bg-secondary);
-  border-color: var(--accent);
+  background: var(--text);
+  color: var(--bg);
 }
 
 /* ========================================
@@ -407,15 +512,15 @@ a:hover {
    ======================================== */
 
 blockquote {
-  background: var(--bg-secondary);
+  background: transparent;
   border-left: 4px solid var(--accent);
-  margin: var(--space-lg) 0;
-  padding: var(--space-md) var(--space-lg);
-  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: var(--space-xl) 0;
+  padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-lg);
 }
 
 blockquote p {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
+  font-style: italic;
   color: var(--text);
   margin: 0;
 }
@@ -426,16 +531,29 @@ blockquote p {
 
 #footer {
   text-align: center;
-  padding: var(--space-lg);
-  border-top: 1px solid var(--border);
+  padding: var(--space-xl) var(--space-lg);
+  border-top: 4px solid var(--border);
   margin-top: auto;
+  background: var(--text);
+  color: var(--bg);
 }
 
 #footer h3 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--bg);
   margin: 0;
+  border-bottom: none;
+}
+
+#footer a {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+#footer a:hover {
+  background: var(--accent);
+  color: var(--text);
 }
 
 /* ========================================
@@ -443,12 +561,42 @@ blockquote p {
    ======================================== */
 
 .past-projects {
-  opacity: 0.7;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  border-style: dashed;
 }
 
 .past-projects:hover {
   opacity: 1;
+  filter: none;
+  border-style: solid;
 }
+
+/* ========================================
+   Images
+   ======================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid var(--border);
+  filter: grayscale(100%) contrast(120%);
+  transition: filter 0.3s ease;
+}
+
+img:hover {
+  filter: grayscale(0%) contrast(100%);
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+  border: none;
+  filter: none;
+}
+
 
 /* ========================================
    Responsive
@@ -466,7 +614,9 @@ blockquote p {
   }
 
   #navbar ul {
-    gap: var(--space-md);
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .social-links {

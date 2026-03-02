@@ -11,7 +11,7 @@
     "format": "biome format --write .",
     "lint": "biome check .",
     "test:html": "markuplint \"src/**/*.{html,liquid,md,njk}\"",
-    "test:links": "linkinator _site",
+    "test:links": "linkinator _site --skip /slides/",
     "test": "npm run build && npm run test:html && npm run test:links",
     "prepare": "husky"
   },

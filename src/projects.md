@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: layout.liquid
 title: Ryzokuken's Projects
 ---
 

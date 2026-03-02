@@ -1,44 +1,44 @@
 [
-    {
-        "title": "How to get into OSS",
-        "show": "JS Party",
-        "url": "https://changelog.com/jsparty/86",
-        "date": "2019"
-    },
-    {
-        "title": "Ujjwal Sharma",
-        "show": "tc39er.us",
-        "url": "https://pocketcasts.com/podcast/tc39erus/5dc01c30-ffe9-0137-b5b8-0acc26574db2/ujjwal-sharma/165db4ee-33b9-40fb-8565-0106a8f251ad",
-        "date": "2021"
-    },
-    {
-        "title": "TC39 and Multicore JavaScript",
-        "show": "PodRocket",
-        "url": "https://podrocket.logrocket.com/tc39-multicore-javascript",
-        "date": "2022"
-    },
-    {
-        "title": "A chat with Ujjwal Sharma",
-        "show": "BeJS Podcast",
-        "url": "https://youtu.be/jN0gHGwCUyg",
-        "date": "2023"
-    },
-    {
-        "title": "TC39 and JavaScript Updates",
-        "show": "Heavy Mornings with HolyJS",
-        "url": "https://www.youtube.com/live/b10L_5NZjQk?si=AXsf1BV-P14PfXFc",
-        "date": "2026"
-    },
-    {
-        "title": "Creative Web Design",
-        "show": "Igalia Chats",
-        "url": "https://www.igalia.com/chats/lynnandtonic",
-        "date": "2026"
-    },
-    {
-        "title": "Ujjwal Sharma and TC39",
-        "show": "ShopTalk Show",
-        "url": "https://shoptalkshow.com/703/",
-        "date": "2026"
-    }
+  {
+    "title": "How to get into OSS",
+    "show": "JS Party",
+    "url": "https://changelog.com/jsparty/86",
+    "date": "2019"
+  },
+  {
+    "title": "Ujjwal Sharma",
+    "show": "tc39er.us",
+    "url": "https://pocketcasts.com/podcast/tc39erus/5dc01c30-ffe9-0137-b5b8-0acc26574db2/ujjwal-sharma/165db4ee-33b9-40fb-8565-0106a8f251ad",
+    "date": "2021"
+  },
+  {
+    "title": "TC39 and Multicore JavaScript",
+    "show": "PodRocket",
+    "url": "https://podrocket.logrocket.com/tc39-multicore-javascript",
+    "date": "2022"
+  },
+  {
+    "title": "A chat with Ujjwal Sharma",
+    "show": "BeJS Podcast",
+    "url": "https://youtu.be/jN0gHGwCUyg",
+    "date": "2023"
+  },
+  {
+    "title": "TC39 and JavaScript Updates",
+    "show": "Heavy Mornings with HolyJS",
+    "url": "https://www.youtube.com/live/b10L_5NZjQk?si=AXsf1BV-P14PfXFc",
+    "date": "2026"
+  },
+  {
+    "title": "Creative Web Design",
+    "show": "Igalia Chats",
+    "url": "https://www.igalia.com/chats/lynnandtonic",
+    "date": "2026"
+  },
+  {
+    "title": "Ujjwal Sharma and TC39",
+    "show": "ShopTalk Show",
+    "url": "https://shoptalkshow.com/703/",
+    "date": "2026"
+  }
 ]

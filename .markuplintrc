@@ -1,0 +1,34 @@
+{
+  "parser": {
+    ".html$": "@markuplint/html-parser"
+  },
+  "rules": {
+    "character-reference": true,
+    "doctype": true,
+    "id-duplication": true,
+    "permitted-contents": true,
+    "required-attr": true,
+    "deprecated-element": true,
+    "deprecated-attr": true,
+    "ineffective-attr": false,
+    "case-sensitive-attr-name": true,
+    "invalid-attr": {
+      "options": {
+        "allowAttrs": [
+          { "name": "property", "value": "Any" },
+          { "name": "content", "value": "Any" }
+        ]
+      }
+    },
+    "wai-aria": true,
+    "attr-value-quotes": true
+  },
+  "nodeRules": [
+    {
+      "selector": "meta[property]",
+      "rules": {
+        "required-attr": false
+      }
+    }
+  ]
+}

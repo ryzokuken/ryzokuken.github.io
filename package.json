@@ -4,9 +4,15 @@
   "description": "",
   "scripts": {
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
-    "build": "npm run clean && eleventy",
+    "build:css": "lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
+    "build": "eleventy && npm run build:css",
     "dev": "eleventy --serve",
-    "clean": "rimraf _site"
+    "format": "biome format --write .",
+    "lint": "biome check .",
+    "test:html": "markuplint \"src/**/*.{html,liquid,md,njk}\"",
+    "test:links": "linkinator _site",
+    "test": "npm run build && npm run test:html && npm run test:links",
+    "prepare": "husky"
   },
   "repository": "github:ryzokuken/ryzokuken.github.io",
   "keywords": [],
@@ -18,6 +24,12 @@
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "rimraf": "^6.1.3"
+    "@biomejs/biome": "^2.4.4",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.31.1",
+    "lightningcss-cli": "^1.31.1",
+    "linkinator": "^7.6.1",
+    "lint-staged": "^16.3.1",
+    "markuplint": "^4.14.1"
   }
 }

@@ -9,14 +9,14 @@
   --text: #000000;
   --text-secondary: #333333;
   --border: #000000;
-  --accent: #FC7C00;
+  --accent: #fc7c00;
   /* TC39 Orange */
   --accent-hover: #ffffff;
-  --accent-bg-hover: #FC7C00;
+  --accent-bg-hover: #fc7c00;
   --nav-bg: #ffffff;
   --card-bg: #ffffff;
   --icon-fill: #000000;
-  --icon-hover: #FC7C00;
+  --icon-hover: #fc7c00;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -27,7 +27,7 @@
   --space-2xl: 5rem;
 
   /* Typography */
-  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -126,7 +126,7 @@ body {
 }
 
 #navbar a::before {
-  content: '[';
+  content: "[";
   opacity: 0;
   margin-right: 2px;
   color: var(--accent);
@@ -134,7 +134,7 @@ body {
 }
 
 #navbar a::after {
-  content: ']';
+  content: "]";
   opacity: 0;
   margin-left: 2px;
   color: var(--accent);
@@ -276,7 +276,7 @@ a:hover {
 }
 
 .hero h1::before {
-  content: '>';
+  content: ">";
   color: var(--accent);
   margin-right: var(--space-sm);
 }
@@ -311,7 +311,7 @@ a:hover {
 }
 
 .hero-roles li::before {
-  content: '- ';
+  content: "- ";
   color: var(--accent);
 }
 
@@ -371,7 +371,7 @@ a:hover {
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -388,7 +388,7 @@ a:hover {
   box-shadow: 4px 4px 0 var(--accent);
 }
 
-.card>* {
+.card > * {
   position: relative;
   z-index: 1;
 }
@@ -473,7 +473,7 @@ a:hover {
 }
 
 .talk-card-event::before {
-  content: '@ ';
+  content: "@ ";
   color: var(--accent);
 }
 
@@ -591,12 +591,11 @@ img:hover {
 img.emoji {
   height: 1em;
   width: 1em;
-  margin: 0 .05em 0 .1em;
+  margin: 0 0.05em 0 0.1em;
   vertical-align: -0.1em;
   border: none;
   filter: none;
 }
-
 
 /* ========================================
    Responsive

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: layout.liquid
 pagination:
   data: collections
   size: 1
@@ -15,10 +15,3 @@ title: Posts tagged {{ tag }}
   </li>
   {%- endfor -%}
 </ul>
-
-<style>
-.container li {
-  font-size: 1.5rem;
-  margin: 2rem 0;
-}
-</style>

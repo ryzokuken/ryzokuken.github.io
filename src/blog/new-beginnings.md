@@ -32,11 +32,3 @@ The nicer side of this is that I can now choose to focus my attention on things 
 That said, the bottom line is, I'm drinking amazing coffee and doing stuff that I've always wanted to do, working alongside people I've always wanted to work with, so I'm doing really amazing and there's a small feeling that this might just be the beginning.
 
 Looking forward to all sorts of amazing things.
-
-<style>
-.container img {
-  float: left;
-  width: 40%;
-  margin-right: 2rem;
-}
-</style>

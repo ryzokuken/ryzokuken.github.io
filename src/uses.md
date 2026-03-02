@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: layout.liquid
 title: Ryzokuken Uses
 ---
 
@@ -161,7 +161,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
     <p>Open-source tool for password security.</p>
   </div>
   <div class="card">
-    <strong><a href="https://matrix.org/">Matrix</a> & <a href="https://element.io/">Element</a></strong>
+    <strong><a href="https://matrix.org/">Matrix</a> &amp; <a href="https://element.io/">Element</a></strong>
     <p>Open protocol messaging and client.</p>
   </div>
   <div class="card">

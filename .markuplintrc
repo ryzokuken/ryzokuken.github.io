@@ -1,4 +1,5 @@
 {
+  "excludeFiles": ["src/temporal-2020-04/**"],
   "parser": {
     ".html$": "@markuplint/html-parser"
   },

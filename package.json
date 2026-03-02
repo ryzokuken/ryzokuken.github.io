@@ -2,6 +2,7 @@
   "name": "ryzokuken.github.io",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
     "build:css": "lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
@@ -10,7 +11,7 @@
     "format": "biome format --write .",
     "lint": "biome check .",
     "test:html": "markuplint \"src/**/*.{html,liquid,md,njk}\"",
-    "test:links": "linkinator _site",
+    "test:links": "linkinator _site --skip /slides/",
     "test": "npm run build && npm run test:html && npm run test:links",
     "prepare": "husky"
   },

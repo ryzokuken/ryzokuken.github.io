@@ -30,14 +30,14 @@
   --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
+  --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2rem;
   --font-size-3xl: 2.5rem;
   --font-size-hero: 4rem;
 
   /* Layout */
-  --max-width: 52rem;
+  --max-width: 70rem;
   --nav-height: 4rem;
   --radius: 0;
   /* Strict angular shapes */
@@ -115,7 +115,7 @@ body {
 }
 
 #navbar a {
-  font-size: var(--font-size-base);
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: lowercase;
   text-decoration: none;
@@ -260,13 +260,14 @@ a:hover {
 }
 
 .hero-photo {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 0;
   object-fit: cover;
   border: 4px solid var(--border);
   margin-bottom: var(--space-lg);
   background: var(--text);
+  filter: none;
 }
 
 .hero h1 {

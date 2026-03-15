@@ -7,12 +7,12 @@ title: Ryzokuken's Blog
 <div class="card-grid">
   {%- for post in collections.post reversed -%}
   <div class="card">
-    <h3 style="margin-top: 0; margin-bottom: var(--space-xs);"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <div style="font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-sm);">
+    <h3 class="blog-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <div class="blog-card-meta">
       📅 {{ post.date | date: "%B %d, %Y" }}
       {% assign tags = post.data.tags | slice:1,10 %}
       {% if tags.size > 0 %}
-      · 🏷 {%- for tag in tags -%} <a href="/tag/{{tag}}" style="margin-left: 0.25rem;">{{tag}}</a>{%- endfor -%}
+      · 🏷 {%- for tag in tags -%} <a href="/tag/{{tag}}" class="blog-card-tag">{{tag}}</a>{%- endfor -%}
       {% endif %}
     </div>
     <p>{{ post.templateContent | strip_html | truncatewords: 40 }}</p>

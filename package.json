@@ -4,15 +4,12 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build:slides": "marp --watch ./temporal-2020-04/README.md -o ./temporal-2020-04/index.html --html",
-    "build:css": "lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
+    "build:css": "mkdir -p _site/css && lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
     "build": "eleventy && npm run build:css",
     "dev": "eleventy --serve",
-    "format": "biome format --write .",
-    "lint": "biome check .",
-    "test:html": "markuplint \"src/**/*.{html,liquid,md,njk}\"",
+    "lint": "markuplint \"src/**/*.{html,liquid,md}\"",
     "test:links": "linkinator _site --skip /slides/",
-    "test": "npm run build && npm run test:html && npm run test:links",
+    "test": "npm run build && npm run lint && npm run test:links",
     "prepare": "husky"
   },
   "repository": "github:ryzokuken/ryzokuken.github.io",
@@ -25,9 +22,7 @@
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@biomejs/biome": "^2.4.4",
     "husky": "^9.1.7",
-    "lightningcss": "^1.31.1",
     "lightningcss-cli": "^1.31.1",
     "linkinator": "^7.6.1",
     "lint-staged": "^16.3.1",

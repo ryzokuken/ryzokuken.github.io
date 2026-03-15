@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta name="description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor.">
+  <meta property="og:description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:type" content="website">
   <title>{{ title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +16,8 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <div id="navbar">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <nav id="navbar" aria-label="Main navigation">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/talks/">Talks</a></li>
@@ -26,13 +26,13 @@
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/uses/">Uses</a></li>
     </ul>
-  </div>
-  <div class="container">
+  </nav>
+  <main id="main-content" class="container">
     {{ content }}
-  </div>
-  <div id="footer">
+  </main>
+  <footer id="footer">
     <h3>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></h3>
-  </div>
+  </footer>
   <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {

@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "build:css": "mkdir -p _site/css && lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
-    "build": "eleventy && npm run build:css",
+    "build": "eleventy && pnpm run build:css",
     "dev": "eleventy --serve",
     "lint": "markuplint \"src/**/*.{html,liquid,md}\"",
     "test:links": "linkinator _site --skip /slides/",
-    "test": "npm run build && npm run lint && npm run test:links",
+    "test": "pnpm run build && pnpm run lint && pnpm run test:links",
     "prepare": "husky"
   },
   "repository": "github:ryzokuken/ryzokuken.github.io",
@@ -20,6 +20,10 @@
     "url": "https://github.com/ryzokuken/ryzokuken.github.io/issues"
   },
   "homepage": "https://github.com/ryzokuken/ryzokuken.github.io#readme",
+  "packageManager": "pnpm@10.32.1",
+  "pnpm": {
+    "onlyBuiltDependencies": ["lightningcss-cli"]
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "husky": "^9.1.7",

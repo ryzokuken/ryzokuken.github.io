@@ -1,5 +1,5 @@
 {% for year_data in talks %}
-### {{ year_data.year }}
+<h3 id="{{ year_data.year }}">{{ year_data.year }}</h3>
 
 <div class="talk-grid">
 {% for talk in year_data.talks %}

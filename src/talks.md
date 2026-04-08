@@ -14,7 +14,8 @@ title: Ryzokuken's Talks
   {% endfor %}
 {% endfor %}
 {% assign unique_flags = all_flags | split: "," | uniq | join: "" %}
-<span id="flags">{{ unique_flags }}</span>
+<p class="flags-label">// countries visited</p>
+<div id="flags">{{ unique_flags }}</div>
 
 ## Podcasts
 
@@ -31,5 +32,10 @@ title: Ryzokuken's Talks
 </div>
 
 ## Past Talks
+
+<nav class="year-jump" aria-label="Jump to year">
+  <span class="year-jump-label">// year:</span>
+  {% for year_data in talks %}<a href="#{{ year_data.year }}">{{ year_data.year }}</a> {% endfor %}
+</nav>
 
 {% include "talks-list.liquid" %}

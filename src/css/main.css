@@ -3,17 +3,16 @@
    ======================================== */
 
 :root {
-  --bg: #ffffff;
-  --bg-secondary: #ffffff;
-  --text: #000000;
-  --text-secondary: color-mix(in srgb, var(--text) 80%, transparent);
-  --border: #000000;
+  --bg: oklch(98% 0.008 70);
+  --text: oklch(12% 0.015 50);
+  --text-secondary: color-mix(in oklch, var(--text) 75%, var(--bg));
+  --border: var(--text);
   --accent: #fc7c00;
-  --accent-hover: #ffffff;
+  --accent-hover: var(--bg);
   --accent-bg-hover: #fc7c00;
-  --nav-bg: #ffffff;
-  --card-bg: #ffffff;
-  --icon-fill: #000000;
+  --nav-bg: var(--bg);
+  --card-bg: var(--bg);
+  --icon-fill: var(--text);
   --icon-hover: #fc7c00;
 
   --space-xs: 0.25rem;
@@ -28,9 +27,9 @@
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
-  --font-size-2xl: 2rem;
-  --font-size-3xl: 2.5rem;
-  --font-size-hero: 4rem;
+  --font-size-2xl: clamp(1.375rem, 1.125rem + 1.25vw, 2rem);
+  --font-size-3xl: clamp(1.75rem, 1.45rem + 1.5vw, 2.5rem);
+  --font-size-hero: clamp(2.25rem, 1.55rem + 3.5vw, 4rem);
 
   --max-width: 70rem;
   --nav-height: 4rem;
@@ -39,13 +38,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #000000;
-    --bg-secondary: #000000;
-    --text: #ffffff;
-    --border: #ffffff;
-    --nav-bg: #000000;
-    --card-bg: #000000;
-    --icon-fill: #ffffff;
+    --bg: oklch(10% 0.015 50);
+    --text: oklch(96% 0.008 70);
   }
 }
 
@@ -114,7 +108,8 @@ h2 {
   margin-bottom: var(--space-md);
   border-bottom: 2px solid var(--text);
   padding-bottom: var(--space-xs);
-  display: inline-block;
+  display: block;
+  width: fit-content;
 }
 
 h3 {
@@ -122,6 +117,10 @@ h3 {
   font-weight: 700;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-sm);
+}
+
+h3[id] {
+  scroll-margin-top: calc(var(--nav-height) + var(--space-md));
 }
 
 p {
@@ -215,7 +214,8 @@ a {
       margin-left: 2px;
     }
 
-    &:hover {
+    &:hover,
+    &[aria-current="page"] {
       color: var(--text);
       background: transparent;
 
@@ -361,6 +361,7 @@ a {
 
 .card-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
   margin: var(--space-md) 0;
 }
@@ -371,6 +372,8 @@ a {
   padding: var(--space-md) var(--space-lg);
   transition: all 0.2s ease;
   position: relative;
+  overflow-wrap: break-word;
+  min-width: 0;
 
   &::before {
     content: "";
@@ -414,6 +417,7 @@ a {
 .blog-card-title {
   margin-top: 0;
   margin-bottom: var(--space-xs);
+  overflow-wrap: break-word;
 }
 
 .blog-card-meta {
@@ -429,6 +433,13 @@ a {
 /* ========================================
    Talks & Podcasts
    ======================================== */
+
+.flags-label {
+  font-size: var(--font-size-sm);
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
 
 #flags {
   font-size: 2rem;
@@ -454,6 +465,7 @@ a {
   transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 
   &:hover {
     transform: translate(-4px, -4px);
@@ -471,6 +483,7 @@ a {
   font-size: var(--font-size-lg);
   margin-bottom: var(--space-sm);
   line-height: 1.3;
+  overflow-wrap: break-word;
 
   & a {
     text-decoration: none;
@@ -528,6 +541,43 @@ a {
 }
 
 /* ========================================
+   Year Jump Navigation
+   ======================================== */
+
+.year-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+  margin: var(--space-md) 0 var(--space-lg);
+  padding: var(--space-md) 0;
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+}
+
+.year-jump-label {
+  color: var(--accent);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  margin-right: var(--space-xs);
+}
+
+.year-jump a {
+  font-size: var(--font-size-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+}
+
+/* ========================================
    Blockquotes
    ======================================== */
 
@@ -557,12 +607,11 @@ blockquote {
   background: var(--text);
   color: var(--bg);
 
-  & h3 {
+  & p {
     font-size: var(--font-size-base);
     font-weight: 400;
     color: var(--bg);
     margin: 0;
-    border-bottom: none;
   }
 
   & a {
@@ -583,12 +632,18 @@ blockquote {
 .past-projects {
   opacity: 0.5;
   filter: grayscale(100%);
-  border-style: dashed;
+
+  & .card {
+    border-style: dashed;
+  }
 
   &:hover {
     opacity: 1;
     filter: none;
-    border-style: solid;
+
+    & .card {
+      border-style: solid;
+    }
   }
 }
 
@@ -600,11 +655,11 @@ img {
   max-width: 100%;
   height: auto;
   border: 4px solid var(--border);
-  filter: grayscale(100%) contrast(120%);
+  filter: grayscale(100%);
   transition: filter 0.3s ease;
 
   &:hover {
-    filter: grayscale(0%) contrast(100%);
+    filter: none;
   }
 
   &.emoji {
@@ -621,13 +676,17 @@ img {
    Responsive
    ======================================== */
 
-@media (width < 640px) {
-  :root {
-    --font-size-hero: 2.5rem;
-    --font-size-3xl: 2rem;
-    --font-size-2xl: 1.5rem;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
+}
 
+@media (width < 640px) {
   .container {
     padding: var(--space-lg) var(--space-md);
   }

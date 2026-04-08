@@ -19,21 +19,21 @@
   <a href="#main-content" class="skip-link">Skip to content</a>
   <nav id="navbar" aria-label="Main navigation">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/talks/">Talks</a></li>
-      <li><a href="/slides/">Slides</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/uses/">Uses</a></li>
+      <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="/talks/"{% if page.url contains "/talks/" %} aria-current="page"{% endif %}>Talks</a></li>
+      <li><a href="/slides/"{% if page.url contains "/slides/" %} aria-current="page"{% endif %}>Slides</a></li>
+      <li><a href="/projects/"{% if page.url contains "/projects/" %} aria-current="page"{% endif %}>Projects</a></li>
+      <li><a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>Blog</a></li>
+      <li><a href="/uses/"{% if page.url contains "/uses/" %} aria-current="page"{% endif %}>Uses</a></li>
     </ul>
   </nav>
   <main id="main-content" class="container">
     {{ content }}
   </main>
   <footer id="footer">
-    <h3>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></h3>
+    <p>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></p>
   </footer>
-  <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" integrity="sha384-o28+zJO3/45GHIy+9TFKGaYnbt0KQcFRzyBrb0WSSrz7bPGwGI1d64worBiXPgXw" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });

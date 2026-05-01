@@ -46,12 +46,12 @@ Ecma's structure has a clear hierarchy, so let me walk it from the top.
 
 ```mermaid
 flowchart
-    ga("General Assembly")
-    mn("Management")
-    sc("Secretariat")
-    ec("Executive Committee")
-    tc("Technical Committees")
-    tg("Task Groups")
+    ga["General Assembly"]
+    mn["Management"]
+    sc["Secretariat"]
+    ec["Executive Committee"]
+    tc["Technical Committees"]
+    tg["Task Groups"]
     st["Standards"]
     tr["Technical Reports"]
     ga --> mn
@@ -61,10 +61,7 @@ flowchart
     sc --> tc
     ec --> tc
     tc --> tg
-    tc .-> st
-    tg .-> st
-    tc .-> tr
-    tg .-> tr
+    tc & tg .-> st & tr
 ```
 
 ### The General Assembly

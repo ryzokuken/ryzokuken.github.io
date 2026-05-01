@@ -12,7 +12,7 @@ export default function (eleventyConfig) {
         fontSize: "15px",
       },
       flowchart: {
-        curve: "linear",
+        // curve: "basis",
         htmlLabels: true,
         padding: 16,
         nodeSpacing: 40,

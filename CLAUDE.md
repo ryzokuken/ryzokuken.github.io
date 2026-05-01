@@ -2,22 +2,23 @@
 
 Personal website for Ujjwal Sharma (ryzokuken), built with [Eleventy](https://www.11ty.dev/) 3.x and LiquidJS templates. Deployed to GitHub Pages via GitHub Actions.
 
-**Stack:** Eleventy · LiquidJS · LightningCSS · Biome · markuplint · Husky + lint-staged
+**Stack:** Eleventy · LiquidJS · LightningCSS · markuplint · linkinator · Husky + lint-staged · Mermaid
 
 ## Dev commands
 
-- `npm run dev` — Eleventy dev server with live reload
-- `npm run build` — build site (Eleventy + LightningCSS minification)
-- `npm run lint` — Biome linter
-- `npm run format` — Biome formatter
-- `npm run test:html` — markuplint on source templates in `src/`
-- `npm run test:links` — linkinator on built `_site/`
+This project uses **pnpm** (see `packageManager` in `package.json` and `pnpm-lock.yaml`). Never use npm or yarn — they will produce a stale `package-lock.json` and drift the dependency tree.
+
+- `pnpm dev` — Eleventy dev server with live reload
+- `pnpm build` — build site (Eleventy + LightningCSS minification)
+- `pnpm lint` — markuplint
+- `pnpm test:links` — linkinator on built `_site/`
+- `pnpm test` — full build + lint + link check
 
 ## Development rules
 
-- Always use `npm install <package>` (or `-D`) — never `npx` for installing.
+- Always use `pnpm add <package>` (or `-D` for dev deps) — never `npx` for installing, never `npm install`.
 - Validate source files in `src/`, not the generated output in `_site/`.
-- Don't invoke devDependency binaries via `npx` in `package.json` scripts or hooks — reference the binary name directly (npm run resolves `.bin` executables automatically).
+- Don't invoke devDependency binaries via `npx` in `package.json` scripts or hooks — reference the binary name directly (`pnpm run` resolves `.bin` executables automatically).
 - Always check official docs before using a package command for the first time.
 - Don't over-engineer build steps: lint/format inputs; bundle/optimize outputs only when strictly necessary.
 - Never commit agent-specific artifact files (e.g. `walkthrough.md`, `implementation_plan.md`) to the repo.

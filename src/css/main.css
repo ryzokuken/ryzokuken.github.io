@@ -648,6 +648,93 @@ blockquote {
 }
 
 /* ========================================
+   Mermaid Diagrams
+   ======================================== */
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg) var(--space-md);
+  border: 2px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  white-space: normal;
+
+  /* Hide raw source until mermaid swaps it for an SVG */
+  &:not([data-processed="true"]) {
+    visibility: hidden;
+    min-height: 6rem;
+  }
+
+  & svg {
+    max-width: 100%;
+    height: auto;
+    background: transparent;
+  }
+
+  /* Sharp corners on every node — brutalist override */
+  & svg .node rect,
+  & svg .node polygon,
+  & svg .node circle,
+  & svg .cluster rect {
+    rx: 0 !important;
+    ry: 0 !important;
+    fill: var(--bg) !important;
+    stroke: var(--text) !important;
+    stroke-width: 2.5px !important;
+  }
+
+  /* Edges: thick, single-weight, follows currentColor */
+  & svg .edgePath .path,
+  & svg .flowchart-link {
+    stroke: var(--text) !important;
+    stroke-width: 2px !important;
+    fill: none !important;
+  }
+
+  & svg .edgePath .arrowheadPath,
+  & svg defs marker path,
+  & svg #arrowhead path {
+    fill: var(--text) !important;
+    stroke: var(--text) !important;
+    stroke-width: 1px !important;
+  }
+
+  /* Dotted edges (.->) get the accent color so "produces" reads as different from "contains" */
+  & svg .edge-pattern-dotted,
+  & svg .edge-pattern-dashed,
+  & svg .edgePath path[stroke-dasharray],
+  & svg .flowchart-link[stroke-dasharray] {
+    stroke: var(--accent) !important;
+    stroke-width: 2.5px !important;
+  }
+
+  /* Node labels & edge labels */
+  & svg .nodeLabel,
+  & svg .edgeLabel,
+  & svg .cluster-label,
+  & svg foreignObject div,
+  & svg foreignObject span,
+  & svg .label {
+    color: var(--text) !important;
+    background: transparent !important;
+    font-family: var(--font-mono) !important;
+    font-weight: 700 !important;
+  }
+
+  /* Edge label backplates need an opaque fill so lines don't bleed through */
+  & svg .edgeLabel rect,
+  & svg .edgeLabel foreignObject {
+    fill: var(--bg) !important;
+    background-color: var(--bg) !important;
+  }
+}
+
+/* ========================================
    Images
    ======================================== */
 

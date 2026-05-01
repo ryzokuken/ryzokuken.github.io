@@ -24,11 +24,11 @@ ECMA used to be an acronym (for "European Computer Manufacturers' Association").
 
 ## Members are organizations, not people
 
-Here's the first thing that trips people up: the members of ECMA are companies and organizations, not individuals. You and I, as individuals, can participate as delegates or invited experts, but we don't hold membership. Generally, it's either your direct employer, the non-profit/open-source project you volunteer for or academic institution you're a part of that does.
+Here's the first thing that trips people up: the members of Ecma are companies and organizations, not individuals. You and I, as individuals, can participate as delegates or invited experts, but we don't hold membership. Generally, it's either your direct employer, the non-profit/open-source project you volunteer for or academic institution you're a part of that does.
 
-ECMA has five categories of members, who each pay a flat annual membership fee that hasn't changed for over 25 years.
+Ecma has five categories of members, who each pay a flat annual membership fee that hasn't changed for over 25 years.
 
-* **Ordinary members** (70k CHF) — despite the name, this is the top tier. Ordinary members hold exclusive voting rights in the General Assembly and on ECMA's administrative matters. Worth flagging: those voting rights do *not* extend to technical matters. Inside the TCs, every member is equal, regardless of the tier their organization sits in. The current ordinary members are Apple, Bloomberg, Google, Huawei, IBM, and Meta.
+* **Ordinary members** (70k CHF) — despite the name, this is the top tier. Ordinary members hold exclusive voting rights in the General Assembly and on Ecma's administrative matters. Worth flagging: those voting rights do *not* extend to technical matters. Inside the TCs, every member is equal, regardless of the tier their organization sits in. The current ordinary members are Apple, Bloomberg, Google, Huawei, IBM, and Meta.
 
 * **Associate members** (35k CHF) are large organizations that, for whatever reason, aren't paying the premium for ordinary status. That's a perfectly reasonable choice, because ordinary membership doesn't buy any technical edge. The list here is long and includes Alibaba, Cloudflare, Dell, F5 Networks, JetBrains, Microsoft, Oracle, ServiceNow, Shopify, and Sony Interactive Entertainment, among others.
 
@@ -38,7 +38,7 @@ ECMA has five categories of members, who each pay a flat annual membership fee t
 
 * **NFP members** (0 CHF) are non-profits, which covers academic institutions and open-source foundations. The list is eclectic: Major universities and academic institutions from across the world like ETH Zürich, Indiana University, the IITs in India (though I've yet to see them actively participate — I wish they did more), KAIST (whose work with us on the ESMeta project has been excellent), the University of Bergen (whose recent contributions have been massive and who are in some ways our liasons to the academic world at large), the OpenJS Foundation, the Apache Software Foundation, the Library of Congress, OWASP, the Open Source Business Alliance, and — most visibly for many readers — the Mozilla Foundation.
 
-Between them, these members send delegates to the various technical committees, and ECMA's own staff supports that work from the secretariat. Most of the people you meet around ECMA are technical contributors employed by one of these member organizations.
+Between them, these members send delegates to the various technical committees, and Ecma's own staff supports that work from the secretariat. Most of the people you meet around Ecma are technical contributors employed by one of these member organizations.
 
 ## How Ecma is governed
 
@@ -69,11 +69,11 @@ flowchart
 
 ### The General Assembly
 
-The General Assembly, or GA, is the highest authority in ECMA. Every member sends one representative. In practice, the GA is mostly a formal body — it ratifies final standards and votes on the big-picture questions — and it delegates day-to-day work downward.
+The General Assembly, or GA, is the highest authority in Ecma. Every member sends one representative. In practice, the GA is mostly a formal body — it ratifies final standards and votes on the big-picture questions — and it delegates day-to-day work downward.
 
 ### Management
 
-ECMA's management is three elected officers, chosen from within the GA:
+Ecma's management is three elected officers, chosen from within the GA:
 
 - **President**: Theresa O’Connor (Apple)
 - **Vice President**: Jochen Friedrich (IBM)
@@ -81,7 +81,7 @@ ECMA's management is three elected officers, chosen from within the GA:
 
 ### The Secretariat
 
-If the management is the elected leadership, the secretariat is the staff — the people who actually work at ECMA and keep the organization running day to day.
+If the management is the elected leadership, the secretariat is the staff — the people who actually work at Ecma and keep the organization running day to day.
 
 - **Secretary General**: Samina Hussain
 - **Senior Manager**: Aki Rose Braun
@@ -89,7 +89,7 @@ If the management is the elected leadership, the secretariat is the staff — th
 - **Office Manager**: Isabelle Walsh
 - **Secretariat and Webmaster**: Patrick Charollais
 
-I want to single Aki out. She is genuinely one of the most helpful people in the whole organization, and a lot of what makes the communication between the committees and ECMA leadership actually work is her doing. She translates between highly technical, motivated TC members and the more bureaucratic parts of the organization, and she's extremely good at it.
+I want to single Aki out. She is genuinely one of the most helpful people in the whole organization, and a lot of what makes the communication between the committees and Ecma leadership actually work is her doing. She translates between highly technical, motivated TC members and the more bureaucratic parts of the organization, and she's extremely good at it.
 
 Samina, as Secretary General, keeps the lights on and keeps us all pointed at a unified goal. As TC chairs, those of us who serve in that role try to support that direction by constantly steering our committees toward productivity and consensus rather than friction.
 

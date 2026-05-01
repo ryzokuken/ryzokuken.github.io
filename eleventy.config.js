@@ -1,4 +1,7 @@
+import pluginMermaid from "@kevingimbel/eleventy-plugin-mermaid";
+
 export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginMermaid);
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
   eleventyConfig.addPassthroughCopy("src/CNAME");

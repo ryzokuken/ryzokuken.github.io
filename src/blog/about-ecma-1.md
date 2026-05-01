@@ -14,13 +14,9 @@ To some readers, that opening sentence is already an exciting glimpse into somet
 
 Despite several of us dedicating large parts of our lives to this standards organization — the one that governs the development of what happens to be one of the most widely used programming languages on the planet, powering the web and basically anything with a UI — there's a wide gap between how the people inside the system perceive their work and how everyone else experiences it. Most JavaScript developers I talk to have no clear sense of what Ecma is, who runs it, or how any of it relates to the language they use every day.
 
-~~Over the years, I and many others have given talks, written posts, and sat on podcasts trying to explain what TC39 is and how the work gets done. Despite that, the tight time budgets and the genuinely detailed nature of the material mean we’ve mostly failed to make this common knowledge.~~
-
-And why *should* they have that sense? Because the more visible the governance of JavaScript is to the people using it, the more accountable we become, and the more responsible we have to be. That matters more now than it used to. In an AI-assisted development world, the average JavaScript developer is spending less time writing code and more time explaining what they want to a coding agent. The language decisions we make flow downstream through the models and into the prompts people write. ~~We should take that seriously.~~
+And why *should* they have that sense? Because the more visible the governance of JavaScript is to the people using it, the more accountable we become, and the more responsible we have to be. That matters more now than it used to. In an AI-assisted development world, the average JavaScript developer is spending less time writing code and more time explaining what they want to a coding agent. The language decisions we make flow downstream through the models and into the prompts people write.
 
 So: a field guide to Ecma, in more detail than I've put in one place before. This is Part 1, covering the organization itself. Part 2 will dig into three of the committees in detail: [TC39 (ECMAScript)][ecma-tc39], [TC53 (ECMAScript modules for embedded systems)][ecma-tc53] and [TC55 (Web-interoperable server runtimes)][ecma-tc55], where the actual JavaScript language lives.
-
-~~(IMO you should consider listing TC53 here, it's definitely an ECMAScript TC -- Aki)~~
 
 ## Ecma International
 
@@ -32,17 +28,15 @@ Here's the first thing that trips people up: the members of ECMA are companies a
 
 ECMA has five categories of members, who each pay a flat annual membership fee that hasn't changed for over 25 years.
 
-**Ordinary members** (70k CHF) — despite the name, this is the top tier. Ordinary members hold exclusive voting rights in the General Assembly and on ECMA's administrative matters. Worth flagging: those voting rights do *not* extend to technical matters. Inside the TCs, every member is equal, regardless of the tier their organization sits in. The current ordinary members are Apple, Bloomberg, Google, Huawei, IBM, and Meta.
+* **Ordinary members** (70k CHF) — despite the name, this is the top tier. Ordinary members hold exclusive voting rights in the General Assembly and on ECMA's administrative matters. Worth flagging: those voting rights do *not* extend to technical matters. Inside the TCs, every member is equal, regardless of the tier their organization sits in. The current ordinary members are Apple, Bloomberg, Google, Huawei, IBM, and Meta.
 
-(Maybe worth mentioning that ordinary members can set the direction of Ecma's work, including whther or not to start new TCs or publish standards -- Aki)
+* **Associate members** (35k CHF) are large organizations that, for whatever reason, aren't paying the premium for ordinary status. That's a perfectly reasonable choice, because ordinary membership doesn't buy any technical edge. The list here is long and includes Alibaba, Cloudflare, Dell, F5 Networks, JetBrains, Microsoft, Oracle, ServiceNow, Shopify, and Sony Interactive Entertainment, among others.
 
-**Associate members** (35k CHF) are large organizations that, for whatever reason, aren't paying the premium for ordinary status. That's a perfectly reasonable choice, because ordinary membership doesn't buy any technical edge. The list here is long and includes Alibaba, Cloudflare, Dell, F5 Networks, JetBrains, Microsoft, Oracle, ServiceNow, Shopify, and Sony Interactive Entertainment, among others.
+* **SME members** (17.5k CHF) are small and medium-sized enterprises. The line is drawn by size, specifically organizations with an annual global turnover under 100 million Swiss francs. At the time of writing there are exactly four: Head Acoustics, HeroDevs, Igalia (that's us), and Vercel.
 
-**SME members** (17.5k CHF) are small and medium-sized enterprises. The line is drawn by size, specifically organizations with an annual global turnover under 100 million Swiss francs. At the time of writing there are exactly four: Head Acoustics, HeroDevs, Igalia (that's us), and Vercel.
+* **SPC members** (3.5k CHF) are smaller still. No more than 25 employees and a turnover under 10 million Swiss francs. Size notwithstanding, plenty of interesting work comes out of this tier. The current list includes Agoric, Deno, Moddable, Orama, Socket Security, Surge, SujiTech, and Zalari.
 
-**SPC members** (3.5k CHF) are smaller still. No more than 25 employees and a turnover under 10 million Swiss francs. Size notwithstanding, plenty of interesting work comes out of this tier. The current list includes Agoric, Deno, Moddable, Orama, Socket Security, Surge, SujiTech, and Zalari.
-
-**NFP members** (0 CHF) are non-profits, which covers academic institutions and open-source foundations. The list is eclectic: Major universities and academic institutions from across the world like ETH Zürich, Indiana University, the IITs in India (though I've yet to see them actively participate — I wish they did more), KAIST (whose work with us on the ESMeta project has been excellent), the University of Bergen (whose recent contributions have been massive and who are in some ways our liasons to the academic world at large), the OpenJS Foundation, the Apache Software Foundation, the Library of Congress, OWASP, the Open Source Business Alliance, and — most visibly for many readers — the Mozilla Foundation.
+* **NFP members** (0 CHF) are non-profits, which covers academic institutions and open-source foundations. The list is eclectic: Major universities and academic institutions from across the world like ETH Zürich, Indiana University, the IITs in India (though I've yet to see them actively participate — I wish they did more), KAIST (whose work with us on the ESMeta project has been excellent), the University of Bergen (whose recent contributions have been massive and who are in some ways our liasons to the academic world at large), the OpenJS Foundation, the Apache Software Foundation, the Library of Congress, OWASP, the Open Source Business Alliance, and — most visibly for many readers — the Mozilla Foundation.
 
 Between them, these members send delegates to the various technical committees, and ECMA's own staff supports that work from the secretariat. Most of the people you meet around ECMA are technical contributors employed by one of these member organizations.
 
@@ -84,10 +78,6 @@ ECMA's management is three elected officers, chosen from within the GA:
 - **President**: Theresa O’Connor (Apple)
 - **Vice President**: Jochen Friedrich (IBM)
 - **Treasurer**: Chris Wilson (Google)
-
-<ADD NOTE ABOUT CHRIS' RETIREMENT>
-
-[!!] One small but telling update here: Chris has recently been succeeded in his GA role by Olivier Flückiger, who many in TC39 will already recognize. Olivier being the Google GA representative says a lot about how important TC39 is to Google.
 
 ### The Secretariat
 
@@ -131,10 +121,7 @@ Ecma has cooperation agreements and liaisons with a handful of related bodies. T
 - **JTC 1** — ISO/IEC JTC 1 Information Technology, the joint technical committee of ISO and IEC
 - **W3C** — the World Wide Web Consortium, which is where virtually every web specification that isn't at WHATWG or at TC39 lives
 
-(Based on some of the TC chair reports on their liaisons, i think this list might actually be much longer -- Aki)
-
 ## The shape of the org
-FIXME: Rewrite this section
 
 The General Assembly sits on top. It formally controls the secretariat, the ExecCom, and management, all of which shape what the TCs can do. In practice, the GA is mostly a ratifying body. The ExecCom, being smaller and more active, actually runs the organization between GA meetings. And the TCs, where the real technical work lives, operate under that framework.
 

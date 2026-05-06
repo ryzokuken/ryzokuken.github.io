@@ -80,7 +80,7 @@ Ecma's management is three elected officers, chosen from within the GA:
 
 If the management is the elected leadership, the secretariat is the staff — the people who actually work at Ecma and keep the organization running day to day.
 
-- **Secretary General**: Samina Hussain
+- **Secretary General**: Samina Husain
 - **Senior Manager**: Aki Rose Braun
 - **Chief Technical Officer**: Patrick Luthi
 - **Office Manager**: Isabelle Walsh

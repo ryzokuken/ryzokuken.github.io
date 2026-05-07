@@ -40,5 +40,32 @@
     });
   </script>
   {% mermaid_js %}
+  <script>
+    (function () {
+      function fitViewBox(svg) {
+        if (!svg || svg.dataset.viewboxFitted) return false;
+        const bb = svg.getBBox();
+        if (!bb.width || !bb.height) return false;
+        const pad = 16;
+        svg.setAttribute("viewBox", `${bb.x - pad} ${bb.y - pad} ${bb.width + pad * 2} ${bb.height + pad * 2}`);
+        svg.style.maxWidth = `${bb.width + pad * 2}px`;
+        svg.dataset.viewboxFitted = "1";
+        return true;
+      }
+      function sweep() {
+        let pending = false;
+        document.querySelectorAll('.mermaid[data-processed="true"] svg').forEach((svg) => {
+          if (!fitViewBox(svg)) pending = true;
+        });
+        if (pending) setTimeout(sweep, 100);
+      }
+      new MutationObserver(sweep).observe(document.body, {
+        subtree: true,
+        attributes: true,
+        attributeFilter: ["data-processed"],
+      });
+      sweep();
+    })();
+  </script>
 </body>
 </html>

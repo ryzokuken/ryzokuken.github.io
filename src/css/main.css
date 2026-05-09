@@ -863,6 +863,7 @@ img {
   #navbar li {
     display: flex;
     justify-content: center;
+    min-width: 0;
   }
 
   #navbar a {
@@ -876,5 +877,22 @@ img {
 
   .social-links {
     gap: var(--space-md);
+  }
+}
+
+@media (width < 420px) {
+  #navbar ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #navbar a {
+    font-size: 1.125rem;
+  }
+}
+
+@media (width < 320px) {
+  #navbar a {
+    font-size: 1rem;
+    padding: var(--space-xs);
   }
 }

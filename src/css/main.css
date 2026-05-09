@@ -37,10 +37,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --bg: oklch(10% 0.015 50);
     --text: oklch(96% 0.008 70);
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: oklch(10% 0.015 50);
+  --text: oklch(96% 0.008 70);
 }
 
 /* ========================================
@@ -625,6 +630,63 @@ blockquote {
   }
 }
 
+#theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-sm);
+}
+
+.theme-switcher-label {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#theme-switcher button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  transition: color 0.15s ease;
+
+  &::before,
+  &::after {
+    opacity: 0;
+    color: var(--accent);
+    transition: opacity 0.15s ease;
+  }
+
+  &::before {
+    content: "[";
+    margin-right: 2px;
+  }
+
+  &::after {
+    content: "]";
+    margin-left: 2px;
+  }
+
+  &:hover,
+  &[aria-pressed="true"] {
+    color: var(--accent);
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
 /* ========================================
    Past Projects
    ======================================== */
@@ -773,15 +835,43 @@ img {
   }
 }
 
+@media (640px <= width < 820px) {
+  #navbar ul {
+    gap: var(--space-md);
+  }
+}
+
 @media (width < 640px) {
   .container {
     padding: var(--space-lg) var(--space-md);
   }
 
+  #navbar {
+    height: auto;
+    min-height: var(--nav-height);
+    padding: var(--space-sm) var(--space-md);
+  }
+
   #navbar ul {
-    gap: var(--space-sm);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--space-xs);
+    row-gap: var(--space-xs);
+    width: 100%;
+  }
+
+  #navbar li {
+    display: flex;
     justify-content: center;
+  }
+
+  #navbar a {
+    padding: var(--space-xs) var(--space-sm);
+    text-align: center;
+  }
+
+  #footer {
+    padding: var(--space-lg) var(--space-md);
   }
 
   .social-links {

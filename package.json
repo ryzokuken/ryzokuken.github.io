@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build:css": "mkdir -p _site/css && lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
+    "build:css": "lightningcss --minify --bundle src/css/main.css -o _site/css/main.css",
     "build": "eleventy && pnpm run build:css",
     "dev": "eleventy --serve",
     "lint": "markuplint \"src/**/*.{html,liquid,md}\"",

@@ -14,6 +14,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
   <script data-goatcounter="https://ryzokuken.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -32,13 +42,46 @@
     {{ content }}
   </main>
   <footer id="footer">
-    <p>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a></p>
+    <div id="theme-switcher" role="group" aria-label="Color theme">
+      <span class="theme-switcher-label">theme:</span>
+      <button type="button" data-theme-set="auto">auto</button>
+      <button type="button" data-theme-set="light">light</button>
+      <button type="button" data-theme-set="dark">dark</button>
+    </div>
+    <p>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a> · <a href="https://github.com/ryzokuken/ryzokuken.github.io/issues/new">Suggest a change</a></p>
   </footer>
   <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" integrity="sha384-o28+zJO3/45GHIy+9TFKGaYnbt0KQcFRzyBrb0WSSrz7bPGwGI1d64worBiXPgXw" crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
     });
+  </script>
+  <script>
+    (function () {
+      var key = "theme";
+      var buttons = document.querySelectorAll("#theme-switcher button[data-theme-set]");
+      if (!buttons.length) return;
+      var stored;
+      try { stored = localStorage.getItem(key); } catch (e) {}
+      var current = (stored === "light" || stored === "dark") ? stored : "auto";
+      function apply(value) {
+        current = value;
+        if (value === "auto") {
+          document.documentElement.removeAttribute("data-theme");
+          try { localStorage.removeItem(key); } catch (e) {}
+        } else {
+          document.documentElement.setAttribute("data-theme", value);
+          try { localStorage.setItem(key, value); } catch (e) {}
+        }
+        buttons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.dataset.themeSet === current ? "true" : "false");
+        });
+      }
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.dataset.themeSet === current ? "true" : "false");
+        b.addEventListener("click", function () { apply(b.dataset.themeSet); });
+      });
+    })();
   </script>
   {% mermaid_js %}
   <script>

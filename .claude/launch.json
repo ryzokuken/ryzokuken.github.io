@@ -4,7 +4,7 @@
     {
       "name": "eleventy",
       "runtimeExecutable": "cmd",
-      "runtimeArgs": ["/c", "npm", "run", "dev"],
+      "runtimeArgs": ["/c", "pnpm", "dev"],
       "port": 8080
     }
   ]

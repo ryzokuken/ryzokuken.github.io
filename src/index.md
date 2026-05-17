@@ -4,7 +4,11 @@ title: Ujjwal Sharma — Developer Advocate
 ---
 
 <div class="hero">
-  <img src="/photo.jpg" alt="Ujjwal Sharma" class="hero-photo">
+  <picture>
+    <source type="image/avif" srcset="/img/photo-360.avif 1x, /img/photo-540.avif 1.5x, /img/photo-720.avif 2x">
+    <source type="image/webp" srcset="/img/photo-360.webp 1x, /img/photo-540.webp 1.5x, /img/photo-720.webp 2x">
+    <img src="/photo.jpg" srcset="/photo.jpg 1x, /img/photo-540.jpg 1.5x, /img/photo-720.jpg 2x" alt="Ujjwal Sharma" class="hero-photo" width="180" height="180" fetchpriority="high" decoding="async">
+  </picture>
   <h1>Ujjwal Sharma</h1>
   <p class="hero-subtitle">Developer Relations, Programming Languages and Web Standards @ <a href="https://www.igalia.com/">Igalia</a></p>
   <p class="hero-location">📍 A Coruña, Galiza</p>

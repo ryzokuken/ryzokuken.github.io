@@ -1,6 +1,7 @@
 ---
 title: What even is Ecma? (Part 1)
 date: Last Modified
+mermaid: true
 tags:
   - post
   - igalia

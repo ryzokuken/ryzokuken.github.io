@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><text y="13" font-family="JetBrains Mono,monospace" font-weight="800" font-size="14" fill="%23fc7c00">&gt;</text></svg>'>
   <meta name="description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:type" content="website">
   <title>{{ title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
-  <script data-goatcounter="https://ryzokuken.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <link rel="preload" href="/fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script data-goatcounter="https://ryzokuken.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script>
     (function () {
       try {
@@ -50,12 +51,14 @@
     </div>
     <p>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a> · <a href="https://github.com/ryzokuken/ryzokuken.github.io/issues/new">Suggest a change</a></p>
   </footer>
-  <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" integrity="sha384-o28+zJO3/45GHIy+9TFKGaYnbt0KQcFRzyBrb0WSSrz7bPGwGI1d64worBiXPgXw" crossorigin="anonymous"></script>
+  {% if flags %}
+  <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" integrity="sha384-o28+zJO3/45GHIy+9TFKGaYnbt0KQcFRzyBrb0WSSrz7bPGwGI1d64worBiXPgXw" crossorigin="anonymous" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+      twemoji.parse(document.getElementById("main-content"), { folder: 'svg', ext: '.svg' });
     });
   </script>
+  {% endif %}
   <script>
     (function () {
       var key = "theme";
@@ -83,6 +86,7 @@
       });
     })();
   </script>
+  {% if mermaid %}
   {% mermaid_js %}
   <script>
     (function () {
@@ -111,5 +115,6 @@
       sweep();
     })();
   </script>
+  {% endif %}
 </body>
 </html>

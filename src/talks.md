@@ -1,6 +1,7 @@
 ---
 layout: layout.liquid
 title: Ryzokuken's Talks
+flags: true
 ---
 
 # My Talks

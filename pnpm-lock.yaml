@@ -11,6 +11,9 @@ importers:
       '@11ty/eleventy':
         specifier: ^3.1.5
         version: 3.1.5
+      '@fontsource/jetbrains-mono':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@kevingimbel/eleventy-plugin-mermaid':
         specifier: ^3.0.1
         version: 3.0.1
@@ -75,6 +78,9 @@ packages:
   '@babel/helper-validator-identifier@7.28.5':
     resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
     engines: {node: '>=6.9.0'}
+
+  '@fontsource/jetbrains-mono@5.2.8':
+    resolution: {integrity: sha512-6w8/SG4kqvIMu7xd7wt6x3idn1Qux3p9N62s6G3rfldOUYHpWcc2FKrqf+Vo44jRvqWj2oAtTHrZXEP23oSKwQ==}
 
   '@kevingimbel/eleventy-plugin-mermaid@3.0.1':
     resolution: {integrity: sha512-p++zth8mdVroiZp5vspqU9KCNC81shKRgr2Vf8+3kAbcmJHZU+SFnTthsqwTI+R6R3K79JmCBBScIKWkUyEivA==}
@@ -1284,6 +1290,8 @@ snapshots:
       picocolors: 1.1.1
 
   '@babel/helper-validator-identifier@7.28.5': {}
+
+  '@fontsource/jetbrains-mono@5.2.8': {}
 
   '@kevingimbel/eleventy-plugin-mermaid@3.0.1':
     dependencies:

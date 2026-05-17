@@ -24,9 +24,19 @@ export default function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  for (const weight of [400, 700, 800]) {
+    for (const subset of ["latin", "latin-ext"]) {
+      const file = `jetbrains-mono-${subset}-${weight}-normal.woff2`;
+      eleventyConfig.addPassthroughCopy({
+        [`node_modules/@fontsource/jetbrains-mono/files/${file}`]: `fonts/${file}`,
+      });
+    }
+  }
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/**/*.webp");
+  eleventyConfig.addPassthroughCopy("src/**/*.avif");
   eleventyConfig.addPassthroughCopy("src/**/*.js");
   eleventyConfig.addPassthroughCopy("src/temporal-2020-04/index.html");
 }

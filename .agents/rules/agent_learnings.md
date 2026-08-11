@@ -1,6 +1,6 @@
 # Agent Rules and Learnings
 
-- When installing a package via the command-line, ALWAYS execute the command `npm install <package-name>` (or `npm install -D` for devDependencies).
+- When installing a package via the command-line, ALWAYS execute the command `pnpm add <package-name>` (or `pnpm add -D` for devDependencies). Never use `npm` or `yarn` — they produce a stale `package-lock.json` and drift the dependency tree away from `pnpm-lock.yaml`.
 - When configuring linters, validate the source files (the uncompiled templates, Markdown files, or scripts, usually located in `src/`) instead of the built, generated output (like `_site/` or `dist/`).
 - Avoid over-engineering build steps; keep it simple. Only format and lint inputs; only bundle and optimize the output if strictly necessary.
 - Never manually invoke `npx` repeatedly inside the `package.json` scripts if the binary is provided by a devDependency. Instead, simply refer to the binary by name (e.g. `markuplint`, `linkinator`, `lightningcss`), as `npm run` processes automatically resolve the `.bin` executables properly.

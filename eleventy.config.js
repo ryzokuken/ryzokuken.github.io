@@ -23,6 +23,7 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
+  eleventyConfig.ignores.add("src/temporal-2020-04/README.md");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   for (const weight of [400, 700, 800]) {
     for (const subset of ["latin", "latin-ext"]) {

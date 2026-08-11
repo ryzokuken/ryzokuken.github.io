@@ -67,7 +67,6 @@
   --border: var(--text);
   --accent: #fc7c00;
   --accent-hover: var(--bg);
-  --accent-bg-hover: #fc7c00;
   --nav-bg: var(--bg);
   --card-bg: var(--bg);
   --icon-fill: var(--text);
@@ -434,31 +433,13 @@ a {
   border: 2px solid var(--border);
   padding: var(--space-md) var(--space-lg);
   transition: all 0.2s ease;
-  position: relative;
   overflow-wrap: break-word;
   min-width: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--accent);
-    transition: width 0.2s ease;
-    z-index: 0;
-  }
 
   &:hover {
     border-color: var(--text);
     transform: translate(-4px, -4px);
     box-shadow: 4px 4px 0 var(--accent);
-  }
-
-  & > * {
-    position: relative;
-    z-index: 1;
   }
 
   & strong {

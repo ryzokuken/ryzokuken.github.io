@@ -1,5 +1,21 @@
 [
   {
+    "year": "2026",
+    "talks": [
+      {
+        "title": "Decentralizing the company, not just the protocol",
+        "event": "MozFest",
+        "location": "Barcelona, ES",
+        "flag": "🇪🇸",
+        "date": "Oct 2026",
+        "upcoming": true,
+        "links": {
+          "conf": "https://www.mozillafestival.org/"
+        }
+      }
+    ]
+  },
+  {
     "year": "2025",
     "talks": [
       {

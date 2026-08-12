@@ -1,20 +1,15 @@
 {% for year_data in talks %}
+{% assign year_has_past = false %}
+{% for talk in year_data.talks %}{% unless talk.upcoming %}{% assign year_has_past = true %}{% endunless %}{% endfor %}
+{% if year_has_past %}
 <h3 id="{{ year_data.year }}">{{ year_data.year }}</h3>
 
 <div class="talk-grid">
 {% for talk in year_data.talks %}
-<div class="talk-card">
-  <div class="talk-card-body">
-    <div class="talk-card-title">{{ talk.title }}</div>
-    <div class="talk-card-event">{{ talk.event }}</div>
-    <div class="talk-card-meta">{{ talk.flag }} {{ talk.location }} · {{ talk.date }}</div>
-    {% if talk.links.size > 0 %}
-    <div class="talk-card-links">
-      {% for link in talk.links %}<a href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
-    </div>
-    {% endif %}
-  </div>
-</div>
+{% unless talk.upcoming %}
+{% include "talk-card.liquid" %}
+{% endunless %}
 {% endfor %}
 </div>
+{% endif %}
 {% endfor %}

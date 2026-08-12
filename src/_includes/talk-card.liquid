@@ -1,0 +1,12 @@
+<div class="talk-card">
+  <div class="talk-card-body">
+    <div class="talk-card-title">{{ talk.title }}</div>
+    <div class="talk-card-event">{{ talk.event }}</div>
+    <div class="talk-card-meta">{{ talk.flag }} {{ talk.location }} · {{ talk.date }}</div>
+    {% if talk.links.size > 0 %}
+    <div class="talk-card-links">
+      {% for link in talk.links %}<a href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

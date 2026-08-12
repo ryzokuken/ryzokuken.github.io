@@ -9,6 +9,8 @@
   <div class="card{% unless item.url %} card--plain{% endunless %}">
     <strong>
       {%- if item.url %}<a href="{{ item.url }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif -%}
+      {%- assign recent = item.since | isRecent %}
+      {%- if recent %} <span class="uses-badge">new</span>{% endif -%}
     </strong>
     <p>{{ item.note }}</p>
   </div>

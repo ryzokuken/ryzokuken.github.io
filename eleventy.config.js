@@ -23,6 +23,15 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setTemplateFormats(["md", "liquid"]);
+  eleventyConfig.addFilter("isRecent", (since) => {
+    const match = (since ?? "").match(/^(\d{4})-(\d{2})$/);
+    if (!match) return false;
+    const then = new Date(Number(match[1]), Number(match[2]) - 1, 1);
+    const now = new Date();
+    const months =
+      (now.getFullYear() - then.getFullYear()) * 12 + (now.getMonth() - then.getMonth());
+    return months >= 0 && months < 6;
+  });
   eleventyConfig.ignores.add("src/temporal-2020-04/README.md");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   for (const weight of [400, 700, 800]) {

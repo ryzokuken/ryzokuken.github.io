@@ -486,6 +486,24 @@ a {
 }
 
 /* ========================================
+   Uses Badge
+   ======================================== */
+
+.uses-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: var(--space-xs);
+  padding: 0 var(--space-xs);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
    Post Body
    ======================================== */
 

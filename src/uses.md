@@ -14,3 +14,16 @@ Am I missing something you wanted to know? [Hit me up on Bluesky](https://bsky.a
 {% for section in uses.sections %}
 {% include "uses-section.liquid", section: section %}
 {% endfor %}
+
+## Retired
+
+Things that used to be on this page. Keeping them here felt more honest than quietly deleting them.
+
+<div class="card-grid past-projects">
+  {%- for item in uses.retired %}
+  <div class="card">
+    <strong>{{ item.name }}</strong>
+    <p>{{ item.note }}{% if item.replacedBy %} Replaced by {{ item.replacedBy }}.{% endif %}</p>
+  </div>
+  {%- endfor %}
+</div>

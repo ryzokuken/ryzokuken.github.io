@@ -1,15 +1,15 @@
-{% for year_data in talks %}
-{% assign year_has_past = false %}
-{% for talk in year_data.talks %}{% unless talk.upcoming %}{% assign year_has_past = true %}{% endunless %}{% endfor %}
-{% if year_has_past %}
+{%- for year_data in talks -%}
+{%- assign year_has_past = false -%}
+{%- for talk in year_data.talks -%}{%- unless talk.upcoming -%}{%- assign year_has_past = true -%}{%- endunless -%}{%- endfor -%}
+{%- if year_has_past %}
 <h3 id="{{ year_data.year }}">{{ year_data.year }}</h3>
 
 <div class="talk-grid">
-{% for talk in year_data.talks %}
-{% unless talk.upcoming %}
-{% include "talk-card.liquid" %}
-{% endunless %}
-{% endfor %}
+{%- for talk in year_data.talks -%}
+{%- unless talk.upcoming -%}
+{%- include "talk-card.liquid" -%}
+{%- endunless -%}
+{%- endfor %}
 </div>
-{% endif %}
-{% endfor %}
+{%- endif %}
+{%- endfor %}

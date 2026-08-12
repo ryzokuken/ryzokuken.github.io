@@ -541,6 +541,12 @@ a {
   }
 }
 
+.talk-grid--upcoming {
+  @media (width >= 640px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  }
+}
+
 .talk-card {
   background: var(--card-bg);
   border: 2px solid var(--border);

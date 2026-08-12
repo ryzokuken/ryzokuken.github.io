@@ -34,11 +34,36 @@ flags: true
 {% endfor %}
 </div>
 
+{% assign has_upcoming = false %}
+{% for year_data in talks %}
+  {% for talk in year_data.talks %}
+    {% if talk.upcoming %}{% assign has_upcoming = true %}{% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% if has_upcoming %}
+<h2 id="upcoming">Upcoming</h2>
+
+<div class="talk-grid">
+{% for year_data in talks %}
+  {% for talk in year_data.talks %}
+    {% if talk.upcoming %}
+    {% include "talk-card.liquid" %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>
+{% endif %}
+
 ## Past Talks
 
 <nav class="year-jump" aria-label="Jump to year">
   <span class="year-jump-label">// year:</span>
-  {% for year_data in talks %}<a href="#{{ year_data.year }}">{{ year_data.year }}</a> {% endfor %}
+  {% for year_data in talks %}
+    {% assign year_has_past = false %}
+    {% for talk in year_data.talks %}{% unless talk.upcoming %}{% assign year_has_past = true %}{% endunless %}{% endfor %}
+    {% if year_has_past %}<a href="#{{ year_data.year }}">{{ year_data.year }}</a> {% endif %}
+  {% endfor %}
 </nav>
 
 {% include "talks-list.liquid" %}

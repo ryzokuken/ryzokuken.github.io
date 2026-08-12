@@ -27,15 +27,31 @@ title: Ujjwal Sharma — Developer Advocate
 </div>
 
 {% assign latest_post = collections.post | last %}
-{% assign latest_year = talks | first %}
-{% assign latest_talk = latest_year.talks | last %}
+
+{% assign next_talk = nil %}
+{% for year_data in talks %}
+  {% for talk in year_data.talks %}
+    {% if talk.upcoming and next_talk == nil %}{% assign next_talk = talk %}{% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% unless next_talk %}
+  {% assign latest_year = talks | first %}
+  {% assign latest_talk = latest_year.talks | last %}
+{% endunless %}
+
 <div class="recent">
   <div class="recent-item">
     <p class="flags-label">// latest post</p>
     <a href="{{ latest_post.url }}" class="recent-link">{{ latest_post.data.title }}</a>
   </div>
   <div class="recent-item">
+    {%- if next_talk %}
+    <p class="flags-label">// next talk</p>
+    <a href="/talks/#upcoming" class="recent-link">{{ next_talk.title }} — {{ next_talk.event }}</a>
+    {%- else %}
     <p class="flags-label">// latest talk</p>
     <a href="/talks/#{{ latest_year.year }}" class="recent-link">{{ latest_talk.title }} — {{ latest_talk.event }}</a>
+    {%- endif %}
   </div>
 </div>

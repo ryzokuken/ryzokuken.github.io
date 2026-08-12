@@ -33,6 +33,7 @@ This project uses **pnpm** (see `packageManager` in `package.json` and `pnpm-loc
 - **flag**: Emoji flag matching the country code. Use `🌐` only for events with no geographic association.
 - **links**: Include `conf`, `video`, `slides`, `meetup`, or `event` as applicable. Add `video` whenever recordings exist.
 - **title**: Exact talk title. Append `\*` for cancelled/undelivered talks.
+- **upcoming**: Set `"upcoming": true` on talks that haven't happened yet. They render in a separate "Upcoming" section instead of "Past Talks", and surface on the home page as "next talk". Remove the field (or set it to `false`) once the talk has taken place.
 - **Sorting**: Talks within a year are ordered chronologically (earliest first).
 
 ### `src/_data/podcasts.json`

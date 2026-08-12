@@ -1,0 +1,4 @@
+allowBuilds:
+  lightningcss-cli: true
+overrides:
+  uuid@13.0.0: '>=13.0.1'

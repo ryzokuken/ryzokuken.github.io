@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: tag
 permalink: "/tag/{{ tag }}/"
-title: Posts tagged {{ tag }}
+eleventyComputed:
+  title: "Posts tagged {{ tag }}"
 ---
 <h1>Posts tagged "{{tag}}"</h1>
 <ul>

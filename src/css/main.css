@@ -66,7 +66,6 @@
   --text-secondary: color-mix(in oklch, var(--text) 75%, var(--bg));
   --border: var(--text);
   --accent: #fc7c00;
-  --accent-hover: var(--bg);
   --nav-bg: var(--bg);
   --card-bg: var(--bg);
   --icon-fill: var(--text);
@@ -201,12 +200,10 @@ a {
   text-decoration-color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  transition: all 0.1s ease;
+  transition: text-decoration-thickness 0.1s ease;
 
   &:hover {
-    background-color: var(--accent);
-    color: var(--accent-hover);
-    text-decoration-color: transparent;
+    text-decoration-thickness: 4px;
   }
 }
 
@@ -372,12 +369,28 @@ a {
     font-size: var(--font-size-lg);
     margin-bottom: var(--space-sm);
     color: var(--text);
-
-    &::before {
-      content: "- ";
-      color: var(--accent);
-    }
   }
+}
+
+/* ========================================
+   Recent Activity
+   ======================================== */
+
+.recent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+
+  @media (width >= 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.recent-link {
+  display: block;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
 }
 
 /* ========================================
@@ -428,6 +441,12 @@ a {
   margin: var(--space-md) 0;
 }
 
+.card-grid--pair {
+  @media (width >= 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .card {
   background: var(--card-bg);
   border: 2px solid var(--border);
@@ -452,6 +471,26 @@ a {
     margin: var(--space-sm) 0 0;
     color: var(--text-secondary);
   }
+}
+
+.card--plain {
+  background: transparent;
+  border: none;
+  padding: var(--space-sm) 0;
+
+  &:hover {
+    border-color: transparent;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* ========================================
+   Post Body
+   ======================================== */
+
+.post-body {
+  max-width: 75ch;
 }
 
 /* ========================================
@@ -480,7 +519,7 @@ a {
 
 .flags-label {
   font-size: var(--font-size-sm);
-  color: var(--accent);
+  color: var(--text-secondary);
   font-weight: 700;
   margin-bottom: var(--space-xs);
 }
@@ -550,7 +589,6 @@ a {
 
   &::before {
     content: "@ ";
-    color: var(--accent);
   }
 }
 
@@ -600,7 +638,7 @@ a {
 }
 
 .year-jump-label {
-  color: var(--accent);
+  color: var(--text-secondary);
   font-size: var(--font-size-sm);
   font-weight: 700;
   margin-right: var(--space-xs);
@@ -731,15 +769,14 @@ blockquote {
    ======================================== */
 
 .past-projects {
-  opacity: 0.5;
   filter: grayscale(100%);
 
   & .card {
     border-style: dashed;
   }
 
-  &:hover {
-    opacity: 1;
+  &:hover,
+  &:focus-within {
     filter: none;
 
     & .card {

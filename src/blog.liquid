@@ -7,10 +7,10 @@ title: Ryzokuken's Blog
 <div class="card-grid">
   {%- for post in collections.post reversed -%}
   <div class="card">
-    <h3 class="blog-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <h2 class="blog-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     <div class="blog-card-meta">
       📅 {{ post.date | date: "%B %d, %Y" }}
-      {% assign tags = post.data.tags | slice:1,10 %}
+      {% assign tags = post.data.tags | reject_exp: "tag", "tag == 'post'" %}
       {% if tags.size > 0 %}
       · 🏷 {%- for tag in tags -%} <a href="/tag/{{tag}}" class="blog-card-tag">{{tag}}</a>{%- endfor -%}
       {% endif %}

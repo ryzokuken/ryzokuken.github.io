@@ -25,3 +25,17 @@ title: Ujjwal Sharma — Developer Advocate
     <li><a href="mailto:usharma1998@gmail.com" aria-label="Email"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M1.5 3A1.5 1.5 0 0 0 0 4.5v15A1.5 1.5 0 0 0 1.5 21h21a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 22.5 3h-21zm.09 1.5h20.82L12 12.46 1.59 4.5zM1.5 5.85l10.14 7.75a.6.6 0 0 0 .72 0L22.5 5.85V19.5h-21V5.85z"/></svg></a></li>
   </ul>
 </div>
+
+{% assign latest_post = collections.post | last %}
+{% assign latest_year = talks | first %}
+{% assign latest_talk = latest_year.talks | last %}
+<div class="recent">
+  <div class="recent-item">
+    <p class="flags-label">// latest post</p>
+    <a href="{{ latest_post.url }}" class="recent-link">{{ latest_post.data.title }}</a>
+  </div>
+  <div class="recent-item">
+    <p class="flags-label">// latest talk</p>
+    <a href="/talks/#{{ latest_year.year }}" class="recent-link">{{ latest_talk.title }} — {{ latest_talk.event }}</a>
+  </div>
+</div>

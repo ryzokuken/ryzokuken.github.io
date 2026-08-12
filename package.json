@@ -8,8 +8,9 @@
     "build": "eleventy && pnpm run build:css",
     "dev": "eleventy --serve",
     "lint": "markuplint \"src/**/*.{html,liquid,md}\"",
+    "test:unit": "vitest run",
     "test:links": "linkinator _site --skip \"slides\" --skip \"gc\\.zgo\\.at\"",
-    "test": "pnpm run build && pnpm run lint && pnpm run test:links",
+    "test": "pnpm run test:unit && pnpm run build && pnpm run lint && pnpm run test:links",
     "prepare": "husky"
   },
   "packageManager": "pnpm@11.21.0+sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1",
@@ -29,6 +30,7 @@
     "lightningcss-cli": "^1.33.0",
     "linkinator": "^8.0.3",
     "lint-staged": "^17.3.0",
-    "markuplint": "^4.18.3"
+    "markuplint": "^4.18.3",
+    "vitest": "^4.1.10"
   }
 }

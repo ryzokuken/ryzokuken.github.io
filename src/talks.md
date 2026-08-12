@@ -6,6 +6,8 @@ flags: true
 
 # My Talks
 
+[Browse all my slide decks →](/slides/)
+
 {% assign all_flags = "" %}
 {% for year_data in talks %}
   {% for talk in year_data.talks %}

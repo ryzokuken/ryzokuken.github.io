@@ -11,4 +11,5 @@ node_modules/
 .env
 
 # Local tool caches
-.impeccable/
+.impeccable/hook.cache.json
+.impeccable/config.local.json

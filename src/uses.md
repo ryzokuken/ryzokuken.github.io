@@ -23,7 +23,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
     <strong><a href="https://drop.com/buy/drop-ctrl-mechanical-keyboard">Drop Ctrl</a></strong>
     <p>Mechanical keyboard for typing, outfitted with Tactile Halo True Switches.</p>
   </div>
-  <div class="card">
+  <div class="card card--plain">
     <strong>Blue Yeti</strong>
     <p>USB microphone for meetings and recordings.</p>
   </div>
@@ -219,7 +219,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
     <strong><a href="https://www.sageappliances.com/eu/en/products/espresso/bes450.html">Sage Bambino</a></strong>
     <p>My daily driver for pulling espresso shots.</p>
   </div>
-  <div class="card">
+  <div class="card card--plain">
     <strong>Electric Conical Burr Grinder</strong>
     <p>My automatic grinder used for daily convenience.</p>
   </div>

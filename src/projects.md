@@ -7,7 +7,7 @@ title: Ryzokuken's Projects
 
 ## Current
 
-<div class="card-grid">
+<div class="card-grid card-grid--pair">
 
 <div class="card">
 

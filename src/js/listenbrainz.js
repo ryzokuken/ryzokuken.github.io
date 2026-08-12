@@ -48,14 +48,27 @@ export function coverArtUrl(listen, size = 250) {
   return `https://coverartarchive.org/release/${mapping.caa_release_mbid}/${mapping.caa_id}-${size}.jpg`;
 }
 
+function hostnameOf(url) {
+  if (typeof url !== "string") return null;
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return null;
+  }
+}
+
+function hostMatches(url, host) {
+  const hostname = hostnameOf(url);
+  if (!hostname) return false;
+  return hostname === host || hostname.endsWith(`.${host}`);
+}
+
 export function streamingLinks(listen) {
   const relations = listen?.track_metadata?.mbid_mapping?.url_rels ?? [];
   const links = [];
 
   for (const preference of LINK_PREFERENCES) {
-    const match = relations.find(
-      (relation) => typeof relation?.url === "string" && relation.url.includes(preference.host),
-    );
+    const match = relations.find((relation) => hostMatches(relation?.url, preference.host));
     if (match) links.push({ label: preference.label, url: match.url });
   }
 

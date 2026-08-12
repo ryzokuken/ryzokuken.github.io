@@ -126,6 +126,43 @@ describe("streamingLinks", () => {
   });
 });
 
+describe("streamingLinks host anchoring", () => {
+  const listenWith = (urls) => ({
+    track_metadata: {
+      mbid_mapping: {
+        url_rels: urls.map((url) => ({ type: "free streaming", url })),
+      },
+    },
+  });
+
+  it("does not match a lookalike host", () => {
+    expect(streamingLinks(listenWith(["https://fakebandcamp.com/track/x"]))).toEqual([]);
+  });
+
+  it("does not match a host appearing only in a query string or path", () => {
+    const links = streamingLinks(
+      listenWith(["https://tracker.example/?redirect=https://open.spotify.com/track/y"]),
+    );
+    expect(links).toEqual([]);
+  });
+
+  it("still matches a genuine Bandcamp subdomain", () => {
+    const links = streamingLinks(listenWith(["https://royksopp.bandcamp.com/track/some-resolve"]));
+    expect(links).toEqual([
+      { label: "Bandcamp", url: "https://royksopp.bandcamp.com/track/some-resolve" },
+    ]);
+  });
+
+  it("skips a malformed URL without throwing, keeping the valid relations around it", () => {
+    const links = streamingLinks(
+      listenWith(["not a url", "https://open.spotify.com/track/7H7RaiZoTNPwjNLygV4fXQ"]),
+    );
+    expect(links).toEqual([
+      { label: "Spotify", url: "https://open.spotify.com/track/7H7RaiZoTNPwjNLygV4fXQ" },
+    ]);
+  });
+});
+
 describe("relativeTime", () => {
   const at = 1_000_000_000;
   const after = (seconds) => relativeTime(at, (at + seconds) * 1000);

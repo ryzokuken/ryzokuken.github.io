@@ -1103,6 +1103,13 @@ img {
 #footer .now-playing {
   margin-bottom: var(--space-md);
 
+  /* The footer centres its text, but a flex container ignores text-align:
+     centre the flex line itself or the title sits flush left under a
+     centred label. The home-page variant stays flex-start by design. */
+  & .now-playing-body {
+    justify-content: center;
+  }
+
   & .flags-label {
     margin-bottom: var(--space-xs);
   }

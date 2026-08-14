@@ -48,10 +48,18 @@ export function coverArtUrl(listen, size = 250) {
   return `https://coverartarchive.org/release/${mapping.caa_release_mbid}/${mapping.caa_id}-${size}.jpg`;
 }
 
+// url_rels is community-editable third-party data, so a relation only earns a
+// host comparison once its scheme is https. Non-special schemes still parse an
+// authority -- new URL("javascript://open.spotify.com/%0aalert(1)").hostname is
+// "open.spotify.com" -- so checking the hostname alone would let a
+// javascript: URL through and into an href.
 function hostnameOf(url) {
   if (typeof url !== "string") return null;
   try {
-    return new URL(url).hostname;
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:") return null;
+    // A fully qualified "open.spotify.com." names the same host as "open.spotify.com".
+    return parsed.hostname.replace(/\.$/, "");
   } catch {
     return null;
   }

@@ -153,6 +153,29 @@ describe("streamingLinks host anchoring", () => {
     ]);
   });
 
+  it("rejects a javascript: URL whose authority looks like a known host", () => {
+    const links = streamingLinks(listenWith(["javascript://open.spotify.com/%0aalert(1)"]));
+    expect(links).toEqual([]);
+  });
+
+  it("rejects a data: URL", () => {
+    const links = streamingLinks(
+      listenWith(["data:text/html,<script>alert(1)</script>", "data://open.spotify.com/x"]),
+    );
+    expect(links).toEqual([]);
+  });
+
+  it("rejects a non-TLS http: URL even on a known host", () => {
+    expect(streamingLinks(listenWith(["http://open.spotify.com/track/y"]))).toEqual([]);
+  });
+
+  it("matches a host written with a trailing dot", () => {
+    const links = streamingLinks(listenWith(["https://open.spotify.com./track/y"]));
+    expect(links).toEqual([
+      { label: "Spotify", url: "https://open.spotify.com./track/y" },
+    ]);
+  });
+
   it("skips a malformed URL without throwing, keeping the valid relations around it", () => {
     const links = streamingLinks(
       listenWith(["not a url", "https://open.spotify.com/track/7H7RaiZoTNPwjNLygV4fXQ"]),

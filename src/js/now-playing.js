@@ -7,7 +7,7 @@ import {
   toTrack,
 } from "./listenbrainz.js";
 
-const USER = "ryzokuken";
+const USER = "ryzo";
 const MIN_REFETCH_MS = 30_000;
 
 let lastFetch = 0;
@@ -61,8 +61,7 @@ function heading(isPlaying, track) {
   return label;
 }
 
-function titleNode(track, listen) {
-  const [primary] = streamingLinks(listen);
+function titleNode(track, primary) {
   const text = `${track.title} — ${track.artist}`;
   if (!primary) return element("span", "now-playing-title", text);
 
@@ -70,6 +69,15 @@ function titleNode(track, listen) {
   link.href = primary.url;
   link.rel = "noopener";
   return link;
+}
+
+function badge(track, secondary) {
+  const anchor = element("a", "now-playing-link", secondary.label);
+  anchor.href = secondary.url;
+  anchor.rel = "noopener";
+  // "Bandcamp" alone is meaningless in a screen reader's list of links.
+  anchor.setAttribute("aria-label", `${track.title} on ${secondary.label}`);
+  return anchor;
 }
 
 function insert(mount, variant, widget) {
@@ -102,15 +110,28 @@ function render(mount, variant, listen, isPlaying) {
   const body = element("div", "now-playing-body");
   if (variant === "full") body.append(artwork(listen));
 
+  const [primary, secondary] = streamingLinks(listen);
   const text = element("div", "now-playing-text");
-  text.append(titleNode(track, listen));
-  if (variant === "full" && track.release) {
-    text.append(element("p", "now-playing-release", track.release));
+  text.append(titleNode(track, primary));
+  if (variant === "full") {
+    if (track.release) text.append(element("p", "now-playing-release", track.release));
+    // The compact footer variant stays a single line, so no badge there.
+    if (secondary) text.append(badge(track, secondary));
   }
   body.append(text);
   widget.append(body);
 
   insert(mount, variant, widget);
+}
+
+// Sequential by design: the ListenBrainz rate limit is charged to the visitor's
+// IP, and a failure on one endpoint must not discard a good response from the
+// other.
+async function pickListen() {
+  const playing = selectListen(await getJson(`/user/${USER}/playing-now`), null);
+  if (playing) return playing;
+
+  return selectListen(null, await getJson(`/user/${USER}/listens?count=1`));
 }
 
 async function update() {
@@ -123,12 +144,7 @@ async function update() {
   if (!mount) return;
 
   try {
-    const [playingNow, listens] = await Promise.all([
-      getJson(`/user/${USER}/playing-now`),
-      getJson(`/user/${USER}/listens?count=1`),
-    ]);
-
-    const selected = selectListen(playingNow, listens);
+    const selected = await pickListen();
     if (selected) render(mount, home ? "full" : "compact", selected.listen, selected.isPlaying);
   } catch {
     // A silent widget is better than a broken one.

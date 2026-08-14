@@ -180,7 +180,7 @@ h3 {
   margin-bottom: var(--space-sm);
 }
 
-h3[id] {
+h2[id] {
   scroll-margin-top: calc(var(--nav-height) + var(--space-md));
 }
 
@@ -491,7 +491,9 @@ a {
   margin-left: var(--space-xs);
   padding: 0 var(--space-xs);
   border: 2px solid var(--accent);
-  color: var(--accent);
+  /* The accent carries the signal; the 0.6875rem label needs --text to clear
+     4.5:1 against --bg in light mode. */
+  color: var(--text);
   font-size: 0.6875rem;
   font-weight: 700;
   line-height: 1.6;
@@ -1020,6 +1022,25 @@ img {
   margin: 0;
 }
 
+/* Same chip as .talk-card-links a, on a node that is not inside a link list. */
+.now-playing-link {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  font-size: 0.875rem;
+  padding: var(--space-xs) var(--space-sm);
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+}
+
 .now-playing-art {
   flex-shrink: 0;
   width: 64px;
@@ -1083,7 +1104,6 @@ img {
   margin-bottom: var(--space-md);
 
   & .flags-label {
-    color: var(--accent);
     margin-bottom: var(--space-xs);
   }
 

@@ -25,7 +25,8 @@
         "flag": "🇧🇪",
         "date": "Feb 2025",
         "links": {
-          "conf": "https://fosdem.org/2025/schedule/event/fosdem-2025-4286-nobody-asks-how-is-javascript-/"
+          "conf": "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4276-nobody-asks-how-is-javascript-/",
+          "video": "https://video.fosdem.org/2025/ub5230/fosdem-2025-4276-nobody-asks-how-is-javascript-.mp4"
         }
       },
       {
@@ -35,7 +36,8 @@
         "flag": "🇧🇪",
         "date": "Feb 2025",
         "links": {
-          "conf": "https://fosdem.org/2025/schedule/event/fosdem-2025-4552-solving-the-world-s-localization-problems/"
+          "conf": "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5561-solving-the-world-s-localization-problems/",
+          "video": "https://video.fosdem.org/2025/k3201/fosdem-2025-5561-solving-the-world-s-localization-problems.mp4"
         }
       },
       {
@@ -142,7 +144,7 @@
         "flag": "🇧🇪",
         "date": "May 2022",
         "links": {
-          "conf": "https://www.bejs.io/conf"
+          "conf": "https://web.archive.org/web/20251210205741/https://www.bejs.io/conf"
         }
       },
       {
@@ -219,7 +221,7 @@
         "flag": "🇷🇺",
         "date": "Sep 2021",
         "links": {
-          "conf": "https://rndtech.pro/"
+          "conf": "https://web.archive.org/web/20250612183457/https://rndtech.pro/"
         }
       },
       {
@@ -314,7 +316,7 @@
         "flag": "🇮🇳",
         "date": "Nov 2021",
         "links": {
-          "conf": "https://osdhackjiit.com/",
+          "conf": "https://web.archive.org/web/20240101195946/https://www.osdhackjiit.com/",
           "slides": "https://ryzokuken.dev/slides/2021-11-multicore-osdhack/"
         }
       }
@@ -373,7 +375,7 @@
         "flag": "🇺🇸",
         "date": "Oct 2020",
         "links": {
-          "conf": "https://events.omg.org/iuc44/",
+          "conf": "https://web.archive.org/web/20220929200029/https://events.omg.org/iuc44/",
           "slides": "https://docs.google.com/presentation/d/1nEnkIu4BpS9S-_K4WR-glfgB9sbjWEP9DeUXuKnrkkQ/edit?usp=sharing"
         }
       },
@@ -384,7 +386,7 @@
         "flag": "🇨🇳",
         "date": "Dec 2020",
         "links": {
-          "conf": "https://www.alibabaf2e.com/",
+          "conf": "https://web.archive.org/web/20211017125540/https://www.alibabaf2e.com/",
           "slides": "https://docs.google.com/presentation/d/1kQcq6KzPbgW55BC7KSu7zURhiRcuccqS3EIzewiZHqw/edit?usp=sharing"
         }
       }

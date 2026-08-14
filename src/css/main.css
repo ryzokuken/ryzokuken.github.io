@@ -180,6 +180,7 @@ h3 {
   margin-bottom: var(--space-sm);
 }
 
+h2[id],
 h3[id] {
   scroll-margin-top: calc(var(--nav-height) + var(--space-md));
 }
@@ -378,13 +379,9 @@ a {
 
 .recent {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: var(--space-lg);
   margin-bottom: var(--space-xl);
-
-  @media (width >= 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .recent-link {
@@ -976,5 +973,130 @@ img {
   #navbar a {
     font-size: 1rem;
     padding: var(--space-xs);
+  }
+}
+
+/* ========================================
+   Now Playing
+   ======================================== */
+
+.now-playing-body {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.now-playing-text {
+  min-width: 0;
+}
+
+.now-playing-title {
+  display: block;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  overflow-wrap: break-word;
+}
+
+.now-playing-release {
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+/* Same chip as .talk-card-links a, on a node that is not inside a link list. */
+.now-playing-link {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  font-size: 0.875rem;
+  padding: var(--space-xs) var(--space-sm);
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+}
+
+.now-playing-art {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-width: 2px;
+  object-fit: cover;
+}
+
+.now-playing-art--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  color: var(--text-secondary);
+  font-size: var(--font-size-xl);
+}
+
+.now-playing-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 0.7em;
+  vertical-align: baseline;
+}
+
+.now-playing-bars i {
+  width: 3px;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: bottom;
+  animation: now-playing-bar 900ms ease-in-out infinite;
+}
+
+.now-playing-bars i:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.now-playing-bars i:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes now-playing-bar {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .now-playing-bars i {
+    animation: none;
+    transform: scaleY(0.6);
+  }
+}
+
+/* Footer variant: one line, inherits the footer's inverted palette. */
+#footer .now-playing {
+  margin-bottom: var(--space-md);
+
+  /* The footer centres its text, but a flex container ignores text-align:
+     centre the flex line itself or the title sits flush left under a
+     centred label. The home-page variant stays flex-start by design. */
+  & .now-playing-body {
+    justify-content: center;
+  }
+
+  & .flags-label {
+    margin-bottom: var(--space-xs);
+  }
+
+  & .now-playing-title {
+    font-size: var(--font-size-base);
+    color: var(--bg);
   }
 }

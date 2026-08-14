@@ -1,0 +1,16 @@
+<h2 id="{{ section.title | slugify }}">{{ section.title }}</h2>
+{%- if section.blurb %}
+<blockquote>
+  <p>{{ section.blurb }}</p>
+</blockquote>
+{%- endif %}
+<div class="card-grid">
+  {%- for item in section.items %}
+  <div class="card{% unless item.url %} card--plain{% endunless %}">
+    <strong>
+      {%- if item.url %}<a href="{{ item.url }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif -%}
+    </strong>
+    <p>{{ item.note }}</p>
+  </div>
+  {%- endfor %}
+</div>

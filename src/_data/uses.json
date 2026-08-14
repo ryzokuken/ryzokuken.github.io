@@ -1,0 +1,265 @@
+{
+  "sections": [
+    {
+      "title": "Desk",
+      "items": [
+        {
+          "name": "Framework 13",
+          "url": "https://frame.work/laptop13",
+          "note": "Repairability as a purchasing decision. I have swapped ports on a train platform and replaced a part without an appointment or a proprietary screwdriver; on every other laptop I have owned, both would have been a support ticket.",
+          "since": "2024-06"
+        },
+        {
+          "name": "ASUS TUF Gaming VG27AQ",
+          "url": "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg27aq/",
+          "note": "1440p at 165Hz. The high refresh rate turned out to matter far more for dragging windows and scrolling diffs than it ever did for games."
+        },
+        {
+          "name": "Drop Ctrl",
+          "url": "https://drop.com/buy/drop-ctrl-mechanical-keyboard",
+          "note": "Tactile Halo True switches, hot-swappable, in a case heavy enough that it does not slide when I type angrily. Years of daily use and it still sounds new."
+        },
+        {
+          "name": "Blue Yeti",
+          "note": "The obvious pick, which is precisely the point. On calls from hotel rooms, conference corridors and airports, nobody has ever once asked me to repeat myself. Boring hardware that has never been the problem."
+        },
+        {
+          "name": "Sennheiser HD 4.50 BTNC",
+          "note": "Wireless with active noise cancelling, and old enough now that the battery has outlived two phones. I wear them for eight hours at a stretch without remembering they are there."
+        }
+      ]
+    },
+    {
+      "title": "Dev environment",
+      "blurb": "My choice of browser leans hard into free software and the open web: Gecko is the last major engine not owned by an advertising company, and keeping it alive is part of the job. The rest of the stack follows the same instinct from a different angle — bleeding-edge Arch, a native editor, a native terminal. Lean, fast, and stripped of the bloat that Electron made normal.",
+      "items": [
+        {
+          "name": "Zen",
+          "url": "https://zen-browser.app/",
+          "note": "Firefox underneath, which is the entire point: Gecko is the last major engine not owned by an advertising company. Zen just makes it a nicer place to spend ten hours a day.",
+          "since": "2025-09"
+        },
+        {
+          "name": "Arch Linux",
+          "url": "https://archlinux.org/",
+          "note": "Arch for control over every layer of the system, with the <a href=\"https://cachyos.org/\">CachyOS</a> repos for compiler-optimised builds I do not have to maintain myself. Bleeding edge on borrowed maintenance."
+        },
+        {
+          "name": "Ghostty",
+          "url": "https://ghostty.org/",
+          "note": "Native, GPU-accelerated, and configured with a plain text file rather than a JavaScript bundle. A terminal emulator should not ship a browser runtime."
+        },
+        {
+          "name": "Zsh",
+          "url": "https://www.zsh.org/",
+          "note": "Paired with <a href=\"https://ohmyz.sh/\">oh-my-zsh</a> for the plumbing and <a href=\"https://starship.rs/\">Starship</a> for the prompt. I have carried this configuration across four machines and three jobs."
+        },
+        {
+          "name": "Zed",
+          "url": "https://zed.dev/",
+          "note": "Fast enough that the editor is never the thing I am waiting on, which sounds like a small claim until you have used something that isn't."
+        },
+        {
+          "name": "Claude Code",
+          "url": "https://claude.com/claude-code",
+          "note": "Lives in the terminal instead of holding an editor hostage, which means it composes with everything else here. Most of what I hand it is the work I would otherwise put off.",
+          "since": "2025-11"
+        },
+        {
+          "name": "Claude Cowork",
+          "url": "https://claude.com/",
+          "note": "For the longer-running work that does not fit in a single sitting. Different shape of problem from Claude Code, same reason for reaching for it.",
+          "since": "2026-04"
+        }
+      ]
+    },
+    {
+      "title": "Gaming rig",
+      "blurb": "I split my computing life to keep both halves clean. Windows lives at home purely to play games on a humble rig without fighting compatibility layers, which keeps the work laptop focused and free of things it does not need.",
+      "items": [
+        {
+          "name": "Desktop PC",
+          "note": "Ryzen 5 2600, GTX 1660 Ti, 32GB. Deliberately humble and deliberately unchanged: it still runs everything I want at a resolution I am happy with, and upgrading it would be a hobby rather than a need."
+        },
+        {
+          "name": "Keychron V3 Max",
+          "url": "https://www.keychron.com/products/keychron-v3-max-qmk-via-wireless-custom-mechanical-keyboard",
+          "note": "Linear Gateron Reds, because games reward travel that does not fight back where writing rewards tactility. That difference is the whole reason I do not use one keyboard for both."
+        },
+        {
+          "name": "Razer Deathadder V3",
+          "url": "https://www.razer.com/gaming-mice/razer-deathadder-v3",
+          "note": "Wired, on purpose. I would rather never think about a battery than save a cable, and this is the only shape that has never given me wrist ache."
+        },
+        {
+          "name": "HyperX Cloud II",
+          "url": "https://hyperx.com/products/hyperx-cloud-ii",
+          "note": "Bought years ago on the strength of the padding rather than the drivers, and that turned out to be the right thing to optimise for."
+        },
+        {
+          "name": "Windows Terminal",
+          "url": "https://aka.ms/windowsterminal",
+          "note": "The one piece of default Windows software I would install deliberately. It made the platform's shell story tolerable, and it is open source."
+        },
+        {
+          "name": "PowerShell 7",
+          "url": "https://github.com/PowerShell/PowerShell",
+          "note": "Objects down the pipe instead of text, which is a genuinely better idea than the Unix version even when the syntax is not. The cross-platform rewrite is the part that made me stop avoiding it."
+        }
+      ]
+    },
+    {
+      "title": "Phone",
+      "items": [
+        {
+          "name": "Moto g73 5G",
+          "note": "Stock Android, mid-range, replaceable without grief. I stopped buying flagships when I noticed the only phone property I actually care about is that losing it should be annoying rather than catastrophic."
+        },
+        {
+          "name": "Samsung Galaxy Buds+",
+          "note": "The pair I actually reach for, because they live in a pocket rather than a bag. Everything I want from earbuds is that they are already with me."
+        },
+        {
+          "name": "Kvaesitso",
+          "url": "https://kvaesitso.mm20.de/",
+          "note": "A search-first launcher: I open it and type instead of hunting through a grid of icons. It replaced Lawnchair once I realised I had not deliberately looked at a home screen in months.",
+          "since": "2026-02"
+        },
+        {
+          "name": "FUTO Keyboard",
+          "url": "https://keyboard.futo.org/",
+          "note": "Swipe typing and voice input that run entirely on-device. Every other keyboard with gesture input wanted a network connection to do the same job."
+        },
+        {
+          "name": "Obtainium",
+          "url": "https://github.com/ImranR98/Obtainium",
+          "note": "Installs and updates apps straight from their release pages. No store, no intermediary, no waiting for somebody to repackage a build that already exists."
+        },
+        {
+          "name": "Aurora Store",
+          "url": "https://auroraoss.com/",
+          "note": "For the handful of apps that exist nowhere but Play. Anonymous sessions mean I can install them without a Google account attached to the device."
+        },
+        {
+          "name": "Sunup",
+          "url": "https://codeberg.org/Sunup/android",
+          "note": "Push notifications with no Google Play Services anywhere in the chain. UnifiedPush is the rare open protocol that ends up simpler than the closed one it replaces: one distributor, every app that supports it, no Firebase."
+        }
+      ]
+    },
+    {
+      "title": "Sync, security and self-hosted",
+      "blurb": "Moving to Matrix, Nextcloud and Bitwarden was an aggressive push for control, federation and the ability to audit what happens to my own data. The common thread is not ideology so much as an exit path: every one of these lets me leave with everything, which is most of why I trust them enough to stay.",
+      "items": [
+        {
+          "name": "Nextcloud",
+          "url": "https://nextcloud.com/",
+          "note": "Files, calendars and contacts on hardware I control. The sync is measurably worse than the commercial options; owning the data is worth the difference to me."
+        },
+        {
+          "name": "Syncthing",
+          "url": "https://syncthing.net/",
+          "note": "Device-to-device sync with no server in the middle. It is the software on this page I think about least, which is the highest praise I have for a sync tool."
+        },
+        {
+          "name": "DAVx5",
+          "url": "https://www.davx5.com/",
+          "note": "The bridge that makes Nextcloud's calendars and contacts native on Android. CalDAV and CardDAV are decades-old standards that still quietly beat every proprietary equivalent."
+        },
+        {
+          "name": "NextDNS",
+          "url": "https://nextdns.io/",
+          "note": "Blocking at the DNS layer covers every device and every app, not just the browser. Hosted rather than self-hosted specifically so that it follows me onto mobile data.",
+          "since": "2025-07"
+        },
+        {
+          "name": "Bitwarden",
+          "url": "https://bitwarden.com/",
+          "note": "Open source, auditable, and documented well enough that I could export everything and leave tomorrow. That exit path is most of the reason I have not needed to."
+        },
+        {
+          "name": "YubiKey",
+          "url": "https://www.yubico.com/",
+          "note": "A second factor that cannot be phished or SIM-swapped, because it is a physical object that has to be touched. The list of services supporting it is finally long enough to matter.",
+          "since": "2025-10"
+        },
+        {
+          "name": "Aegis",
+          "url": "https://getaegis.app/",
+          "note": "Open source, encrypted, local-first TOTP. It replaces Authy, whose deliberate export restrictions are precisely the kind of lock-in this page exists to argue against.",
+          "since": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Notes and comms",
+      "blurb": "Everything here stores its data locally first and syncs second, so my notes and my message history stay mine even when a service, a company or my own enthusiasm for a tool goes away.",
+      "items": [
+        {
+          "name": "Logseq",
+          "url": "https://logseq.com/",
+          "note": "Local-first, plain Markdown files on disk, outliner-shaped. The files stay readable in any editor, so the worst case if the app disappears is that I lose the interface rather than the notes."
+        },
+        {
+          "name": "Matrix &amp; Element",
+          "url": "https://matrix.org/",
+          "note": "An open federated protocol with a client I can swap out, which is the arrangement email got right and every proprietary messenger since has got wrong on purpose."
+        },
+        {
+          "name": "Thunderbird",
+          "url": "https://www.thunderbird.net/",
+          "note": "A local mail client speaking IMAP to servers I chose, on desktop and phone alike. Mail I have downloaded is mail I still have when I am on a plane or between providers."
+        }
+      ]
+    },
+    {
+      "title": "Reading and listening",
+      "blurb": "The one section where I have not managed to be consistent. Reading runs entirely on open standards and software I host; listening runs on Spotify, and I have made my peace with the trade by making sure the record of what I listen to is not Spotify's to keep.",
+      "items": [
+        {
+          "name": "Miniflux",
+          "url": "https://miniflux.app/",
+          "note": "A minimal self-hosted RSS reader that does one job and has no opinions about what I should read next. RSS survived the death of Google Reader and every algorithmic feed built since."
+        },
+        {
+          "name": "Readeck",
+          "url": "https://readeck.org/",
+          "note": "Self-hosted read-later that keeps the full article rather than a link. Roughly a third of what I save has since gone offline, which is the entire argument for it.",
+          "since": "2026-01"
+        },
+        {
+          "name": "Spotify",
+          "url": "https://www.spotify.com/",
+          "note": "The one walled garden I have not escaped. Everything else on this page I chose; this one chose me, through everybody I share music with."
+        },
+        {
+          "name": "ListenBrainz",
+          "url": "https://listenbrainz.org/",
+          "note": "The compromise that makes Spotify tolerable: Spotify plays the music, an open archive owns the record of it. It is also what feeds the now playing widget on this site.",
+          "since": "2026-08"
+        }
+      ]
+    },
+    {
+      "title": "Coffee",
+      "blurb": "Pulling a shot on the Bambino, or hand-grinding when there is time to spare, is a deliberately analog counterweight to everything else on this page. It is the only part of my day that cannot be automated and I would like to keep it that way.",
+      "items": [
+        {
+          "name": "Sage Bambino",
+          "url": "https://www.sageappliances.com/eu/en/products/espresso/bes450.html",
+          "note": "Heats in three seconds and pulls a shot good enough that I stopped visiting the cafe downstairs on work mornings. It paid for itself in about four months."
+        },
+        {
+          "name": "Cecotec Stellmill",
+          "note": "Cheap, conical, and does most of what a grinder four times the price does. The Skerton is for when I want the ritual; this is for when I want the coffee."
+        },
+        {
+          "name": "Hario Skerton",
+          "url": "https://www.hario-usa.com/products/ceramic-coffee-mill-skerton-pro",
+          "note": "A hand grinder for weekends, when the two minutes of cranking is the point rather than the cost."
+        }
+      ]
+    }
+  ],
+  "retired": []
+}

@@ -9,7 +9,7 @@
     "dev": "eleventy --serve",
     "lint": "markuplint \"src/**/*.{html,liquid,md}\"",
     "test:unit": "vitest run",
-    "test:links": "linkinator _site --skip \"slides\" --skip \"gc\\.zgo\\.at\"",
+    "test:links": "linkinator _site --recurse --skip \"slides\" --skip \"gc\\.zgo\\.at\" --skip \"meetup\\.com\"",
     "test": "pnpm run test:unit && pnpm run build && pnpm run lint && pnpm run test:links",
     "prepare": "husky"
   },

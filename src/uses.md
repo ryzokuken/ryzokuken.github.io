@@ -16,7 +16,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
 
 <div class="card-grid">
   <div class="card">
-    <strong><a href="https://frame.work/products/laptop-13-gen-intel-core-ultra-1">Framework 13</a></strong>
+    <strong><a href="https://frame.work/laptop13">Framework 13</a></strong>
     <p>Work laptop featuring the Intel Core Ultra 1 Series.</p>
   </div>
   <div class="card">
@@ -100,7 +100,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
     <p>Super accurate wired gaming mouse.</p>
   </div>
   <div class="card">
-    <strong><a href="https://hyperx.com/products/hyperx-cloud-ii-gaming-headset">HyperX Cloud II</a></strong>
+    <strong><a href="https://hyperx.com/products/hyperx-cloud-ii">HyperX Cloud II</a></strong>
     <p>Comfortable headset with excellent audio for gaming.</p>
   </div>
 </div>
@@ -224,7 +224,7 @@ Make sure to check out [uses.tech](https://uses.tech) for a list of everyone's `
     <p>My automatic grinder used for daily convenience.</p>
   </div>
   <div class="card">
-    <strong><a href="https://www.hario-usa.com/products/skerton-pro-ceramic-coffee-mill">Hario Skerton</a></strong>
+    <strong><a href="https://www.hario-usa.com/products/ceramic-coffee-mill-skerton-pro">Hario Skerton</a></strong>
     <p>A trusted hand-grinder for when I feel like manually cranking the beans.</p>
   </div>
 </div>

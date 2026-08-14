@@ -261,5 +261,43 @@
       ]
     }
   ],
-  "retired": []
+  "retired": [
+    {
+      "name": "Google Antigravity",
+      "url": "https://antigravity.google/",
+      "note": "Tried it for side projects and never formed the habit.",
+      "replacedBy": "Claude Code"
+    },
+    {
+      "name": "Super Productivity",
+      "url": "https://super-productivity.com/",
+      "note": "Good software that lost an argument with how I actually plan my week."
+    },
+    {
+      "name": "Bookmory",
+      "url": "https://play.google.com/store/apps/details?id=net.tonysoft.bookmory",
+      "note": "Logging what I read turned out to be effort I would rather spend reading."
+    },
+    {
+      "name": "Reef",
+      "url": "https://github.com/aload0/Reef",
+      "note": "Blocking distractions works right up until the blocker becomes the distraction."
+    },
+    {
+      "name": "Lawnchair",
+      "url": "https://lawnchair.app/",
+      "note": "Served me well for years, but I stopped looking at home screens on purpose.",
+      "replacedBy": "Kvaesitso"
+    },
+    {
+      "name": "Smartspacer",
+      "url": "https://github.com/KieronQuinn/Smartspacer",
+      "note": "Clever, endlessly configurable, and I configured it exactly once."
+    },
+    {
+      "name": "Bromite",
+      "url": "https://www.bromite.org/",
+      "note": "Abandoned upstream since December 2022 and many security releases behind. Recommending it on a page about privacy had become actively irresponsible."
+    }
+  ]
 }

@@ -59,3 +59,17 @@ Must work on all popular screen sizes. Test that layout doesn't break on desktop
 ### Dark mode
 
 Light and dark modes are supported via `prefers-color-scheme`. Every feature must look correct in both modes.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live as GitHub Issues in `ryzokuken/ryzokuken.github.io`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout: `CONTEXT.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.

@@ -7,7 +7,7 @@ import {
   toTrack,
 } from "./listenbrainz.js";
 
-const USER = "ryzo";
+const USER = "ryzokuken";
 const MIN_REFETCH_MS = 30_000;
 
 let lastFetch = 0;

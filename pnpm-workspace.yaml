@@ -2,3 +2,4 @@ allowBuilds:
   lightningcss-cli: true
 overrides:
   uuid@13.0.0: '>=13.0.1'
+  postcss-selector-parser@7.1.1: '^7.1.3'

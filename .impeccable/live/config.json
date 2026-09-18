@@ -1,0 +1,6 @@
+{
+  "files": ["src/_includes/layout.liquid"],
+  "insertBefore": "</body>",
+  "commentSyntax": "html",
+  "cspChecked": true
+}

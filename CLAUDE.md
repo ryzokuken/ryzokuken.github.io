@@ -2,7 +2,9 @@
 
 Personal website for Ujjwal Sharma (ryzokuken), built with [Eleventy](https://www.11ty.dev/) 3.x and LiquidJS templates. Deployed to GitHub Pages via GitHub Actions.
 
-**Stack:** Eleventy · LiquidJS · LightningCSS · markuplint · linkinator · Husky + lint-staged · Mermaid
+**Stack:** Eleventy · LiquidJS · LightningCSS · markuplint · linkinator · Vitest · Husky + lint-staged · Mermaid
+
+Product context (audience, purpose, constraints) lives in `PRODUCT.md`.
 
 ## Dev commands
 
@@ -11,6 +13,7 @@ This project uses **pnpm** (see `packageManager` in `package.json` and `pnpm-loc
 - `pnpm dev` — Eleventy dev server with live reload
 - `pnpm build` — build site (Eleventy + LightningCSS minification)
 - `pnpm lint` — markuplint
+- `pnpm test:unit` — Vitest unit tests in `test/`
 - `pnpm test:links` — linkinator on built `_site/`
 - `pnpm test` — unit tests + build + lint + link check
 
@@ -58,11 +61,11 @@ From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push o
 
 ### Aesthetic
 
-Simple, clean, consistent — "nerdy and professional". Single monospace typeface (JetBrains Mono). Strict black-and-white palette with one accent color: TC39 Orange (`#FC7C00`). Brutalist geometry: sharp angles, thick borders (2–4px solid), no rounded corners.
+The visual identity is open to a redesign. Once `DESIGN.md` exists, it is the authority for visual decisions. Until then, the current look is: "nerdy and professional", a single monospace typeface (JetBrains Mono, self-hosted), warm near-black and off-white tokens (`--text`, `--bg` in `src/css/main.css`) with one accent, TC39 Orange (`#FC7C00`), and brutalist geometry (sharp angles, 2–4px solid borders, no rounded corners).
 
 ### Emoji
 
-The site uses country flags and icons throughout. Windows lacks native support for emoji flags; Twemoji is loaded via CDN in `src/_includes/layout.liquid` as the cross-platform fallback.
+The site uses country flags and icons throughout. Windows lacks native support for emoji flags; Twemoji is loaded from a CDN in `src/_includes/layout.liquid` on pages that set `flags: true` in front matter.
 
 ### Responsive
 
@@ -70,7 +73,7 @@ Must work on all popular screen sizes. Test that layout doesn't break on desktop
 
 ### Dark mode
 
-Light and dark modes are supported via `prefers-color-scheme`. Every feature must look correct in both modes.
+Light and dark modes follow `prefers-color-scheme` by default. A footer switcher (auto/light/dark) overrides it by setting `data-theme` on `<html>` and storing the choice in `localStorage`. Every feature must look correct in both modes and under both mechanisms.
 
 ## Agent skills
 

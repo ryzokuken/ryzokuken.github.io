@@ -11,17 +11,23 @@ describe("numberClauses", () => {
     expect(numberClauses(html)).toBe("<nav></nav><main><h2>Hi</h2></main>");
   });
 
-  it("numbers h1, h2 and h3 under the page clause", () => {
-    const out = numberClauses(page("<h1>Talks</h1><h2>Podcasts</h2><h2>Past</h2><h3>2025</h3>"));
+  it("numbers h1 and h2 under the page clause", () => {
+    const out = numberClauses(page("<h1>Talks</h1><h2>Podcasts</h2><h2>Past</h2>"));
     expect(out).toContain('<h1><span class="secnum">2</span> Talks</h1>');
     expect(out).toContain('<a class="secnum" href="#podcasts">2.1</a> Podcasts');
     expect(out).toContain('<a class="secnum" href="#past">2.2</a> Past');
-    expect(out).toContain('<a class="secnum" href="#2025">2.2.1</a> 2025');
   });
 
-  it("restarts h3 numbering under each h2", () => {
-    const out = numberClauses(page("<h2>A</h2><h3>x</h3><h2>B</h2><h3>y</h3>"));
-    expect(out).toContain(">2.2.1</a> y");
+  it("gives h3s an id but no number", () => {
+    const out = numberClauses(page("<h2>Past</h2><h3>2025</h3>"));
+    expect(out).toContain('<h3 id="2025">2025</h3>');
+  });
+
+  it("skips data-unnumbered h2s without shifting the others", () => {
+    const out = numberClauses(page("<h2 data-unnumbered>Post</h2><h2>Next</h2>"));
+    expect(out).toContain('<h2 data-unnumbered id="post">Post</h2>');
+    expect(out).toContain('href="#next">2.1</a> Next');
+    expect(out).not.toContain('href="#post"');
   });
 
   it("numbers locally and skips the h1 when the clause is empty", () => {
@@ -45,10 +51,6 @@ describe("numberClauses", () => {
   it("does not collide with ids used elsewhere on the page", () => {
     const html = `<div id="flags"></div>${page("<h2>Flags</h2>")}`;
     expect(numberClauses(html)).toContain('id="flags-2"');
-  });
-
-  it("ignores an h3 before any h2", () => {
-    expect(numberClauses(page("<h3>Loose</h3>"))).toContain("<h3>Loose</h3>");
   });
 
   it("fills the TOC slot with h2 clauses, tags stripped", () => {

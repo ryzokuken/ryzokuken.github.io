@@ -32,7 +32,7 @@ clause: 1
 {% assign talk_count = 0 %}
 {% for year_data in talks %}
   {% for talk in year_data.talks %}
-    {% if talk.upcoming %}{% if next_talk == nil %}{% assign next_talk = talk %}{% endif %}{% else %}{% assign talk_count = talk_count | plus: 1 %}{% endif %}
+    {% if talk.upcoming %}{% if next_talk == nil %}{% assign next_talk = talk %}{% endif %}{% else %}{% unless talk.title contains "*" %}{% assign talk_count = talk_count | plus: 1 %}{% endunless %}{% endif %}
   {% endfor %}
 {% endfor %}
 {% assign first_year = talks | last %}

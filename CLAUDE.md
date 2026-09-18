@@ -47,8 +47,8 @@ From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push o
 - **location**: `"City, CC"` using ISO 3166-1 alpha-2 country codes. Use `"Online"` for virtual events.
 - **flag**: Emoji flag matching the country code. Use `🌐` only for events with no geographic association.
 - **links**: Include `conf`, `video`, `slides`, `meetup`, or `event` as applicable. Add `video` whenever recordings exist.
-- **title**: Exact talk title. Append `\*` for cancelled/undelivered talks.
-- **upcoming**: Set `"upcoming": true` on talks that haven't happened yet. They render in a separate "Upcoming" section instead of "Past Talks", and surface on the home page as "next talk". Remove the field (or set it to `false`) once the talk has taken place.
+- **title**: Exact talk title. Append `\*` for undelivered talks (accepted but not given).
+- **upcoming**: Set `"upcoming": true` on talks that haven't happened yet. They render in a separate "Upcoming" section instead of "Past talks", and surface on the home page as "next talk". Remove the field once the talk has taken place; if it falls through, remove it and mark the talk undelivered. A unit test fails once an upcoming talk's month has passed.
 - **Sorting**: Talks within a year are ordered chronologically (earliest first).
 
 ### `src/_data/podcasts.json`
@@ -61,7 +61,7 @@ From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push o
 
 ### Aesthetic
 
-`DESIGN.md` is the authority for visual decisions. The site is "The Living Standard": each page is a numbered clause of a specification, with a sticky table of contents, captioned tables, note panels, and references. Headings use Public Sans, prose uses Source Serif 4, and code uses the system mono. The palette is a white sheet, near-black ink and one spec blue, with 1px rules and no cards, shadows or radius. `lib/clauses.js` numbers headings at build time for any page that sets `clause` in front matter.
+`DESIGN.md` is the authority for visual decisions. The site borrows the look of a web specification: numbered sections, a sticky table of contents, captioned tables and note panels. It never names or labels itself as a spec (DESIGN.md's Understatement Rule): no "Living Standard", "Clause" or "Table N:" in visible text, and no numbering below h2. Headings use Public Sans, prose uses Source Serif 4, and code uses the system mono. The palette is a white sheet, near-black ink and one spec blue, with 1px rules and no cards, shadows or radius. `lib/clauses.js` numbers headings at build time for any page that sets `clause` in front matter. Domain terms live in `CONTEXT.md`.
 
 ### Emoji
 

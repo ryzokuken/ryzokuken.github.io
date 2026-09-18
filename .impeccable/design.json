@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T00:00:00Z",
+  "title": "Design System: ryzokuken.dev",
+  "extensions": {
+    "colorMeta": {
+      "tc39-orange": {
+        "role": "primary",
+        "displayName": "TC39 Orange",
+        "canonical": "#fc7c00",
+        "tonalRamp": [
+          "oklch(25% 0.08 55)",
+          "oklch(35% 0.11 55)",
+          "oklch(45% 0.14 55)",
+          "oklch(55% 0.16 55)",
+          "oklch(65% 0.18 55)",
+          "oklch(72% 0.18 55)",
+          "oklch(84% 0.10 55)",
+          "oklch(95% 0.04 55)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(98% 0.008 70)",
+        "tonalRamp": [
+          "oklch(15% 0.008 70)",
+          "oklch(27% 0.008 70)",
+          "oklch(40% 0.008 70)",
+          "oklch(52% 0.008 70)",
+          "oklch(65% 0.008 70)",
+          "oklch(77% 0.008 70)",
+          "oklch(88% 0.008 70)",
+          "oklch(98% 0.008 70)"
+        ]
+      },
+      "terminal-black": {
+        "role": "neutral",
+        "displayName": "Terminal Black",
+        "canonical": "oklch(12% 0.015 50)",
+        "tonalRamp": [
+          "oklch(12% 0.015 50)",
+          "oklch(24% 0.015 50)",
+          "oklch(36% 0.015 50)",
+          "oklch(48% 0.015 50)",
+          "oklch(60% 0.015 50)",
+          "oklch(72% 0.015 50)",
+          "oklch(84% 0.015 50)",
+          "oklch(95% 0.015 50)"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "canonical": "color-mix(in oklch, var(--text) 75%, var(--bg))"
+      },
+      "bone-night": {
+        "role": "neutral",
+        "displayName": "Bone Night",
+        "canonical": "oklch(96% 0.008 70)"
+      },
+      "terminal-black-night": {
+        "role": "neutral",
+        "displayName": "Terminal Black Night",
+        "canonical": "oklch(10% 0.015 50)"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero name only; uppercase, prefixed with an orange >." },
+      "headline": { "displayName": "Headline", "purpose": "Page h1; uppercase." },
+      "title": { "displayName": "Title", "purpose": "Section h2 with a fit-content 2px underline rule." },
+      "subtitle": { "displayName": "Subtitle", "purpose": "h3; year headings on the talks page." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and list items in ink-secondary; posts cap at 75ch." },
+      "body-small": { "displayName": "Body Small", "purpose": "Card descriptions, talk and blog meta." },
+      "label": { "displayName": "Label", "purpose": "// comment labels, link chips, year-jump and switcher controls." },
+      "badge": { "displayName": "Badge", "purpose": "The uses 'new' badge only; uppercase." }
+    },
+    "shadows": [
+      { "name": "offset-accent", "value": "4px 4px 0 var(--accent)", "purpose": "Generic card hover, paired with translate(-4px, -4px)." },
+      { "name": "offset-ink", "value": "4px 4px 0 var(--text)", "purpose": "Talk and podcast card hover, paired with translate(-4px, -4px)." }
+    ],
+    "motion": [
+      { "name": "chip-invert", "value": "all 0.1s ease", "purpose": "Link-chip and year-jump inversion on hover." },
+      { "name": "card-lift", "value": "all 0.2s ease", "purpose": "Card lift and stamp shadow on hover." },
+      { "name": "link-thicken", "value": "text-decoration-thickness 0.1s ease", "purpose": "Underline grows from 2px to 4px on hover." },
+      { "name": "image-reveal", "value": "filter 0.3s ease", "purpose": "Grayscale image to color on hover." },
+      { "name": "now-playing-bar", "value": "900ms ease-in-out infinite, 150ms stagger", "purpose": "Equalizer bars; static under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "nav-tiny", "value": "320px" },
+      { "name": "nav-two-col", "value": "420px" },
+      { "name": "pair-grid", "value": "600px" },
+      { "name": "mobile", "value": "640px" },
+      { "name": "nav-tight", "value": "820px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Ruled entry for projects, uses and blog posts; lifts with an orange stamp shadow on hover.",
+      "html": "<div class=\"ds-card\"><strong><a class=\"ds-link\" href=\"#\">tc39/proposal-temporal</a></strong><p>Standard objects and functions for working with dates and times in JavaScript. Champion.</p></div>",
+      "css": ".ds-card { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); border-radius: 0; padding: 1rem 2rem; max-width: 22rem; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-card:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--accent, #fc7c00); } .ds-card strong { font-size: 1.25rem; font-weight: 700; } .ds-card p { font-size: 0.875rem; margin: 0.5rem 0 0; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-link { color: inherit; text-decoration: underline; text-decoration-color: var(--accent, #fc7c00); text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-link:hover { text-decoration-thickness: 4px; } .ds-link:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+    },
+    {
+      "name": "Talk Card",
+      "kind": "card",
+      "refersTo": "talk-card",
+      "description": "Talk or podcast entry: title, @ event, flag + place + date, link chips pinned to the bottom.",
+      "html": "<div class=\"ds-talk\"><div class=\"ds-talk-title\">Nobody asks \"How is JavaScript?\"</div><div class=\"ds-talk-event\">FOSDEM (JavaScript Devroom)</div><div class=\"ds-talk-meta\">🇧🇪 Brussels, BE · Feb 2025</div><div class=\"ds-talk-links\"><a href=\"#\">conf</a><a href=\"#\">video</a></div></div>",
+      "css": ".ds-talk { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); padding: 1rem 2rem; max-width: 24rem; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-talk:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--text, oklch(12% 0.015 50)); } .ds-talk-title { font-weight: 800; font-size: 1.25rem; line-height: 1.3; margin-bottom: 0.5rem; } .ds-talk-event { font-weight: 700; margin-bottom: 0.25rem; } .ds-talk-event::before { content: '@ '; } .ds-talk-meta { font-size: 0.875rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); margin-bottom: 1rem; } .ds-talk-links { display: flex; flex-wrap: wrap; gap: 0.5rem; } .ds-talk-links a { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border: 2px solid var(--text, oklch(12% 0.015 50)); color: var(--text, oklch(12% 0.015 50)); text-decoration: none; transition: all 0.1s ease; } .ds-talk-links a:hover { background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-talk-links a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+    },
+    {
+      "name": "Podcast Card",
+      "kind": "card",
+      "refersTo": "talk-card",
+      "description": "Talk card variant with a 4px orange left edge.",
+      "html": "<div class=\"ds-pod\"><div class=\"ds-pod-title\"><a href=\"#\">TC39 and Multicore JavaScript</a></div><div class=\"ds-pod-event\">PodRocket</div><div class=\"ds-pod-meta\">🎙️ 2022</div></div>",
+      "css": ".ds-pod { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); border-left: 4px solid var(--accent, #fc7c00); padding: 1rem 2rem; max-width: 24rem; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-pod:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--text, oklch(12% 0.015 50)); } .ds-pod-title { font-weight: 800; font-size: 1.25rem; line-height: 1.3; margin-bottom: 0.5rem; } .ds-pod-title a { color: inherit; text-decoration: none; } .ds-pod-title a:hover { text-decoration: underline; text-decoration-color: var(--accent, #fc7c00); text-decoration-thickness: 4px; } .ds-pod-event { font-weight: 700; } .ds-pod-event::before { content: '@ '; } .ds-pod-meta { font-size: 0.875rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); }"
+    },
+    {
+      "name": "Link Chip",
+      "kind": "button",
+      "refersTo": "chip",
+      "description": "The system's only action control: bordered, uppercase, inverts on hover.",
+      "html": "<a class=\"ds-chip\" href=\"#\">slides</a>",
+      "css": ".ds-chip { display: inline-block; font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border: 2px solid var(--text, oklch(12% 0.015 50)); border-radius: 0; color: var(--text, oklch(12% 0.015 50)); background: transparent; text-decoration: none; transition: all 0.1s ease; } .ds-chip:hover { background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-chip:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky bar of bold lowercase links; the current page gets orange brackets.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\">home</a><a href=\"#\" aria-current=\"page\">talks</a><a href=\"#\">projects</a><a href=\"#\">blog</a><a href=\"#\">uses</a></nav>",
+      "css": ".ds-nav { display: flex; justify-content: center; gap: 2rem; height: 4rem; align-items: center; background: var(--bg, oklch(98% 0.008 70)); border-bottom: 2px solid var(--text, oklch(12% 0.015 50)); font-family: var(--font-mono, 'JetBrains Mono', monospace); } .ds-nav a { font-size: 1.25rem; font-weight: 700; text-transform: lowercase; text-decoration: none; color: var(--text, oklch(12% 0.015 50)); padding: 0.25rem 0.5rem; } .ds-nav a::before, .ds-nav a::after { opacity: 0; color: var(--accent, #fc7c00); transition: opacity 0.2s ease; } .ds-nav a::before { content: '['; margin-right: 2px; } .ds-nav a::after { content: ']'; margin-left: 2px; } .ds-nav a:hover::before, .ds-nav a:hover::after, .ds-nav a[aria-current='page']::before, .ds-nav a[aria-current='page']::after { opacity: 1; } .ds-nav a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+    },
+    {
+      "name": "Uses Badge",
+      "kind": "chip",
+      "refersTo": "uses-badge",
+      "description": "Tiny orange-bordered 'new' flag for tools added in the last six months.",
+      "html": "<strong class=\"ds-badge-row\">Kvaesitso <span class=\"ds-badge\">new</span></strong>",
+      "css": ".ds-badge-row { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 1.25rem; color: var(--text, oklch(12% 0.015 50)); } .ds-badge { display: inline-block; vertical-align: middle; margin-left: 0.25rem; padding: 0 0.25rem; border: 2px solid var(--accent, #fc7c00); color: var(--text, oklch(12% 0.015 50)); font-size: 0.6875rem; font-weight: 700; line-height: 1.6; text-transform: uppercase; letter-spacing: 0.05em; }"
+    },
+    {
+      "name": "Now Playing",
+      "kind": "custom",
+      "refersTo": "now-playing",
+      "description": "Signature live element: // label with orange equalizer bars, framed cover art, track and release.",
+      "html": "<div class=\"ds-np\"><p class=\"ds-np-label\">// now playing <span class=\"ds-np-bars\" aria-hidden=\"true\"><i></i><i></i><i></i></span></p><div class=\"ds-np-body\"><span class=\"ds-np-art\" aria-hidden=\"true\">♪</span><div><span class=\"ds-np-title\">Track title</span><p class=\"ds-np-release\">Release name</p></div></div></div>",
+      "css": ".ds-np { font-family: var(--font-mono, 'JetBrains Mono', monospace); color: var(--text, oklch(12% 0.015 50)); } .ds-np-label { font-size: 0.875rem; font-weight: 700; margin: 0 0 0.25rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-np-bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 0.7em; } .ds-np-bars i { width: 3px; height: 100%; background: var(--accent, #fc7c00); transform-origin: bottom; animation: ds-np-bar 900ms ease-in-out infinite; } .ds-np-bars i:nth-child(2) { animation-delay: 150ms; } .ds-np-bars i:nth-child(3) { animation-delay: 300ms; } @keyframes ds-np-bar { 0%, 100% { transform: scaleY(0.35); } 50% { transform: scaleY(1); } } @media (prefers-reduced-motion: reduce) { .ds-np-bars i { animation: none; transform: scaleY(0.6); } } .ds-np-body { display: flex; align-items: center; gap: 0.5rem; } .ds-np-art { flex-shrink: 0; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--text, oklch(12% 0.015 50)); font-size: 1.5rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-np-title { display: block; font-size: 1.25rem; font-weight: 700; } .ds-np-release { font-size: 0.875rem; margin: 0; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); }"
+    },
+    {
+      "name": "Footer with Theme Switcher",
+      "kind": "custom",
+      "refersTo": "footer",
+      "description": "The page's one inverted block; lowercase switcher buttons bracket in orange when pressed.",
+      "html": "<footer class=\"ds-foot\"><div class=\"ds-switch\" role=\"group\" aria-label=\"Color theme\"><span class=\"ds-switch-label\">theme:</span><button type=\"button\" aria-pressed=\"true\">auto</button><button type=\"button\" aria-pressed=\"false\">light</button><button type=\"button\" aria-pressed=\"false\">dark</button></div><p>Made with ❤️ by <a href=\"#\">Ryzokuken</a> using <a href=\"#\">11ty</a></p></footer>",
+      "css": ".ds-foot { font-family: var(--font-mono, 'JetBrains Mono', monospace); text-align: center; padding: 3rem 2rem; border-top: 4px solid var(--text, oklch(12% 0.015 50)); background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-foot p { margin: 0; } .ds-foot a { color: var(--accent, #fc7c00); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-foot a:hover { background: var(--accent, #fc7c00); color: var(--text, oklch(12% 0.015 50)); } .ds-switch { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; } .ds-switch-label { color: var(--accent, #fc7c00); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; } .ds-switch button { background: transparent; border: none; color: inherit; font: inherit; font-weight: 700; text-transform: lowercase; padding: 0.25rem 0.5rem; cursor: pointer; transition: color 0.15s ease; } .ds-switch button::before, .ds-switch button::after { opacity: 0; color: var(--accent, #fc7c00); transition: opacity 0.15s ease; } .ds-switch button::before { content: '['; margin-right: 2px; } .ds-switch button::after { content: ']'; margin-left: 2px; } .ds-switch button:hover, .ds-switch button[aria-pressed='true'] { color: var(--accent, #fc7c00); } .ds-switch button:hover::before, .ds-switch button:hover::after, .ds-switch button[aria-pressed='true']::before, .ds-switch button[aria-pressed='true']::after { opacity: 1; } .ds-switch button:focus-visible, .ds-foot a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Plenary Record",
+    "overview": "The site reads like the minutes of a working life in standards: dense, factual, bordered entries, set in a single monospace face, ruled off by heavy lines. Every talk, podcast, project and tool is an entry with a title, a venue, a date and its links, in a consistent order. The one orange is the chair's gavel. It marks what is current, what you can act on, and where you are, and nothing else.\n\nPersonality comes from typographic jokes borrowed from the shell and from source code: a `>` prompt before the name, `[brackets]` around the current page, `//` comment labels over small sections, `@` before an event name. The ornament is punctuation. There are no illustrations, gradients, icons beyond the social marks, or decorative imagery.\n\nDensity is moderate to high: body copy runs large (1.25rem) with generous line height, but pages are long, stacked lists of bordered entries with little whitespace between them. Both color schemes are first-class; the footer always inverts against the page.",
+    "keyCharacteristics": [
+      "One typeface, JetBrains Mono, at three weights (400, 700, 800).",
+      "Two warm neutrals and one accent; no other hues.",
+      "Zero corner radius anywhere, including Mermaid diagram nodes.",
+      "2px rules for structure, 4px for emphasis.",
+      "Depth only as a hard, unblurred offset shadow on hover.",
+      "Shell and source-code punctuation as the only ornament."
+    ],
+    "rules": [
+      { "name": "The Two Tokens Rule", "body": "Surfaces, text and borders all derive from `--bg` and `--text`. Aliases (`--border`, `--card-bg`, `--nav-bg`, `--icon-fill`) exist for naming, not for new values. A third neutral would break the automatic dark-mode swap.", "section": "colors" },
+      { "name": "The Gavel Rule", "body": "Orange marks the current, the actionable, or the focused. If an element is none of those, it is black or bone.", "section": "colors" },
+      { "name": "The Case Carries Rank Rule", "body": "Uppercase marks top-level structure (page titles, the hero name) and actions (link chips, badges). Navigation and switcher controls are lowercase. Section titles and body are sentence case.", "section": "typography" },
+      { "name": "The Comment Label Rule", "body": "Small section labels are written as code comments, `// latest post`, `// countries visited`, in bold ink-secondary at label size.", "section": "typography" },
+      { "name": "The Stamp Rule", "body": "Shadows are solid, unblurred, offset 4px down-right, and exist only on hover. A blurred shadow is foreign to this system.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** derive every new surface, text and border color from `--bg` and `--text` so dark mode keeps working as a swap.",
+      "**Do** keep corners at 0 and structural borders at 2px, emphasis at 4px.",
+      "**Do** mark actions as bordered chips that invert on hover.",
+      "**Do** use code punctuation (`>`, `//`, `[ ]`, `@`) for small labels and state instead of icons.",
+      "**Do** check every change under light, dark, and each theme-switcher setting.",
+      "**Do** honor `prefers-reduced-motion`; the global rule collapses transitions and animations to 0.01ms."
+    ],
+    "donts": [
+      "**Don't** add a second typeface or a second accent hue.",
+      "**Don't** use rounded corners, blurred shadows, or gradients.",
+      "**Don't** set orange as text on bone. It is a mark, underline, edge or fill, never body copy on the light background.",
+      "**Don't** add orange to an element that is not current, actionable or focused."
+    ]
+  }
+}

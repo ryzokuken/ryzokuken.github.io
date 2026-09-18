@@ -61,7 +61,7 @@ From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push o
 
 ### Aesthetic
 
-The visual identity is open to a redesign. Once `DESIGN.md` exists, it is the authority for visual decisions. Until then, the current look is: "nerdy and professional", a single monospace typeface (JetBrains Mono, self-hosted), warm near-black and off-white tokens (`--text`, `--bg` in `src/css/main.css`) with one accent, TC39 Orange (`#FC7C00`), and brutalist geometry (sharp angles, 2–4px solid borders, no rounded corners).
+`DESIGN.md` documents the current system ("The Plenary Record": JetBrains Mono only, warm black and bone with one TC39 Orange accent, square corners, 2–4px borders) and is the authority for visual decisions. The identity is open to a redesign; a redesign replaces `DESIGN.md` rather than patching it. `DESIGN.md` also lists known gaps (contrast, missing code styles) to address.
 
 ### Emoji
 

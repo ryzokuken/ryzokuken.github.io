@@ -73,7 +73,7 @@ Must work on all popular screen sizes. Test that layout doesn't break on desktop
 
 ### Dark mode
 
-Light and dark modes follow `prefers-color-scheme` by default. A footer switcher (auto/light/dark) overrides it by setting `data-theme` on `<html>` and storing the choice in `localStorage`. Every feature must look correct in both modes and under both mechanisms.
+Light and dark modes follow `prefers-color-scheme` by default. A switcher at the foot of the table-of-contents sidebar (auto/light/dark) overrides it by setting `data-theme` on `<html>` and storing the choice in `localStorage`. Every feature must look correct in both modes and under both mechanisms.
 
 ## Agent skills
 

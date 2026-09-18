@@ -157,7 +157,7 @@ The world rejects the developer-portfolio arrangement: no hero-then-card-grid, n
 - Sans for structure, serif for content, mono for code only.
 - One accent (spec blue); everything else is ink, secondary ink, rule and panel.
 - 1px hairline rules everywhere; zero radius; zero shadow.
-- Tables and figures carry plain sans captions, never auto-numbered.
+- Captions appear only when they add to the heading; never auto-numbered.
 - The metaphor is never named on the page: no "Living Standard", "Clause" or "Figure N" in the visible text.
 - Full light and dark sets, switchable by preference or an explicit Auto/Light/Dark control.
 
@@ -272,7 +272,7 @@ There are no form fields. Native controls inherit `accent-color` and `caret-colo
 - **Links:** spec blue with a 1px underline at 45% blue, offset 0.2em; the underline goes solid on hover (0.2s).
 
 ### Numbered tables
-The signature container of the record. Full-width, collapsed 1px rule grid, tabular numbers, header row in panel with sans labels, cells in compact serif. Every table carries a plain secondary-ink sans caption; nothing is auto-numbered. Talk rows put the date in a narrow sans column, the title in semibold over an italic secondary-ink event line, the place with its flag, and links as a small sans inline list. A talk that was not delivered carries a blue superscript asterisk, explained by a secondary-ink table note beneath the table.
+The signature container of the record. Full-width, collapsed 1px rule grid, tabular numbers, header row in panel with sans labels, cells in compact serif. A table gets a plain secondary-ink sans caption only when the caption says something its heading doesn't (order, where links go); otherwise it takes its accessible name from the heading above it via `aria-labelledby`. Nothing is auto-numbered. The Talks page opens with a one-line secondary-ink summary (talks given, countries spoken in in person, with small flags) instead of a flags figure. Talk rows put the date in a narrow sans column, the title in semibold over an italic secondary-ink event line, the place with its flag, and links as a small sans inline list. A talk that was not delivered carries a blue superscript asterisk, explained by a secondary-ink table note beneath the table.
 
 ### Definition entries
 Used on Projects and Uses: a rule-divided list of name (sans 650, left, 14rem) and description (serif, right), with a note panel as the section blurb. Retired entries set the name in secondary ink.

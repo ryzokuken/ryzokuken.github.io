@@ -7,6 +7,22 @@ clause: 2
 
 # Talks
 
+{%- assign given = 0 -%}
+{%- assign all_flags = "" -%}
+{%- for year_data in talks -%}
+  {%- for talk in year_data.talks -%}
+    {%- if talk.upcoming or talk.title contains "*" -%}{%- continue -%}{%- endif -%}
+    {%- assign given = given | plus: 1 -%}
+    {%- if talk.flag != "🌐" and talk.location != "Online" -%}
+      {%- assign all_flags = all_flags | append: talk.flag | append: "," -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign countries = all_flags | split: "," | uniq -%}
+{%- assign first_year = talks | last %}
+
+<p class="talks-summary">{{ given }} talks since {{ first_year.year }}, in person in {{ countries.size }} countries: <span class="talks-flags">{{ countries | join: "" }}</span></p>
+
 [Browse all my slide decks →](/slides/)
 
 {%- assign has_upcoming = false -%}
@@ -19,7 +35,7 @@ clause: 2
 {%- if has_upcoming %}
 <h2 id="upcoming">Upcoming</h2>
 
-{% include "talks-table.liquid", caption: "Scheduled talks" %}
+{% include "talks-table.liquid", labelledby: "upcoming" %}
 {%- for year_data in talks -%}
 {%- for talk in year_data.talks -%}
 {%- if talk.upcoming -%}
@@ -90,19 +106,3 @@ clause: 2
   </tbody>
 </table>
 </div>
-
-## Countries
-
-{% assign all_flags = "" %}
-{% for year_data in talks %}
-  {% for talk in year_data.talks %}
-    {% if talk.flag and talk.flag != '🌐' and talk.location != 'Online' %}
-      {% assign all_flags = all_flags | append: talk.flag | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-{% assign unique_flags = all_flags | split: "," | uniq | join: "" %}
-<figure class="flags-figure">
-  <div id="flags">{{ unique_flags }}</div>
-  <figcaption>Countries visited</figcaption>
-</figure>

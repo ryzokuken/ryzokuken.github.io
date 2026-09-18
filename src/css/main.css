@@ -247,7 +247,6 @@ img {
     letter-spacing: -0.01em;
     text-decoration: none;
   }
-
 }
 
 .toc-contents {
@@ -841,15 +840,15 @@ main > :first-child {
    Talks
    ======================================== */
 
-.flags-figure {
-  margin: var(--space-lg) 0;
+.talks-summary {
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+}
 
-  & #flags {
-    font-size: var(--step-2);
-    line-height: 1.6;
-    letter-spacing: 0.15em;
-    margin-bottom: var(--space-xs);
-  }
+.talks-flags {
+  font-size: var(--step-0);
+  white-space: normal;
 }
 
 .year-jump {

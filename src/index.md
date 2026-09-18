@@ -1,13 +1,13 @@
 ---
 layout: layout.liquid
-title: Ujjwal Sharma — Developer Advocate
+title: Ujjwal Sharma
 clause: 1
 ---
 
 <header class="title-block">
   <div class="title-text">
     <h1 class="doc-title">Ujjwal Sharma</h1>
-    <p class="doc-subtitle">Developer Relations, Programming Languages and Web Standards at <a href="https://www.igalia.com/">Igalia</a></p>
+    <p class="doc-subtitle">Programming Languages, Web Standards and Open Source Tinkerer</p>
     <ul class="refs" aria-label="Contact and profiles">
       <li><span class="ref-key">[GitHub]</span> <a href="https://github.com/ryzokuken">github.com/ryzokuken</a></li>
       <li><span class="ref-key">[LinkedIn]</span> <a href="https://www.linkedin.com/in/ryzokuken">linkedin.com/in/ryzokuken</a></li>
@@ -44,9 +44,12 @@ clause: 1
 
 <h2 id="roles">Roles</h2>
 
+<p>I work on how JavaScript handles dates, times and languages: Temporal, Intl (ECMA-402) and the next Unicode MessageFormat.</p>
+
 <ol class="steps">
   <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
   <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>
+  <li><a href="https://github.com/tc39/proposal-temporal">Temporal</a> Champion</li>
   <li><a href="/talks/">International Speaker</a></li>
 </ol>
 

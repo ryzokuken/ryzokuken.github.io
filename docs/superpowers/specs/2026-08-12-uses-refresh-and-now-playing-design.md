@@ -1,7 +1,7 @@
 # `/uses` refresh and Now Playing
 
 **Date:** 2026-08-12
-**Status:** Approved, not yet implemented
+**Status:** Implemented (Aug 2026)
 
 ## Problem
 

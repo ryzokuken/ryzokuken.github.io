@@ -9,40 +9,6 @@ clause: 2
 
 [Browse all my slide decks →](/slides/)
 
-{% assign all_flags = "" %}
-{% for year_data in talks %}
-  {% for talk in year_data.talks %}
-    {% if talk.flag and talk.flag != '🌐' %}
-      {% assign all_flags = all_flags | append: talk.flag | append: "," %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-{% assign unique_flags = all_flags | split: "," | uniq | join: "" %}
-<figure class="figure flags-figure">
-  <div id="flags">{{ unique_flags }}</div>
-  <figcaption>Countries visited</figcaption>
-</figure>
-
-## Podcasts
-
-<div class="table-wrap">
-<table class="talk-table podcast-table">
-  <caption>Podcast appearances</caption>
-  <thead>
-    <tr><th scope="col">Date</th><th scope="col">Episode</th><th scope="col">Show</th></tr>
-  </thead>
-  <tbody>
-{%- for podcast in podcasts %}
-    <tr>
-      <td class="cell-date">{{ podcast.date }}</td>
-      <td><a class="talk-title" href="{{ podcast.url }}">{{ podcast.title }}</a></td>
-      <td>{{ podcast.show }}</td>
-    </tr>
-{%- endfor %}
-  </tbody>
-</table>
-</div>
-
 {%- assign has_upcoming = false -%}
 {%- for year_data in talks -%}
   {%- for talk in year_data.talks -%}
@@ -66,7 +32,31 @@ clause: 2
 </div>
 {%- endif %}
 
-## Past Talks
+<h2 id="recorded">Recorded talks</h2>
+
+<div class="table-wrap">
+<table class="talk-table">
+  <caption>Talks with a recording, newest first; each title opens the video</caption>
+  <thead>
+    <tr><th scope="col">Date</th><th scope="col">Talk</th><th scope="col">Place</th></tr>
+  </thead>
+  <tbody>
+{%- for year_data in talks -%}
+{%- for talk in year_data.talks reversed -%}
+{%- if talk.links.video %}
+    <tr>
+      <td class="cell-date">{{ talk.date }}</td>
+      <td><a class="talk-title" href="{{ talk.links.video }}">{{ talk.title }}</a> <span class="talk-event">{{ talk.event }}</span></td>
+      <td class="cell-place">{{ talk.flag }} {{ talk.location }}</td>
+    </tr>
+{%- endif -%}
+{%- endfor -%}
+{%- endfor %}
+  </tbody>
+</table>
+</div>
+
+## Past talks
 
 <nav class="year-jump" aria-label="Jump to year">
   <span class="year-jump-label">Jump to year</span>
@@ -80,3 +70,39 @@ clause: 2
 </nav>
 
 {% include "talks-list.liquid" %}
+
+## Podcasts
+
+<div class="table-wrap">
+<table class="talk-table podcast-table">
+  <caption>Podcast appearances, newest first</caption>
+  <thead>
+    <tr><th scope="col">Date</th><th scope="col">Episode</th><th scope="col">Show</th></tr>
+  </thead>
+  <tbody>
+{%- for podcast in podcasts reversed %}
+    <tr>
+      <td class="cell-date">{{ podcast.date }}</td>
+      <td><a class="talk-title" href="{{ podcast.url }}">{{ podcast.title }}</a></td>
+      <td>{{ podcast.show }}</td>
+    </tr>
+{%- endfor %}
+  </tbody>
+</table>
+</div>
+
+## Countries
+
+{% assign all_flags = "" %}
+{% for year_data in talks %}
+  {% for talk in year_data.talks %}
+    {% if talk.flag and talk.flag != '🌐' %}
+      {% assign all_flags = all_flags | append: talk.flag | append: "," %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_flags = all_flags | split: "," | uniq | join: "" %}
+<figure class="figure flags-figure">
+  <div id="flags">{{ unique_flags }}</div>
+  <figcaption>Countries visited</figcaption>
+</figure>

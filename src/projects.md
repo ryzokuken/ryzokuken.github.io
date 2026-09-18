@@ -14,8 +14,8 @@ clause: 3
     <dd>Status, process, and documents for ECMA-402, the JavaScript Internationalization specification. Co-editor.</dd>
   </div>
   <div class="entry">
-    <dt><a href="https://github.com/tc39/proposal-temporal">tc39/proposal-temporal</a></dt>
-    <dd>Provides standard objects and functions for working with dates and times in JavaScript. Champion.</dd>
+    <dt><a href="https://github.com/tc39/proposal-intl-messageformat">tc39/proposal-intl-messageformat</a></dt>
+    <dd>Brings Unicode MessageFormat to JavaScript as Intl.MessageFormat, for formatting localizable messages. Champion.</dd>
   </div>
   <div class="entry">
     <dt><a href="https://github.com/unicode-org/message-format-wg">Unicode MessageFormat</a></dt>
@@ -30,6 +30,14 @@ clause: 3
 ## Past
 
 <dl class="entries entries--retired">
+  <div class="entry">
+    <dt><a href="https://github.com/tc39/proposal-temporal">tc39/proposal-temporal</a></dt>
+    <dd>Provides standard objects and functions for working with dates and times in JavaScript. Champion.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/tc39/proposal-intl-duration-format">tc39/proposal-intl-duration-format</a></dt>
+    <dd>Adds Intl.DurationFormat for locale-aware formatting of durations such as “1 hr, 40 min”, built to work with Temporal. Champion.</dd>
+  </div>
   <div class="entry">
     <dt><a href="https://github.com/nodejs/node">nodejs/node</a></dt>
     <dd>Node.js JavaScript runtime ✨🐢🚀✨</dd>

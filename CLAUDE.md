@@ -12,7 +12,15 @@ This project uses **pnpm** (see `packageManager` in `package.json` and `pnpm-loc
 - `pnpm build` — build site (Eleventy + LightningCSS minification)
 - `pnpm lint` — markuplint
 - `pnpm test:links` — linkinator on built `_site/`
-- `pnpm test` — full build + lint + link check
+- `pnpm test` — unit tests + build + lint + link check
+
+## Workflow
+
+Commit straight to `main` and push it; this local machine is the work and testing surface. This overrides the global feature-branch-and-PR rule for this repo.
+
+Every push to `main` deploys to GitHub Pages at once — CI runs beside the deploy, not before it — so a green local `pnpm test` is the only gate. Run it before each push, and check visual changes in `pnpm dev`.
+
+From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push origin HEAD:main`.
 
 ## Development rules
 

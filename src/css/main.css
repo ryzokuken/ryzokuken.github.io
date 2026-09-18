@@ -847,8 +847,8 @@ main > :first-child {
 }
 
 .talks-flags {
+  display: block;
   font-size: var(--step-0);
-  white-space: normal;
 }
 
 .year-jump {

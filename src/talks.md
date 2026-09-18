@@ -102,7 +102,7 @@ clause: 2
   {% endfor %}
 {% endfor %}
 {% assign unique_flags = all_flags | split: "," | uniq | join: "" %}
-<figure class="figure flags-figure">
+<figure class="flags-figure">
   <div id="flags">{{ unique_flags }}</div>
   <figcaption>Countries visited</figcaption>
 </figure>

@@ -237,9 +237,6 @@ img {
 }
 
 .toc-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
   margin-bottom: var(--space-lg);
   line-height: 1.25;
 
@@ -251,10 +248,6 @@ img {
     text-decoration: none;
   }
 
-  & span {
-    color: var(--ink-2);
-    font-size: var(--step--1);
-  }
 }
 
 .toc-contents {
@@ -396,7 +389,6 @@ main {
   width: 100%;
   max-width: 62rem;
   padding: var(--space-xl) clamp(var(--space-md), 5vw, var(--space-2xl)) var(--space-lg);
-  counter-reset: figure table;
 }
 
 /* ========================================
@@ -546,22 +538,12 @@ pre {
    Figures & tables
    ======================================== */
 
-.figure {
-  counter-increment: figure;
-}
-
 figcaption,
 caption {
   color: var(--ink-2);
   font-family: var(--font-sans);
   font-size: var(--step--1);
   text-align: left;
-}
-
-.figure figcaption::before {
-  content: "Figure " counter(figure) ": ";
-  color: var(--ink);
-  font-weight: 650;
 }
 
 .table-wrap {
@@ -573,17 +555,10 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-variant-numeric: tabular-nums;
-  counter-increment: table;
 }
 
 caption {
   padding-bottom: var(--space-xs);
-
-  &::before {
-    content: "Table " counter(table) ": ";
-    color: var(--ink);
-    font-weight: 650;
-  }
 }
 
 th,
@@ -733,7 +708,6 @@ main > :first-child {
     aspect-ratio: 1;
     object-fit: cover;
     border: 1px solid var(--rule);
-    margin-bottom: var(--space-xs);
   }
 }
 
@@ -1162,19 +1136,12 @@ main > :first-child {
     border-bottom: 1px solid var(--rule);
   }
 
-  .toc-brand span {
-    display: none;
-  }
-
   .toc-brand {
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--space-xs);
+    display: flex;
+    align-items: center;
     min-height: var(--bar-height);
     margin: 0;
     padding-right: 7rem;
-    align-content: center;
-    flex-wrap: wrap;
     padding-block: var(--space-sm);
   }
 

@@ -15,15 +15,14 @@ clause: 1
       <li><span class="ref-key">[Bluesky]</span> <a href="https://bsky.app/profile/ryzokuken.dev">@ryzokuken.dev</a></li>
       <li><span class="ref-key">[Email]</span> <a href="mailto:usharma1998@gmail.com">usharma1998@gmail.com</a></li>
     </ul>
-    <p class="doc-meta">A Coruña, Galiza · Living Standard, updated <time datetime="{{ build.date | date: "%Y-%m-%d" }}">{{ build.date | date: "%-d %B %Y" }}</time></p>
+    <p class="doc-meta">A Coruña, Galiza</p>
   </div>
-  <figure class="figure portrait">
+  <figure class="portrait">
     <picture>
     <source type="image/avif" srcset="/img/photo-360.avif 1x, /img/photo-540.avif 1.5x, /img/photo-720.avif 2x">
     <source type="image/webp" srcset="/img/photo-360.webp 1x, /img/photo-540.webp 1.5x, /img/photo-720.webp 2x">
     <img src="/photo.jpg" srcset="/photo.jpg 1x, /img/photo-540.jpg 1.5x, /img/photo-720.jpg 2x" alt="Ujjwal Sharma" width="180" height="180" fetchpriority="high" decoding="async">
   </picture>
-    <figcaption>The author</figcaption>
   </figure>
 </header>
 
@@ -76,7 +75,7 @@ clause: 1
 <table class="index-table">
   <caption>Where everything else lives</caption>
   <thead>
-    <tr><th scope="col">Clause</th><th scope="col">Contents</th></tr>
+    <tr><th scope="col">Section</th><th scope="col">Contents</th></tr>
   </thead>
   <tbody>
     <tr><td><a href="/talks/"><span class="toc-num">2</span> Talks</a></td><td>{{ talk_count }} talks since {{ first_year.year }}, {{ podcasts.size }} podcasts{% if next_talk %}, and what is next{% endif %}</td></tr>

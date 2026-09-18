@@ -68,9 +68,9 @@ developer-advocate site could not truthfully make this claim.
   instead of assuming it. Pages like `/uses` state their own editorial rules and keep
   retired entries rather than quietly deleting them.
 - Roles shown as fact: TC39 co-chair, ECMA-402 co-editor, Temporal champion.
-- The current visual identity (monospace, near-black/off-white with TC39 Orange, sharp
-  brutalist borders) is **not binding**. The author is open to a redesign; future
-  visual work may replace it.
+- The visual identity is the understated web-specification look in DESIGN.md: a white
+  sheet, near-black ink, one spec blue, numbered sections and hairline rules. The site
+  borrows that look but never names or labels itself as a spec.
 
 ## Evidence on Hand
 

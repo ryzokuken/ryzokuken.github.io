@@ -4,8 +4,7 @@
 {%- if year_has_past %}
 <h3 id="{{ year_data.year }}">{{ year_data.year }}</h3>
 
-{% assign caption = "Talks given in " | append: year_data.year %}
-{% include "talks-table.liquid", caption: caption %}
+{% include "talks-table.liquid", labelledby: year_data.year %}
 {%- for talk in year_data.talks -%}
 {%- unless talk.upcoming -%}
 {%- include "talk-row.liquid" -%}

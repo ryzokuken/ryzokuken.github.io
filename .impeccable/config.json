@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font-size",
+        "value": "0.75rem",
+        "createdAt": "2026-09-18T22:58:48.175Z",
+        "reason": "Claude: pre-existing 'New' badge size, documented in DESIGN.md Components > Badge (0.75rem)"
+      }
+    ]
+  }
+}

@@ -245,7 +245,7 @@
       },
       "subtitle": {
         "displayName": "Subtitle",
-        "purpose": "h3 sub-clauses such as talk years (--step-1)."
+        "purpose": "Unnumbered h3 sub-headings such as talk years (--step-1)."
       },
       "lede": {
         "displayName": "Lede",
@@ -332,7 +332,7 @@
       "kind": "nav",
       "refersTo": "toc-sidebar",
       "description": "Numbered site clauses; current page blue and bold, current sub-clause blue on blue wash.",
-      "html": "<nav class=\"ds-toc\" aria-label=\"Main navigation\"><p class=\"ds-toc-brand\"><a href=\"#\">ryzokuken.dev</a><span>Living Standard</span></p><ol class=\"ds-toc-list\"><li><a href=\"#\" aria-current=\"page\"><span class=\"ds-num\">1</span>Home</a><ol class=\"ds-toc-sub\"><li><a href=\"#\" aria-current=\"location\"><span class=\"ds-num\">1.1</span>Roles</a></li><li><a href=\"#\"><span class=\"ds-num\">1.2</span>Current activity</a></li></ol></li><li><a href=\"#\"><span class=\"ds-num\">2</span>Talks</a></li><li><a href=\"#\"><span class=\"ds-num\">3</span>Projects</a></li></ol></nav>",
+      "html": "<nav class=\"ds-toc\" aria-label=\"Main navigation\"><p class=\"ds-toc-brand\"><a href=\"#\">ryzokuken.dev</a></p><ol class=\"ds-toc-list\"><li><a href=\"#\" aria-current=\"page\"><span class=\"ds-num\">1</span>Home</a><ol class=\"ds-toc-sub\"><li><a href=\"#\" aria-current=\"location\"><span class=\"ds-num\">1.1</span>Roles</a></li><li><a href=\"#\"><span class=\"ds-num\">1.2</span>Current activity</a></li></ol></li><li><a href=\"#\"><span class=\"ds-num\">2</span>Talks</a></li><li><a href=\"#\"><span class=\"ds-num\">3</span>Projects</a></li></ol></nav>",
       "css": ".ds-toc{width:16.5rem;padding:2rem 1.25rem 1.25rem;background:var(--panel, oklch(95.5% 0.005 260));border-right:1px solid var(--rule, oklch(88% 0.006 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif)}.ds-toc-brand{display:flex;flex-direction:column;margin:0 0 2rem;line-height:1.25}.ds-toc-brand a{color:var(--ink, oklch(22% 0.012 260));font-size:1.0625rem;font-weight:750;text-decoration:none}.ds-toc-brand span{color:var(--ink-2, oklch(46% 0.014 260));font-size:0.875rem}.ds-toc ol{list-style:none;margin:0;padding:0}.ds-toc-list>li>a{display:grid;grid-template-columns:2.1em 1fr;padding:0.3rem 0.5rem;color:var(--ink, oklch(22% 0.012 260));font-size:0.9375rem;font-weight:500;text-decoration:none}.ds-toc-list>li>a:hover{background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc-list>li>a[aria-current=\"page\"]{color:var(--blue, oklch(50% 0.14 250));font-weight:700}.ds-num{color:var(--ink-2, oklch(46% 0.014 260));font-variant-numeric:tabular-nums;font-weight:600}[aria-current]>.ds-num{color:inherit}.ds-toc ol.ds-toc-sub{margin:0.125rem 0 0.5rem 0.5rem}.ds-toc-sub a{display:grid;grid-template-columns:2.6em 1fr;padding:0.2rem 0.5rem;color:var(--ink-2, oklch(46% 0.014 260));font-size:0.875rem;line-height:1.35;text-decoration:none;transition:background-color 0.3s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),color 0.3s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-toc-sub a:hover{color:var(--ink, oklch(22% 0.012 260));background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc-sub a[aria-current=\"location\"]{color:var(--blue, oklch(50% 0.14 250));background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc a:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}"
     },
     {
@@ -388,12 +388,12 @@
     "northStar": "The Living Standard",
     "overview": "The site is set as a living web specification, the way WHATWG and TC39 documents look when you read them in a browser. Every page is a numbered clause, the navigation is the spec's table of contents, and the record (talks, projects, tools) sits in captioned, numbered tables, definition entries and note panels. The person is written up as a standard: roles as numbered steps, current activity in a note, contact links as normative references. It is quiet, dense where the data is dense, and open where the prose runs long.\n\nTwo voices carry the page. Public Sans, a public-sector grotesque, speaks for structure: headings, section numbers, the TOC, captions, table headers, dates and metadata. Source Serif 4 speaks for content: body prose, table cells, entry descriptions, the subtitle. A system monospace appears only inside code. Color is almost absent: near-black ink on white paper (or its dark inversion), a cool gray rule for every line, a pale panel for notes and header rows, and one spec blue that marks links, section numbers and the current clause.\n\nThe world rejects the developer-portfolio arrangement: no hero-then-card-grid, no cards, no shadows, no rounded corners. Depth and grouping come from hairline rules, the panel tint and numbering, never from lift.",
     "keyCharacteristics": [
-      "Pages are numbered clauses; h2 and h3 carry blue, linkable section numbers generated at build time.",
+      "Pages are numbered sections; h1 and h2 carry blue section numbers (h2 numbers are permalinks) generated at build time. h3s are never numbered.",
       "Sticky table-of-contents sidebar on wide screens, a \"Contents\" disclosure bar on narrow ones.",
       "Sans for structure, serif for content, mono for code only.",
       "One accent (spec blue); everything else is ink, secondary ink, rule and panel.",
       "1px hairline rules everywhere; zero radius; zero shadow.",
-      "Tables and figures are captioned and auto-numbered (\"Table 1:\", \"Figure 1:\").",
+      "Tables and figures carry plain sans captions, never auto-numbered.",
       "Full light and dark sets, switchable by preference or an explicit Auto/Light/Dark control."
     ],
     "rules": [
@@ -429,7 +429,7 @@
       },
       {
         "name": "The Clause Rule",
-        "body": "Structure is numbered, not decorated. A page gets a clause number in front matter (`clause:`) and the build numbers its h2/h3, makes each number a permalink, and writes the page's sub-TOC. New pages join the TOC numbering rather than inventing their own navigation.",
+        "body": "Structure is numbered, not decorated. A page gets a clause number in front matter (`clause:`) and the build numbers its h2s, makes each number a permalink, and writes the page's sub-TOC. h3s and data-unnumbered h2s get ids but no number. New pages join the TOC numbering rather than inventing their own navigation.",
         "section": "layout"
       },
       {

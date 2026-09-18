@@ -152,12 +152,13 @@ Two voices carry the page. Public Sans, a public-sector grotesque, speaks for st
 The world rejects the developer-portfolio arrangement: no hero-then-card-grid, no cards, no shadows, no rounded corners. Depth and grouping come from hairline rules, the panel tint and numbering, never from lift.
 
 **Key Characteristics:**
-- Pages are numbered clauses; h2 and h3 carry blue, linkable section numbers generated at build time.
+- Pages are numbered sections; h1 and h2 carry blue section numbers (h2 numbers are permalinks) generated at build time. h3s are never numbered.
 - Sticky table-of-contents sidebar on wide screens, a "Contents" disclosure bar on narrow ones.
 - Sans for structure, serif for content, mono for code only.
 - One accent (spec blue); everything else is ink, secondary ink, rule and panel.
 - 1px hairline rules everywhere; zero radius; zero shadow.
-- Tables and figures are captioned and auto-numbered ("Table 1:", "Figure 1:").
+- Tables and figures carry plain sans captions, never auto-numbered.
+- The metaphor is never named on the page: no "Living Standard", "Clause" or "Figure N" in the visible text.
 - Full light and dark sets, switchable by preference or an explicit Auto/Light/Dark control.
 
 ## Colors
@@ -169,7 +170,7 @@ A near-monochrome cool-neutral palette with a single desaturated spec blue; the 
 - **Blue Wash** (`blue-wash`; `blue-wash-dark`): the tint behind interactive and highlighted states. TOC hover, the current sub-clause in the TOC, year-jump hover, the badge ground, and the fading flash on a heading reached by its anchor.
 
 ### Neutral
-- **Ink** (`ink`; `ink-dark`): headings, body text, figure and table caption prefixes, Mermaid node strokes.
+- **Ink** (`ink`; `ink-dark`): headings, body text, Mermaid node strokes.
 - **Secondary Ink** (`ink-secondary`; `ink-secondary-dark`): metadata of every kind. TOC numbers, dates, captions, list markers, step numbers, venues, excerpts, the colophon, retired entries, reference keys.
 - **Rule** (`rule`; `rule-dark`): every line in the system. Table borders, h2 top rules, entry and record dividers, the TOC edge, panel and image borders, unpressed buttons, the scrollbar thumb.
 - **Paper** (`paper`; `paper-dark`): the page ground and the fill of buttons and Mermaid nodes.
@@ -195,7 +196,7 @@ A near-monochrome cool-neutral palette with a single desaturated spec blue; the 
 - **Display** (800, `--step-4` clamp 2.75–4.5rem, 0.95, -0.035em): the name in the home title block only.
 - **Headline** (800, `--step-3` clamp 2.25–3rem, 1.1, -0.015em): the page h1 on every other page, prefixed with the page's clause number; post titles cap at 22ch.
 - **Title** (700, `--step-2` 1.75rem, 1.2, -0.015em): h2 clauses, set under a 1px top rule with the blue number before them. Blog index entries drop to `--step-1`.
-- **Subtitle** (700, `--step-1` 1.375rem, 1.3): h3 sub-clauses, such as the year headings on Talks.
+- **Subtitle** (700, `--step-1` 1.375rem, 1.3): unnumbered h3 sub-headings, such as the year headings on Talks.
 - **Lede** (serif 400, `--step-1`, 1.4): the home subtitle under the name.
 - **Body** (serif 400, `--step-0` 1.125rem, 1.65): prose, capped at a 68ch measure for paragraphs, list items, blockquotes and entry descriptions.
 - **Body Compact** (serif 400, 1rem, 1.5–1.55): table cells, entry descriptions, note text.
@@ -216,16 +217,18 @@ The page is a two-column sheet: a 16.5rem table-of-contents column and a documen
 
 Vertical rhythm comes from the seven-step space scale (2xs 0.25rem to 2xl 5rem). Clauses are separated generously (h2 has 5rem above, 1.25rem below), paragraphs by 1.25rem, and list items by 0.25rem. Records and entries use a two-column grid, label left (11rem for records and the index table, 14rem for entries), content right, divided by hairline rules with 0.75rem of vertical padding.
 
-The home title block is a grid of text and a captioned portrait figure (11.25rem square) aligned to the baseline end. Contact references flow in an auto-fill grid of 15rem-minimum columns.
+The home title block is a grid of text and an uncaptioned portrait (11.25rem square) aligned to the baseline end. Contact references flow in an auto-fill grid of 15rem-minimum columns.
 
 Responsive behavior:
 - **Below 64rem:** the sidebar becomes a top bar (3.25rem minimum) with the brand on the left and a bordered "Contents" disclosure button with a CSS-drawn chevron on the right; the TOC and theme control open beneath it and close on link activation. Heading scroll margins grow to clear the bar.
 - **Below 48rem:** the title block stacks with the portrait first (7.5rem), records and entries collapse to one column, h2 top margins drop to 3rem, and talk tables become stacked records: header row visually hidden, title across the full width, date and place beneath, links on their own line, one rule per record, no horizontal scroll.
 
 ### Named Rules
-**The Clause Rule.** Structure is numbered, not decorated. A page gets a clause number in front matter (`clause:`) and the build numbers its h2/h3, makes each number a permalink, and writes the page's sub-TOC. New pages join the TOC numbering rather than inventing their own navigation.
+**The Clause Rule.** Structure is numbered, not decorated. A page gets a clause number in front matter (`clause:`) and the build numbers its h2s, makes each number a permalink, and writes the page's sub-TOC. h3s get ids but no number. An h2 marked `data-unnumbered` (post titles on the blog and tag lists) is skipped, so publishing a post never renumbers the others. New pages join the TOC numbering rather than inventing their own navigation.
 
 **The Measure Rule.** Reading text stops at 68ch no matter how wide the column is.
+
+**The Understatement Rule.** The spec look is carried by structure (TOC, section numbers, rules, tables, notes), never by naming itself. Visible text avoids spec jargon: no "Living Standard" tagline, no "Clause" labels, no "Table N:" or "Figure N:" prefixes, no numbering deeper than h2.
 
 ## Elevation & Depth
 
@@ -263,19 +266,19 @@ The system has no cards. Its containers are:
 There are no form fields. Native controls inherit `accent-color` and `caret-color` from spec blue.
 
 ### Navigation
-- **TOC sidebar:** brand ("ryzokuken.dev", bold sans) over a secondary-ink "Living Standard" line, then an ordered list of the five site clauses, each a two-column grid of tabular number and name at UI size. The current page is spec blue and bold. Hover fills blue wash.
+- **TOC sidebar:** brand ("ryzokuken.dev", bold sans), then an ordered list of the five site clauses, each a two-column grid of tabular number and name at UI size. The current page is spec blue and bold. Hover fills blue wash.
 - **Sub-TOC:** the current page's h2 clauses nest beneath it at label size in secondary ink, numbered (1.1, 1.2...). Scroll-spy marks the clause whose heading has passed 30% of the viewport with `aria-current="location"`: blue text on blue wash. Blog posts nest their own title and its clauses.
 - **Mobile:** the Contents disclosure described in Layout.
 - **Links:** spec blue with a 1px underline at 45% blue, offset 0.2em; the underline goes solid on hover (0.2s).
 
 ### Numbered tables
-The signature container of the record. Full-width, collapsed 1px rule grid, tabular numbers, header row in panel with sans labels, cells in compact serif. Every table carries a caption auto-prefixed "Table N:" in bold ink, and figures likewise get "Figure N:". Talk rows put the date in a narrow sans column, the title in semibold over an italic secondary-ink event line, the place with its flag, and links as a small sans inline list. A talk that was not delivered carries a blue superscript asterisk, explained by a secondary-ink table note beneath the table.
+The signature container of the record. Full-width, collapsed 1px rule grid, tabular numbers, header row in panel with sans labels, cells in compact serif. Every table carries a plain secondary-ink sans caption; nothing is auto-numbered. Talk rows put the date in a narrow sans column, the title in semibold over an italic secondary-ink event line, the place with its flag, and links as a small sans inline list. A talk that was not delivered carries a blue superscript asterisk, explained by a secondary-ink table note beneath the table.
 
 ### Definition entries
 Used on Projects and Uses: a rule-divided list of name (sans 650, left, 14rem) and description (serif, right), with a note panel as the section blurb. Retired entries set the name in secondary ink.
 
 ### Title block and references
-The home page opens like a spec's front matter: the name at display size, a serif lede, a grid of references each led by a bracketed secondary-ink key ("[GitHub]"), a meta line with place and the "Living Standard, updated <date>" status, and a captioned portrait figure.
+The home page opens like a spec's front matter: the name at display size, a serif lede, a grid of references each led by a bracketed secondary-ink key ("[GitHub]"), a meta line with the place, and the portrait without a caption.
 
 ### Steps
 Ordered lists set like a spec algorithm: counters in secondary-ink sans with tabular numbers ("1."), hanging in a 2rem gutter.

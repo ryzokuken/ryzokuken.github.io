@@ -96,7 +96,7 @@ clause: 2
 {% assign all_flags = "" %}
 {% for year_data in talks %}
   {% for talk in year_data.talks %}
-    {% if talk.flag and talk.flag != '🌐' %}
+    {% if talk.flag and talk.flag != '🌐' and talk.location != 'Online' %}
       {% assign all_flags = all_flags | append: talk.flag | append: "," %}
     {% endif %}
   {% endfor %}

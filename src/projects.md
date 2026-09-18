@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-title: Ryzokuken's Projects
+title: Ujjwal's Projects
 clause: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-title: Ryzokuken's Talks
+title: Ujjwal's Talks
 flags: true
 clause: 2
 ---

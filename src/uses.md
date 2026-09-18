@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-title: Ryzokuken Uses
+title: Ujjwal Uses
 clause: 5
 ---
 

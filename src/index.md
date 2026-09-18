@@ -44,8 +44,6 @@ clause: 1
 
 <h2 id="roles">Roles</h2>
 
-<p>I work on how JavaScript handles languages: Intl (ECMA-402), Intl.MessageFormat and the next Unicode MessageFormat. Before that, I worked on dates and times with Temporal and Intl.DurationFormat.</p>
-
 <ol class="steps">
   <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>
   <li><a href="https://github.com/tc39/proposal-intl-messageformat">Intl.MessageFormat</a> Champion</li>
@@ -55,7 +53,7 @@ clause: 1
 <h2 id="past-roles">Past roles</h2>
 
 <ol class="steps">
-  <li><a href="https://www.igalia.com/">Igalia</a> Developer Advocate</li>
+  <li><a href="https://www.igalia.com/">Igalia</a> Compilers Hacker and Developer Advocate</li>
   <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
   <li><a href="https://github.com/tc39/proposal-temporal">Temporal</a> and <a href="https://github.com/tc39/proposal-intl-duration-format">Intl.DurationFormat</a> Champion</li>
   <li><a href="https://nodejs.org/">Node.js</a> Core Contributor</li>

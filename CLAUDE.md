@@ -61,7 +61,7 @@ From a `.claude/worktrees/` session, rebase onto `origin/main`, then `git push o
 
 ### Aesthetic
 
-`DESIGN.md` documents the current system ("The Plenary Record": JetBrains Mono only, warm black and bone with one TC39 Orange accent, square corners, 2–4px borders) and is the authority for visual decisions. The identity is open to a redesign; a redesign replaces `DESIGN.md` rather than patching it. `DESIGN.md` also lists known gaps (contrast, missing code styles) to address.
+`DESIGN.md` is the authority for visual decisions. The site is "The Living Standard": each page is a numbered clause of a specification, with a sticky table of contents, captioned tables, note panels, and references. Headings use Public Sans, prose uses Source Serif 4, and code uses the system mono. The palette is a white sheet, near-black ink and one spec blue, with 1px rules and no cards, shadows or radius. `lib/clauses.js` numbers headings at build time for any page that sets `clause` in front matter.
 
 ### Emoji
 

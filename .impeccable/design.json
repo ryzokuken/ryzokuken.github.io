@@ -1,196 +1,469 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-18T00:00:00Z",
+  "generatedAt": "2026-09-18T22:00:22.496Z",
   "title": "Design System: ryzokuken.dev",
   "extensions": {
     "colorMeta": {
-      "tc39-orange": {
+      "spec-blue": {
         "role": "primary",
-        "displayName": "TC39 Orange",
-        "canonical": "#fc7c00",
+        "displayName": "Spec Blue",
+        "canonical": "oklch(50% 0.14 250)",
         "tonalRamp": [
-          "oklch(25% 0.08 55)",
-          "oklch(35% 0.11 55)",
-          "oklch(45% 0.14 55)",
-          "oklch(55% 0.16 55)",
-          "oklch(65% 0.18 55)",
-          "oklch(72% 0.18 55)",
-          "oklch(84% 0.10 55)",
-          "oklch(95% 0.04 55)"
+          "oklch(15% 0.14 250)",
+          "oklch(25% 0.14 250)",
+          "oklch(36% 0.14 250)",
+          "oklch(47% 0.14 250)",
+          "oklch(58% 0.14 250)",
+          "oklch(70% 0.14 250)",
+          "oklch(82% 0.14 250)",
+          "oklch(95% 0.14 250)"
         ]
       },
-      "bone": {
-        "role": "neutral",
-        "displayName": "Bone",
-        "canonical": "oklch(98% 0.008 70)",
+      "blue-wash": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "canonical": "oklch(95.5% 0.025 250)",
         "tonalRamp": [
-          "oklch(15% 0.008 70)",
-          "oklch(27% 0.008 70)",
-          "oklch(40% 0.008 70)",
-          "oklch(52% 0.008 70)",
-          "oklch(65% 0.008 70)",
-          "oklch(77% 0.008 70)",
-          "oklch(88% 0.008 70)",
-          "oklch(98% 0.008 70)"
+          "oklch(15% 0.025 250)",
+          "oklch(25% 0.025 250)",
+          "oklch(36% 0.025 250)",
+          "oklch(47% 0.025 250)",
+          "oklch(58% 0.025 250)",
+          "oklch(70% 0.025 250)",
+          "oklch(82% 0.025 250)",
+          "oklch(95% 0.025 250)"
         ]
       },
-      "terminal-black": {
+      "ink": {
         "role": "neutral",
-        "displayName": "Terminal Black",
-        "canonical": "oklch(12% 0.015 50)",
+        "displayName": "Ink",
+        "canonical": "oklch(22% 0.012 260)",
         "tonalRamp": [
-          "oklch(12% 0.015 50)",
-          "oklch(24% 0.015 50)",
-          "oklch(36% 0.015 50)",
-          "oklch(48% 0.015 50)",
-          "oklch(60% 0.015 50)",
-          "oklch(72% 0.015 50)",
-          "oklch(84% 0.015 50)",
-          "oklch(95% 0.015 50)"
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.012 260)",
+          "oklch(36% 0.012 260)",
+          "oklch(47% 0.012 260)",
+          "oklch(58% 0.012 260)",
+          "oklch(70% 0.012 260)",
+          "oklch(82% 0.012 260)",
+          "oklch(95% 0.012 260)"
         ]
       },
       "ink-secondary": {
         "role": "neutral",
-        "displayName": "Ink Secondary",
-        "canonical": "color-mix(in oklch, var(--text) 75%, var(--bg))"
+        "displayName": "Secondary Ink",
+        "canonical": "oklch(46% 0.014 260)",
+        "tonalRamp": [
+          "oklch(15% 0.014 260)",
+          "oklch(25% 0.014 260)",
+          "oklch(36% 0.014 260)",
+          "oklch(47% 0.014 260)",
+          "oklch(58% 0.014 260)",
+          "oklch(70% 0.014 260)",
+          "oklch(82% 0.014 260)",
+          "oklch(95% 0.014 260)"
+        ]
       },
-      "bone-night": {
+      "rule": {
         "role": "neutral",
-        "displayName": "Bone Night",
-        "canonical": "oklch(96% 0.008 70)"
+        "displayName": "Rule",
+        "canonical": "oklch(88% 0.006 260)",
+        "tonalRamp": [
+          "oklch(15% 0.006 260)",
+          "oklch(25% 0.006 260)",
+          "oklch(36% 0.006 260)",
+          "oklch(47% 0.006 260)",
+          "oklch(58% 0.006 260)",
+          "oklch(70% 0.006 260)",
+          "oklch(82% 0.006 260)",
+          "oklch(95% 0.006 260)"
+        ]
       },
-      "terminal-black-night": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Terminal Black Night",
-        "canonical": "oklch(10% 0.015 50)"
+        "displayName": "Paper",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(36% 0 0)",
+          "oklch(47% 0 0)",
+          "oklch(58% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(82% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "oklch(95.5% 0.005 260)",
+        "tonalRamp": [
+          "oklch(15% 0.005 260)",
+          "oklch(25% 0.005 260)",
+          "oklch(36% 0.005 260)",
+          "oklch(47% 0.005 260)",
+          "oklch(58% 0.005 260)",
+          "oklch(70% 0.005 260)",
+          "oklch(82% 0.005 260)",
+          "oklch(95% 0.005 260)"
+        ]
+      },
+      "code-bg": {
+        "role": "neutral",
+        "displayName": "Code Ground",
+        "canonical": "oklch(96.5% 0.004 260)",
+        "tonalRamp": [
+          "oklch(15% 0.004 260)",
+          "oklch(25% 0.004 260)",
+          "oklch(36% 0.004 260)",
+          "oklch(47% 0.004 260)",
+          "oklch(58% 0.004 260)",
+          "oklch(70% 0.004 260)",
+          "oklch(82% 0.004 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      },
+      "spec-blue-dark": {
+        "role": "primary",
+        "displayName": "Spec Blue (dark set)",
+        "canonical": "oklch(78% 0.1 250)",
+        "tonalRamp": [
+          "oklch(15% 0.1 250)",
+          "oklch(25% 0.1 250)",
+          "oklch(36% 0.1 250)",
+          "oklch(47% 0.1 250)",
+          "oklch(58% 0.1 250)",
+          "oklch(70% 0.1 250)",
+          "oklch(82% 0.1 250)",
+          "oklch(95% 0.1 250)"
+        ]
+      },
+      "blue-wash-dark": {
+        "role": "primary",
+        "displayName": "Blue Wash (dark set)",
+        "canonical": "oklch(27% 0.045 250)",
+        "tonalRamp": [
+          "oklch(15% 0.045 250)",
+          "oklch(25% 0.045 250)",
+          "oklch(36% 0.045 250)",
+          "oklch(47% 0.045 250)",
+          "oklch(58% 0.045 250)",
+          "oklch(70% 0.045 250)",
+          "oklch(82% 0.045 250)",
+          "oklch(95% 0.045 250)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark set)",
+        "canonical": "oklch(93% 0.006 260)",
+        "tonalRamp": [
+          "oklch(15% 0.006 260)",
+          "oklch(25% 0.006 260)",
+          "oklch(36% 0.006 260)",
+          "oklch(47% 0.006 260)",
+          "oklch(58% 0.006 260)",
+          "oklch(70% 0.006 260)",
+          "oklch(82% 0.006 260)",
+          "oklch(95% 0.006 260)"
+        ]
+      },
+      "ink-secondary-dark": {
+        "role": "neutral",
+        "displayName": "Secondary Ink (dark set)",
+        "canonical": "oklch(74% 0.012 260)",
+        "tonalRamp": [
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.012 260)",
+          "oklch(36% 0.012 260)",
+          "oklch(47% 0.012 260)",
+          "oklch(58% 0.012 260)",
+          "oklch(70% 0.012 260)",
+          "oklch(82% 0.012 260)",
+          "oklch(95% 0.012 260)"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Rule (dark set)",
+        "canonical": "oklch(33% 0.012 260)",
+        "tonalRamp": [
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.012 260)",
+          "oklch(36% 0.012 260)",
+          "oklch(47% 0.012 260)",
+          "oklch(58% 0.012 260)",
+          "oklch(70% 0.012 260)",
+          "oklch(82% 0.012 260)",
+          "oklch(95% 0.012 260)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Paper (dark set)",
+        "canonical": "oklch(18% 0.012 260)",
+        "tonalRamp": [
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.012 260)",
+          "oklch(36% 0.012 260)",
+          "oklch(47% 0.012 260)",
+          "oklch(58% 0.012 260)",
+          "oklch(70% 0.012 260)",
+          "oklch(82% 0.012 260)",
+          "oklch(95% 0.012 260)"
+        ]
+      },
+      "panel-dark": {
+        "role": "neutral",
+        "displayName": "Panel (dark set; also code ground)",
+        "canonical": "oklch(22.5% 0.012 260)",
+        "tonalRamp": [
+          "oklch(15% 0.012 260)",
+          "oklch(25% 0.012 260)",
+          "oklch(36% 0.012 260)",
+          "oklch(47% 0.012 260)",
+          "oklch(58% 0.012 260)",
+          "oklch(70% 0.012 260)",
+          "oklch(82% 0.012 260)",
+          "oklch(95% 0.012 260)"
+        ]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Home hero name only; uppercase, prefixed with an orange >." },
-      "headline": { "displayName": "Headline", "purpose": "Page h1; uppercase." },
-      "title": { "displayName": "Title", "purpose": "Section h2 with a fit-content 2px underline rule." },
-      "subtitle": { "displayName": "Subtitle", "purpose": "h3; year headings on the talks page." },
-      "body": { "displayName": "Body", "purpose": "Paragraphs and list items in ink-secondary; posts cap at 75ch." },
-      "body-small": { "displayName": "Body Small", "purpose": "Card descriptions, talk and blog meta." },
-      "label": { "displayName": "Label", "purpose": "// comment labels, link chips, year-jump and switcher controls." },
-      "badge": { "displayName": "Badge", "purpose": "The uses 'new' badge only; uppercase." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the home title block only (--step-4)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page h1, prefixed with the page clause number (--step-3)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h2 clauses under a 1px top rule, blue section number first (--step-2)."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "h3 sub-clauses such as talk years (--step-1)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Serif subtitle under the name on the home page (--step-1)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Serif prose at a 68ch measure (--step-0)."
+      },
+      "body-compact": {
+        "displayName": "Body Compact",
+        "purpose": "Table cells, entry descriptions, note text."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "TOC page links, references, table date cells, code blocks."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table headers, captions, metadata, TOC sub-clauses, theme control (--step--1). Sentence case."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "System monospace, code only."
+      }
     },
-    "shadows": [
-      { "name": "offset-accent", "value": "4px 4px 0 var(--accent)", "purpose": "Generic card hover, paired with translate(-4px, -4px)." },
-      { "name": "offset-ink", "value": "4px 4px 0 var(--text)", "purpose": "Talk and podcast card hover, paired with translate(-4px, -4px)." }
-    ],
+    "shadows": [],
     "motion": [
-      { "name": "chip-invert", "value": "all 0.1s ease", "purpose": "Link-chip and year-jump inversion on hover." },
-      { "name": "card-lift", "value": "all 0.2s ease", "purpose": "Card lift and stamp shadow on hover." },
-      { "name": "link-thicken", "value": "text-decoration-thickness 0.1s ease", "purpose": "Underline grows from 2px to 4px on hover." },
-      { "name": "image-reveal", "value": "filter 0.3s ease", "purpose": "Grayscale image to color on hover." },
-      { "name": "now-playing-bar", "value": "900ms ease-in-out infinite, 150ms stagger", "purpose": "Equalizer bars; static under reduced motion." }
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing curve, for every transition."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.2s",
+        "purpose": "Link underline, button background and border changes."
+      },
+      {
+        "name": "state-toc",
+        "value": "0.3s",
+        "purpose": "TOC sub-clause color and background as scroll-spy moves."
+      },
+      {
+        "name": "chevron",
+        "value": "0.25s",
+        "purpose": "Mobile Contents disclosure chevron rotation."
+      },
+      {
+        "name": "clause-target",
+        "value": "2.4s",
+        "purpose": "Blue-wash flash fading off a heading reached by its anchor."
+      },
+      {
+        "name": "now-playing-bar",
+        "value": "900ms ease-in-out infinite",
+        "purpose": "Three staggered bars (150ms offsets) on the now-playing label; static under reduced motion."
+      }
     ],
     "breakpoints": [
-      { "name": "nav-tiny", "value": "320px" },
-      { "name": "nav-two-col", "value": "420px" },
-      { "name": "pair-grid", "value": "600px" },
-      { "name": "mobile", "value": "640px" },
-      { "name": "nav-tight", "value": "820px" }
+      {
+        "name": "sidebar",
+        "value": "64rem",
+        "purpose": "At and above: sticky TOC sidebar. Below: top bar with Contents disclosure."
+      },
+      {
+        "name": "stack",
+        "value": "48rem",
+        "purpose": "Below: title block, records and entries stack; talk tables become stacked records."
+      }
     ]
   },
   "components": [
     {
-      "name": "Card",
-      "kind": "card",
-      "refersTo": "card",
-      "description": "Ruled entry for projects, uses and blog posts; lifts with an orange stamp shadow on hover.",
-      "html": "<div class=\"ds-card\"><strong><a class=\"ds-link\" href=\"#\">tc39/proposal-temporal</a></strong><p>Standard objects and functions for working with dates and times in JavaScript. Champion.</p></div>",
-      "css": ".ds-card { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); border-radius: 0; padding: 1rem 2rem; max-width: 22rem; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-card:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--accent, #fc7c00); } .ds-card strong { font-size: 1.25rem; font-weight: 700; } .ds-card p { font-size: 0.875rem; margin: 0.5rem 0 0; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-link { color: inherit; text-decoration: underline; text-decoration-color: var(--accent, #fc7c00); text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-link:hover { text-decoration-thickness: 4px; } .ds-link:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
-    },
-    {
-      "name": "Talk Card",
-      "kind": "card",
-      "refersTo": "talk-card",
-      "description": "Talk or podcast entry: title, @ event, flag + place + date, link chips pinned to the bottom.",
-      "html": "<div class=\"ds-talk\"><div class=\"ds-talk-title\">Nobody asks \"How is JavaScript?\"</div><div class=\"ds-talk-event\">FOSDEM (JavaScript Devroom)</div><div class=\"ds-talk-meta\">🇧🇪 Brussels, BE · Feb 2025</div><div class=\"ds-talk-links\"><a href=\"#\">conf</a><a href=\"#\">video</a></div></div>",
-      "css": ".ds-talk { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); padding: 1rem 2rem; max-width: 24rem; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-talk:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--text, oklch(12% 0.015 50)); } .ds-talk-title { font-weight: 800; font-size: 1.25rem; line-height: 1.3; margin-bottom: 0.5rem; } .ds-talk-event { font-weight: 700; margin-bottom: 0.25rem; } .ds-talk-event::before { content: '@ '; } .ds-talk-meta { font-size: 0.875rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); margin-bottom: 1rem; } .ds-talk-links { display: flex; flex-wrap: wrap; gap: 0.5rem; } .ds-talk-links a { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border: 2px solid var(--text, oklch(12% 0.015 50)); color: var(--text, oklch(12% 0.015 50)); text-decoration: none; transition: all 0.1s ease; } .ds-talk-links a:hover { background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-talk-links a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
-    },
-    {
-      "name": "Podcast Card",
-      "kind": "card",
-      "refersTo": "talk-card",
-      "description": "Talk card variant with a 4px orange left edge.",
-      "html": "<div class=\"ds-pod\"><div class=\"ds-pod-title\"><a href=\"#\">TC39 and Multicore JavaScript</a></div><div class=\"ds-pod-event\">PodRocket</div><div class=\"ds-pod-meta\">🎙️ 2022</div></div>",
-      "css": ".ds-pod { font-family: var(--font-mono, 'JetBrains Mono', monospace); background: var(--bg, oklch(98% 0.008 70)); color: var(--text, oklch(12% 0.015 50)); border: 2px solid var(--text, oklch(12% 0.015 50)); border-left: 4px solid var(--accent, #fc7c00); padding: 1rem 2rem; max-width: 24rem; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-pod:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--text, oklch(12% 0.015 50)); } .ds-pod-title { font-weight: 800; font-size: 1.25rem; line-height: 1.3; margin-bottom: 0.5rem; } .ds-pod-title a { color: inherit; text-decoration: none; } .ds-pod-title a:hover { text-decoration: underline; text-decoration-color: var(--accent, #fc7c00); text-decoration-thickness: 4px; } .ds-pod-event { font-weight: 700; } .ds-pod-event::before { content: '@ '; } .ds-pod-meta { font-size: 0.875rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); }"
-    },
-    {
-      "name": "Link Chip",
+      "name": "Theme Control",
       "kind": "button",
-      "refersTo": "chip",
-      "description": "The system's only action control: bordered, uppercase, inverts on hover.",
-      "html": "<a class=\"ds-chip\" href=\"#\">slides</a>",
-      "css": ".ds-chip { display: inline-block; font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border: 2px solid var(--text, oklch(12% 0.015 50)); border-radius: 0; color: var(--text, oklch(12% 0.015 50)); background: transparent; text-decoration: none; transition: all 0.1s ease; } .ds-chip:hover { background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-chip:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+      "refersTo": "theme-button",
+      "description": "Auto/Light/Dark control at the foot of the TOC; the pressed option fills spec blue.",
+      "html": "<div class=\"ds-theme\" role=\"group\" aria-label=\"Color theme\"><span class=\"ds-theme-label\">Theme</span><button type=\"button\" aria-pressed=\"true\">Auto</button><button type=\"button\" aria-pressed=\"false\">Light</button><button type=\"button\" aria-pressed=\"false\">Dark</button></div>",
+      "css": ".ds-theme{display:flex;align-items:center;gap:0.25rem;font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem}.ds-theme-label{margin-right:0.25rem;color:var(--ink-2, oklch(46% 0.014 260))}.ds-theme button{padding:0.2rem 0.5rem;border:1px solid var(--rule, oklch(88% 0.006 260));border-radius:0;background:var(--paper, oklch(100% 0 0));color:var(--ink, oklch(22% 0.012 260));font:inherit;cursor:pointer;transition:background-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),border-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-theme button:hover{border-color:var(--blue, oklch(50% 0.14 250))}.ds-theme button:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}.ds-theme button[aria-pressed=\"true\"]{background:var(--blue, oklch(50% 0.14 250));border-color:var(--blue, oklch(50% 0.14 250));color:var(--paper, oklch(100% 0 0))}"
     },
     {
-      "name": "Navigation",
+      "name": "Table of Contents",
       "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Sticky bar of bold lowercase links; the current page gets orange brackets.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\">home</a><a href=\"#\" aria-current=\"page\">talks</a><a href=\"#\">projects</a><a href=\"#\">blog</a><a href=\"#\">uses</a></nav>",
-      "css": ".ds-nav { display: flex; justify-content: center; gap: 2rem; height: 4rem; align-items: center; background: var(--bg, oklch(98% 0.008 70)); border-bottom: 2px solid var(--text, oklch(12% 0.015 50)); font-family: var(--font-mono, 'JetBrains Mono', monospace); } .ds-nav a { font-size: 1.25rem; font-weight: 700; text-transform: lowercase; text-decoration: none; color: var(--text, oklch(12% 0.015 50)); padding: 0.25rem 0.5rem; } .ds-nav a::before, .ds-nav a::after { opacity: 0; color: var(--accent, #fc7c00); transition: opacity 0.2s ease; } .ds-nav a::before { content: '['; margin-right: 2px; } .ds-nav a::after { content: ']'; margin-left: 2px; } .ds-nav a:hover::before, .ds-nav a:hover::after, .ds-nav a[aria-current='page']::before, .ds-nav a[aria-current='page']::after { opacity: 1; } .ds-nav a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+      "refersTo": "toc-sidebar",
+      "description": "Numbered site clauses; current page blue and bold, current sub-clause blue on blue wash.",
+      "html": "<nav class=\"ds-toc\" aria-label=\"Main navigation\"><p class=\"ds-toc-brand\"><a href=\"#\">ryzokuken.dev</a><span>Living Standard</span></p><ol class=\"ds-toc-list\"><li><a href=\"#\" aria-current=\"page\"><span class=\"ds-num\">1</span>Home</a><ol class=\"ds-toc-sub\"><li><a href=\"#\" aria-current=\"location\"><span class=\"ds-num\">1.1</span>Roles</a></li><li><a href=\"#\"><span class=\"ds-num\">1.2</span>Current activity</a></li></ol></li><li><a href=\"#\"><span class=\"ds-num\">2</span>Talks</a></li><li><a href=\"#\"><span class=\"ds-num\">3</span>Projects</a></li></ol></nav>",
+      "css": ".ds-toc{width:16.5rem;padding:2rem 1.25rem 1.25rem;background:var(--panel, oklch(95.5% 0.005 260));border-right:1px solid var(--rule, oklch(88% 0.006 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif)}.ds-toc-brand{display:flex;flex-direction:column;margin:0 0 2rem;line-height:1.25}.ds-toc-brand a{color:var(--ink, oklch(22% 0.012 260));font-size:1.0625rem;font-weight:750;text-decoration:none}.ds-toc-brand span{color:var(--ink-2, oklch(46% 0.014 260));font-size:0.875rem}.ds-toc ol{list-style:none;margin:0;padding:0}.ds-toc-list>li>a{display:grid;grid-template-columns:2.1em 1fr;padding:0.3rem 0.5rem;color:var(--ink, oklch(22% 0.012 260));font-size:0.9375rem;font-weight:500;text-decoration:none}.ds-toc-list>li>a:hover{background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc-list>li>a[aria-current=\"page\"]{color:var(--blue, oklch(50% 0.14 250));font-weight:700}.ds-num{color:var(--ink-2, oklch(46% 0.014 260));font-variant-numeric:tabular-nums;font-weight:600}[aria-current]>.ds-num{color:inherit}.ds-toc ol.ds-toc-sub{margin:0.125rem 0 0.5rem 0.5rem}.ds-toc-sub a{display:grid;grid-template-columns:2.6em 1fr;padding:0.2rem 0.5rem;color:var(--ink-2, oklch(46% 0.014 260));font-size:0.875rem;line-height:1.35;text-decoration:none;transition:background-color 0.3s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)),color 0.3s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-toc-sub a:hover{color:var(--ink, oklch(22% 0.012 260));background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc-sub a[aria-current=\"location\"]{color:var(--blue, oklch(50% 0.14 250));background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-toc a:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}"
     },
     {
-      "name": "Uses Badge",
+      "name": "Clause Heading",
+      "kind": "custom",
+      "refersTo": "title",
+      "description": "h2 clause under a hairline, led by a blue tabular section number that is its own permalink.",
+      "html": "<h2 class=\"ds-clause\"><a class=\"ds-secnum\" href=\"#roles\">1.1</a> Roles</h2>",
+      "css": ".ds-clause{margin:0;padding-top:1.25rem;border-top:1px solid var(--rule, oklch(88% 0.006 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:1.75rem;font-weight:700;line-height:1.2;letter-spacing:-0.015em;color:var(--ink, oklch(22% 0.012 260))}.ds-secnum{margin-right:0.35em;color:var(--blue, oklch(50% 0.14 250));font-variant-numeric:tabular-nums;text-decoration:none}.ds-secnum:hover{text-decoration:underline;text-decoration-thickness:2px}.ds-secnum:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Table",
+      "kind": "custom",
+      "refersTo": "table-header-cell",
+      "description": "Captioned, auto-numbered table: panel header row, hairline grid, serif cells, tabular numbers, table note for undelivered talks.",
+      "html": "<table class=\"ds-table\"><caption><b>Table 1:</b> Talks given in 2025</caption><thead><tr><th scope=\"col\">Date</th><th scope=\"col\">Talk</th><th scope=\"col\">Place</th></tr></thead><tbody><tr><td class=\"ds-date\">Feb 2025</td><td><span class=\"ds-talk\">Temporal is here<sup class=\"ds-mark\" title=\"Not delivered\">*</sup></span><span class=\"ds-event\">FOSDEM</span></td><td>Brussels, BE</td></tr></tbody></table><p class=\"ds-table-note\"><span class=\"ds-mark\">*</span> Not delivered: the talk was accepted but did not take place.</p>",
+      "css": ".ds-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-family:var(--font-serif, \"Source Serif 4\", Charter, Cambria, serif)}.ds-table caption{padding-bottom:0.5rem;color:var(--ink-2, oklch(46% 0.014 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem;text-align:left}.ds-table caption b{color:var(--ink, oklch(22% 0.012 260));font-weight:650}.ds-table th,.ds-table td{padding:0.5rem 0.75rem;border:1px solid var(--rule, oklch(88% 0.006 260));text-align:left;vertical-align:top}.ds-table th{background:var(--panel, oklch(95.5% 0.005 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem;font-weight:650}.ds-table td{font-size:1rem;line-height:1.5;color:var(--ink, oklch(22% 0.012 260))}.ds-table td.ds-date{color:var(--ink-2, oklch(46% 0.014 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.9375rem;white-space:nowrap}.ds-talk{display:block;font-weight:600}.ds-event{display:block;color:var(--ink-2, oklch(46% 0.014 260));font-style:italic}.ds-mark{color:var(--blue, oklch(50% 0.14 250));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-weight:700}.ds-table-note{margin-top:0.5rem;color:var(--ink-2, oklch(46% 0.014 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem}"
+    },
+    {
+      "name": "Note Panel",
+      "kind": "card",
+      "refersTo": "note-panel",
+      "description": "The system's container: panel ground, hairline border, square corners, sentence-case Note label.",
+      "html": "<div class=\"ds-note\"><p>Everything here is in daily use; retired tools are listed below.</p></div>",
+      "css": ".ds-note{padding:0.75rem 1.25rem;background:var(--panel, oklch(95.5% 0.005 260));border:1px solid var(--rule, oklch(88% 0.006 260));border-radius:0}.ds-note p{margin:0;font-family:var(--font-serif, \"Source Serif 4\", Charter, Cambria, serif);font-size:1rem;line-height:1.55;color:var(--ink, oklch(22% 0.012 260))}.ds-note p::before{content:\"Note\";display:block;margin-bottom:0.25rem;color:var(--ink-2, oklch(46% 0.014 260));font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem;font-weight:650}"
+    },
+    {
+      "name": "Definition Entries",
+      "kind": "custom",
+      "refersTo": "body-compact",
+      "description": "Rule-divided name/description list for projects and uses, with the New badge.",
+      "html": "<dl class=\"ds-entries\"><div class=\"ds-entry\"><dt><a href=\"#\">Temporal</a> <span class=\"ds-badge\">New</span></dt><dd>Modern date and time API for JavaScript.</dd></div><div class=\"ds-entry\"><dt><a href=\"#\">ECMA-402</a></dt><dd>The ECMAScript Internationalization API specification.</dd></div></dl>",
+      "css": ".ds-entries{margin:0;border-top:1px solid var(--rule, oklch(88% 0.006 260))}.ds-entry{display:grid;grid-template-columns:14rem minmax(0,1fr);gap:0.25rem 2rem;padding:0.75rem 0;border-bottom:1px solid var(--rule, oklch(88% 0.006 260))}.ds-entry dt{font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:1rem;font-weight:650;line-height:1.45}.ds-entry dd{margin:0;font-family:var(--font-serif, \"Source Serif 4\", Charter, Cambria, serif);font-size:1rem;line-height:1.55;color:var(--ink, oklch(22% 0.012 260))}.ds-entry a{color:var(--blue, oklch(50% 0.14 250));text-decoration-line:underline;text-decoration-thickness:1px;text-decoration-color:color-mix(in oklch,var(--blue, oklch(50% 0.14 250)) 45%,transparent);text-underline-offset:0.2em;transition:text-decoration-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-entry a:hover{text-decoration-color:var(--blue, oklch(50% 0.14 250))}.ds-entry a:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}.ds-badge{display:inline-block;margin-left:0.25rem;padding:0 0.35rem;background:var(--blue-wash, oklch(95.5% 0.025 250));color:var(--blue, oklch(50% 0.14 250));font-size:0.75rem;font-weight:700;line-height:1.6;letter-spacing:0.02em;vertical-align:0.1em}"
+    },
+    {
+      "name": "Year Jump",
       "kind": "chip",
-      "refersTo": "uses-badge",
-      "description": "Tiny orange-bordered 'new' flag for tools added in the last six months.",
-      "html": "<strong class=\"ds-badge-row\">Kvaesitso <span class=\"ds-badge\">new</span></strong>",
-      "css": ".ds-badge-row { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 1.25rem; color: var(--text, oklch(12% 0.015 50)); } .ds-badge { display: inline-block; vertical-align: middle; margin-left: 0.25rem; padding: 0 0.25rem; border: 2px solid var(--accent, #fc7c00); color: var(--text, oklch(12% 0.015 50)); font-size: 0.6875rem; font-weight: 700; line-height: 1.6; text-transform: uppercase; letter-spacing: 0.05em; }"
+      "refersTo": "year-jump-link",
+      "description": "Bordered tabular year links; hover turns the border blue over blue wash.",
+      "html": "<nav class=\"ds-years\" aria-label=\"Jump to year\"><span>Jump to year</span><a href=\"#\">2026</a><a href=\"#\">2025</a><a href=\"#\">2024</a></nav>",
+      "css": ".ds-years{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.25rem;font-family:var(--font-sans, \"Public Sans\", system-ui, sans-serif);font-size:0.875rem}.ds-years span{margin-right:1rem;color:var(--ink-2, oklch(46% 0.014 260))}.ds-years a{padding:0.15rem 0.5rem;border:1px solid var(--rule, oklch(88% 0.006 260));color:var(--blue, oklch(50% 0.14 250));font-variant-numeric:tabular-nums;text-decoration:none}.ds-years a:hover{border-color:var(--blue, oklch(50% 0.14 250));background:var(--blue-wash, oklch(95.5% 0.025 250))}.ds-years a:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}"
     },
     {
-      "name": "Now Playing",
+      "name": "Prose Link",
       "kind": "custom",
-      "refersTo": "now-playing",
-      "description": "Signature live element: // label with orange equalizer bars, framed cover art, track and release.",
-      "html": "<div class=\"ds-np\"><p class=\"ds-np-label\">// now playing <span class=\"ds-np-bars\" aria-hidden=\"true\"><i></i><i></i><i></i></span></p><div class=\"ds-np-body\"><span class=\"ds-np-art\" aria-hidden=\"true\">♪</span><div><span class=\"ds-np-title\">Track title</span><p class=\"ds-np-release\">Release name</p></div></div></div>",
-      "css": ".ds-np { font-family: var(--font-mono, 'JetBrains Mono', monospace); color: var(--text, oklch(12% 0.015 50)); } .ds-np-label { font-size: 0.875rem; font-weight: 700; margin: 0 0 0.25rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-np-bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 0.7em; } .ds-np-bars i { width: 3px; height: 100%; background: var(--accent, #fc7c00); transform-origin: bottom; animation: ds-np-bar 900ms ease-in-out infinite; } .ds-np-bars i:nth-child(2) { animation-delay: 150ms; } .ds-np-bars i:nth-child(3) { animation-delay: 300ms; } @keyframes ds-np-bar { 0%, 100% { transform: scaleY(0.35); } 50% { transform: scaleY(1); } } @media (prefers-reduced-motion: reduce) { .ds-np-bars i { animation: none; transform: scaleY(0.6); } } .ds-np-body { display: flex; align-items: center; gap: 0.5rem; } .ds-np-art { flex-shrink: 0; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--text, oklch(12% 0.015 50)); font-size: 1.5rem; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); } .ds-np-title { display: block; font-size: 1.25rem; font-weight: 700; } .ds-np-release { font-size: 0.875rem; margin: 0; color: color-mix(in oklch, var(--text, oklch(12% 0.015 50)) 75%, var(--bg, oklch(98% 0.008 70))); }"
-    },
-    {
-      "name": "Footer with Theme Switcher",
-      "kind": "custom",
-      "refersTo": "footer",
-      "description": "The page's one inverted block; lowercase switcher buttons bracket in orange when pressed.",
-      "html": "<footer class=\"ds-foot\"><div class=\"ds-switch\" role=\"group\" aria-label=\"Color theme\"><span class=\"ds-switch-label\">theme:</span><button type=\"button\" aria-pressed=\"true\">auto</button><button type=\"button\" aria-pressed=\"false\">light</button><button type=\"button\" aria-pressed=\"false\">dark</button></div><p>Made with ❤️ by <a href=\"#\">Ryzokuken</a> using <a href=\"#\">11ty</a></p></footer>",
-      "css": ".ds-foot { font-family: var(--font-mono, 'JetBrains Mono', monospace); text-align: center; padding: 3rem 2rem; border-top: 4px solid var(--text, oklch(12% 0.015 50)); background: var(--text, oklch(12% 0.015 50)); color: var(--bg, oklch(98% 0.008 70)); } .ds-foot p { margin: 0; } .ds-foot a { color: var(--accent, #fc7c00); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-foot a:hover { background: var(--accent, #fc7c00); color: var(--text, oklch(12% 0.015 50)); } .ds-switch { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; } .ds-switch-label { color: var(--accent, #fc7c00); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; } .ds-switch button { background: transparent; border: none; color: inherit; font: inherit; font-weight: 700; text-transform: lowercase; padding: 0.25rem 0.5rem; cursor: pointer; transition: color 0.15s ease; } .ds-switch button::before, .ds-switch button::after { opacity: 0; color: var(--accent, #fc7c00); transition: opacity 0.15s ease; } .ds-switch button::before { content: '['; margin-right: 2px; } .ds-switch button::after { content: ']'; margin-left: 2px; } .ds-switch button:hover, .ds-switch button[aria-pressed='true'] { color: var(--accent, #fc7c00); } .ds-switch button:hover::before, .ds-switch button:hover::after, .ds-switch button[aria-pressed='true']::before, .ds-switch button[aria-pressed='true']::after { opacity: 1; } .ds-switch button:focus-visible, .ds-foot a:focus-visible { outline: 3px solid var(--accent, #fc7c00); outline-offset: 2px; }"
+      "refersTo": "body",
+      "description": "Serif body text at the 68ch measure with a spec-blue link whose 45% underline goes solid on hover.",
+      "html": "<p class=\"ds-prose\">Co-chair of <a href=\"#\">TC39</a> and co-editor of <a href=\"#\">ECMA-402</a>.</p>",
+      "css": ".ds-prose{max-width:68ch;font-family:var(--font-serif, \"Source Serif 4\", Charter, Cambria, serif);font-size:1.125rem;line-height:1.65;color:var(--ink, oklch(22% 0.012 260))}.ds-prose a{color:var(--blue, oklch(50% 0.14 250));text-decoration-line:underline;text-decoration-thickness:1px;text-decoration-color:color-mix(in oklch,var(--blue, oklch(50% 0.14 250)) 45%,transparent);text-underline-offset:0.2em;transition:text-decoration-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1))}.ds-prose a:hover{text-decoration-color:var(--blue, oklch(50% 0.14 250))}.ds-prose a:focus-visible{outline:2px solid var(--blue, oklch(50% 0.14 250));outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Plenary Record",
-    "overview": "The site reads like the minutes of a working life in standards: dense, factual, bordered entries, set in a single monospace face, ruled off by heavy lines. Every talk, podcast, project and tool is an entry with a title, a venue, a date and its links, in a consistent order. The one orange is the chair's gavel. It marks what is current, what you can act on, and where you are, and nothing else.\n\nPersonality comes from typographic jokes borrowed from the shell and from source code: a `>` prompt before the name, `[brackets]` around the current page, `//` comment labels over small sections, `@` before an event name. The ornament is punctuation. There are no illustrations, gradients, icons beyond the social marks, or decorative imagery.\n\nDensity is moderate to high: body copy runs large (1.25rem) with generous line height, but pages are long, stacked lists of bordered entries with little whitespace between them. Both color schemes are first-class; the footer always inverts against the page.",
+    "northStar": "The Living Standard",
+    "overview": "The site is set as a living web specification, the way WHATWG and TC39 documents look when you read them in a browser. Every page is a numbered clause, the navigation is the spec's table of contents, and the record (talks, projects, tools) sits in captioned, numbered tables, definition entries and note panels. The person is written up as a standard: roles as numbered steps, current activity in a note, contact links as normative references. It is quiet, dense where the data is dense, and open where the prose runs long.\n\nTwo voices carry the page. Public Sans, a public-sector grotesque, speaks for structure: headings, section numbers, the TOC, captions, table headers, dates and metadata. Source Serif 4 speaks for content: body prose, table cells, entry descriptions, the subtitle. A system monospace appears only inside code. Color is almost absent: near-black ink on white paper (or its dark inversion), a cool gray rule for every line, a pale panel for notes and header rows, and one spec blue that marks links, section numbers and the current clause.\n\nThe world rejects the developer-portfolio arrangement: no hero-then-card-grid, no cards, no shadows, no rounded corners. Depth and grouping come from hairline rules, the panel tint and numbering, never from lift.",
     "keyCharacteristics": [
-      "One typeface, JetBrains Mono, at three weights (400, 700, 800).",
-      "Two warm neutrals and one accent; no other hues.",
-      "Zero corner radius anywhere, including Mermaid diagram nodes.",
-      "2px rules for structure, 4px for emphasis.",
-      "Depth only as a hard, unblurred offset shadow on hover.",
-      "Shell and source-code punctuation as the only ornament."
+      "Pages are numbered clauses; h2 and h3 carry blue, linkable section numbers generated at build time.",
+      "Sticky table-of-contents sidebar on wide screens, a \"Contents\" disclosure bar on narrow ones.",
+      "Sans for structure, serif for content, mono for code only.",
+      "One accent (spec blue); everything else is ink, secondary ink, rule and panel.",
+      "1px hairline rules everywhere; zero radius; zero shadow.",
+      "Tables and figures are captioned and auto-numbered (\"Table 1:\", \"Figure 1:\").",
+      "Full light and dark sets, switchable by preference or an explicit Auto/Light/Dark control."
     ],
     "rules": [
-      { "name": "The Two Tokens Rule", "body": "Surfaces, text and borders all derive from `--bg` and `--text`. Aliases (`--border`, `--card-bg`, `--nav-bg`, `--icon-fill`) exist for naming, not for new values. A third neutral would break the automatic dark-mode swap.", "section": "colors" },
-      { "name": "The Gavel Rule", "body": "Orange marks the current, the actionable, or the focused. If an element is none of those, it is black or bone.", "section": "colors" },
-      { "name": "The Case Carries Rank Rule", "body": "Uppercase marks top-level structure (page titles, the hero name) and actions (link chips, badges). Navigation and switcher controls are lowercase. Section titles and body are sentence case.", "section": "typography" },
-      { "name": "The Comment Label Rule", "body": "Small section labels are written as code comments, `// latest post`, `// countries visited`, in bold ink-secondary at label size.", "section": "typography" },
-      { "name": "The Stamp Rule", "body": "Shadows are solid, unblurred, offset 4px down-right, and exist only on hover. A blurred shadow is foreign to this system.", "section": "elevation" }
+      {
+        "name": "The One Blue Rule",
+        "body": "Spec blue is the only hue in the system. It means \"this goes somewhere\" or \"you are here\". Nothing decorative is ever blue, and no second accent is introduced.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wash Is State Rule",
+        "body": "Blue wash appears only in response to state (hover, current location, a just-targeted heading) or on the one badge. It never becomes a resting background for a region; resting regions use panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Sets Rule",
+        "body": "Every color role exists in both the light and dark set, and components reference roles through custom properties, never literal values. Dark mode applies by `prefers-color-scheme` unless the reader pins a theme with `data-theme`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Apparatus/Content Rule",
+        "body": "Sans is the document's apparatus (headings, numbers, labels, captions, dates, navigation); serif is its content (anything a reader reads as a sentence). When deciding, ask whether the text is about the page or is the page.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Numbers Rule",
+        "body": "Anything that counts or dates uses `font-variant-numeric: tabular-nums`: section numbers, TOC numbers, step counters, year links and every table.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Labels, headers and captions are sentence case at normal tracking. The system has no uppercase, letter-spaced labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Clause Rule",
+        "body": "Structure is numbered, not decorated. A page gets a clause number in front matter (`clause:`) and the build numbers its h2/h3, makes each number a permalink, and writes the page's sub-TOC. New pages join the TOC numbering rather than inventing their own navigation.",
+        "section": "layout"
+      },
+      {
+        "name": "The Measure Rule",
+        "body": "Reading text stops at 68ch no matter how wide the column is.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Every border in the system is 1px solid in the rule color, and it is the only way a region is bounded. Thicker strokes appear only as the 2px focus outline and the 2px underline on a hovered section number.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Lift Rule",
+        "body": "Nothing rises on hover. Interactive feedback is a color shift (underline strength, border to blue, blue-wash fill), never a shadow or transform.",
+        "section": "elevation"
+      }
     ],
     "dos": [
-      "**Do** derive every new surface, text and border color from `--bg` and `--text` so dark mode keeps working as a swap.",
-      "**Do** keep corners at 0 and structural borders at 2px, emphasis at 4px.",
-      "**Do** mark actions as bordered chips that invert on hover.",
-      "**Do** use code punctuation (`>`, `//`, `[ ]`, `@`) for small labels and state instead of icons.",
-      "**Do** check every change under light, dark, and each theme-switcher setting.",
-      "**Do** honor `prefers-reduced-motion`; the global rule collapses transitions and animations to 0.01ms."
+      "**Do** number every new page with a `clause:` value and let the build number its headings and write its sub-TOC.",
+      "**Do** put structured records in captioned tables or rule-divided definition entries, and asides in a note panel.",
+      "**Do** use spec blue only for links, section numbers, current location and state; use blue wash only for hover, current location and the badge.",
+      "**Do** set structure in Public Sans and reading text in Source Serif 4, and cap reading text at 68ch.",
+      "**Do** bound regions with 1px rule-colored hairlines and the panel tint, in both color sets.",
+      "**Do** use tabular numbers for anything counted or dated.",
+      "**Do** check every change in light, dark, pinned-theme, and below 64rem and 48rem."
     ],
     "donts": [
-      "**Don't** add a second typeface or a second accent hue.",
-      "**Don't** use rounded corners, blurred shadows, or gradients.",
-      "**Don't** set orange as text on bone. It is a mark, underline, edge or fill, never body copy on the light background.",
-      "**Don't** add orange to an element that is not current, actionable or focused."
+      "**Don't** use cards, card grids or a hero layout; the record is tables, entries and notes.",
+      "**Don't** add shadows, rounded corners, or hover lift.",
+      "**Don't** introduce a second accent hue or tint regions blue at rest.",
+      "**Don't** set prose in sans or headings in serif, and don't use monospace outside code.",
+      "**Don't** add uppercase, letter-spaced labels above headings; a clause is introduced by its number.",
+      "**Don't** hardcode color values in components; reference the role custom properties so both sets stay correct."
     ]
   }
 }

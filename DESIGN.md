@@ -145,7 +145,7 @@ components:
 
 **Creative North Star: "The Living Standard"**
 
-The site is set as a living web specification, the way WHATWG and TC39 documents look when you read them in a browser. Every page is a numbered clause, the navigation is the spec's table of contents, and the record (talks, projects, tools) sits in captioned, numbered tables, definition entries and note panels. The person is written up as a standard: roles as numbered steps, current activity in a note, contact links as normative references. It is quiet, dense where the data is dense, and open where the prose runs long.
+The site is set as a living web specification, the way WHATWG and TC39 documents look when you read them in a browser. Every page is a numbered section, the navigation is the spec's table of contents, and the record (talks, projects, tools) sits in tables, definition entries and note panels. The look is borrowed, never announced: the page does not name itself a spec or use spec jargon. The person is written up as a standard: roles as numbered steps, current activity in a note, contact links as normative references. It is quiet, dense where the data is dense, and open where the prose runs long.
 
 Two voices carry the page. Public Sans, a public-sector grotesque, speaks for structure: headings, section numbers, the TOC, captions, table headers, dates and metadata. Source Serif 4 speaks for content: body prose, table cells, entry descriptions, the subtitle. A system monospace appears only inside code. Color is almost absent: near-black ink on white paper (or its dark inversion), a cool gray rule for every line, a pale panel for notes and header rows, and one spec blue that marks links, section numbers and the current clause.
 
@@ -293,7 +293,7 @@ One easing curve, `cubic-bezier(0.16, 1, 0.3, 1)`, at 0.2–0.3s for color and b
 
 ### Do:
 - **Do** number every new page with a `clause:` value and let the build number its headings and write its sub-TOC.
-- **Do** put structured records in captioned tables or rule-divided definition entries, and asides in a note panel.
+- **Do** put structured records in tables or rule-divided definition entries, and asides in a note panel.
 - **Do** use spec blue only for links, section numbers, current location and state; use blue wash only for hover, current location and the badge.
 - **Do** set structure in Public Sans and reading text in Source Serif 4, and cap reading text at 68ch.
 - **Do** bound regions with 1px rule-colored hairlines and the panel tint, in both color sets.

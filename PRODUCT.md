@@ -34,8 +34,8 @@ shows what the author is doing now, not just past work.
 
 ## Positioning
 
-Written from inside JavaScript governance. The author co-chairs TC39, co-edits ECMA-402,
-and champions Temporal, and the site explains standards bodies and specs as someone who
+Written from inside JavaScript governance. The author co-edits ECMA-402, champions Temporal
+and has co-chaired TC39, and the site explains standards bodies and specs as someone who
 runs them. The "What even is Ecma?" series is the clearest example. A neighboring
 developer-advocate site could not truthfully make this claim.
 
@@ -67,7 +67,9 @@ developer-advocate site could not truthfully make this claim.
 - Voice: first person, candid, plain-spoken, occasionally wry. Posts explain jargon
   instead of assuming it. Pages like `/uses` state their own editorial rules and keep
   retired entries rather than quietly deleting them.
-- Roles shown as fact: TC39 co-chair, ECMA-402 co-editor, Temporal champion.
+- Roles shown as fact: ECMA-402 co-editor and Temporal champion. Past roles (TC39 co-chair,
+  Node.js core contributor, Electron maintainer and a former employer) sit in their own
+  list on the home page.
 - The visual identity is the understated web-specification look in DESIGN.md: a white
   sheet, near-black ink, one spec blue, numbered sections and hairline rules. The site
   borrows that look but never names or labels itself as a spec.

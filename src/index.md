@@ -47,10 +47,18 @@ clause: 1
 <p>I work on how JavaScript handles dates, times and languages: Temporal, Intl (ECMA-402) and the next Unicode MessageFormat.</p>
 
 <ol class="steps">
-  <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
   <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>
   <li><a href="https://github.com/tc39/proposal-temporal">Temporal</a> Champion</li>
   <li><a href="/talks/">International Speaker</a></li>
+</ol>
+
+<h2 id="past-roles">Past roles</h2>
+
+<ol class="steps">
+  <li><a href="https://www.igalia.com/">Igalia</a> Developer Advocate</li>
+  <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
+  <li><a href="https://nodejs.org/">Node.js</a> Core Contributor</li>
+  <li><a href="https://www.electronjs.org/">Electron</a> Maintainer</li>
 </ol>
 
 <h2 id="current">Current activity</h2>

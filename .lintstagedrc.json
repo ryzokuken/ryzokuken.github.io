@@ -1,3 +1,4 @@
 {
-  "*.{html,liquid,md}": ["markuplint"]
+  "*.{html,liquid,md}": ["markuplint"],
+  "*.js": ["vitest related --run --passWithNoTests"]
 }

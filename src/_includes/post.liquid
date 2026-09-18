@@ -2,7 +2,8 @@
 layout: layout.liquid
 ---
 <article class="post-body">
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
+<p class="post-meta"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
 
-{{content}}
+{{ content }}
 </article>

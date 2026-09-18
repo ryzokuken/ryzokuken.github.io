@@ -1,14 +1,26 @@
 import pluginMermaid from "@kevingimbel/eleventy-plugin-mermaid";
 
+import { numberClauses } from "./lib/clauses.js";
+
+const FONTS = {
+  "public-sans": ["public-sans-latin-wght-normal", "public-sans-latin-ext-wght-normal"],
+  "source-serif-4": [
+    "source-serif-4-latin-wght-normal",
+    "source-serif-4-latin-wght-italic",
+    "source-serif-4-latin-ext-wght-normal",
+    "source-serif-4-latin-ext-wght-italic",
+  ],
+};
+
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginMermaid, {
     mermaid_config: {
       startOnLoad: true,
       securityLevel: "strict",
       theme: "base",
-      fontFamily: '"JetBrains Mono", "Fira Code", monospace',
+      fontFamily: '"Public Sans", system-ui, sans-serif',
       themeVariables: {
-        fontFamily: '"JetBrains Mono", "Fira Code", monospace',
+        fontFamily: '"Public Sans", system-ui, sans-serif',
         fontSize: "15px",
       },
       flowchart: {
@@ -34,14 +46,17 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.ignores.add("src/temporal-2020-04/README.md");
   eleventyConfig.addPassthroughCopy("src/CNAME");
-  for (const weight of [400, 700, 800]) {
-    for (const subset of ["latin", "latin-ext"]) {
-      const file = `jetbrains-mono-${subset}-${weight}-normal.woff2`;
+  for (const [family, files] of Object.entries(FONTS)) {
+    for (const file of files) {
       eleventyConfig.addPassthroughCopy({
-        [`node_modules/@fontsource/jetbrains-mono/files/${file}`]: `fonts/${file}`,
+        [`node_modules/@fontsource-variable/${family}/files/${file}.woff2`]: `fonts/${file}.woff2`,
       });
     }
   }
+  eleventyConfig.addGlobalData("build", () => ({ date: new Date() }));
+  eleventyConfig.addTransform("clauses", function (content) {
+    return this.page.outputPath?.endsWith(".html") ? numberClauses(content) : content;
+  });
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.png");

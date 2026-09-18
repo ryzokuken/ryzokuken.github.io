@@ -4,12 +4,20 @@
 {%- if year_has_past %}
 <h3 id="{{ year_data.year }}">{{ year_data.year }}</h3>
 
-<div class="talk-grid">
+{% assign caption = "Talks given in " | append: year_data.year %}
+{% include "talks-table.liquid", caption: caption %}
 {%- for talk in year_data.talks -%}
 {%- unless talk.upcoming -%}
-{%- include "talk-card.liquid" -%}
+{%- include "talk-row.liquid" -%}
 {%- endunless -%}
 {%- endfor %}
+  </tbody>
+</table>
+{%- assign year_cancelled = false -%}
+{%- for talk in year_data.talks -%}{%- if talk.title contains "*" -%}{%- assign year_cancelled = true -%}{%- endif -%}{%- endfor -%}
+{%- if year_cancelled %}
+<p class="table-note"><span class="table-mark">*</span> Not delivered: the talk was accepted but did not take place.</p>
+{%- endif %}
 </div>
 {%- endif %}
 {%- endfor %}

@@ -27,17 +27,13 @@ function element(tag, className, text) {
 
 function artwork(listen) {
   const url = coverArtUrl(listen);
-  if (!url) {
-    const placeholder = element("span", "now-playing-art now-playing-art--empty", "♪");
-    placeholder.setAttribute("aria-hidden", "true");
-    return placeholder;
-  }
+  if (!url) return null;
 
   const image = element("img", "now-playing-art");
   image.src = url;
   image.alt = "";
-  image.width = 64;
-  image.height = 64;
+  image.width = 56;
+  image.height = 56;
   image.loading = "lazy";
   image.decoding = "async";
   // A missing or slow Cover Art Archive entry must not leave a broken image.
@@ -52,12 +48,12 @@ function bars() {
   return wrapper;
 }
 
-function heading(isPlaying, track) {
+function heading(tag, isPlaying, track) {
   const suffix = isPlaying
     ? ""
     : ` ${track.listenedAt ? relativeTime(track.listenedAt, Date.now()) : ""}`;
-  const label = element("p", "flags-label", `// ${isPlaying ? "now playing" : "last played"}${suffix}`);
-  if (isPlaying) label.prepend(bars(), " ");
+  const label = element(tag, "now-playing-label", `${isPlaying ? "Now playing" : "Last played"}${suffix}`);
+  if (isPlaying) label.append(bars());
   return label;
 }
 
@@ -102,18 +98,20 @@ function render(mount, variant, listen, isPlaying) {
   const track = toTrack(listen);
   if (!track) return;
 
+  // The home variant is one row of the "Current activity" list (dt + dd).
+  const full = variant === "full";
   const widget = element("div", `now-playing now-playing--${variant}`);
-  if (variant === "full") widget.classList.add("recent-item");
+  if (full) widget.classList.add("recent-item");
+  widget.append(heading(full ? "dt" : "p", isPlaying, track));
 
-  widget.append(heading(isPlaying, track));
-
-  const body = element("div", "now-playing-body");
-  if (variant === "full") body.append(artwork(listen));
+  const body = element(full ? "dd" : "div", "now-playing-body");
+  const art = full ? artwork(listen) : null;
+  if (art) body.append(art);
 
   const [primary, secondary] = streamingLinks(listen);
   const text = element("div", "now-playing-text");
   text.append(titleNode(track, primary));
-  if (variant === "full") {
+  if (full) {
     if (track.release) text.append(element("p", "now-playing-release", track.release));
     // The compact footer variant stays a single line, so no badge there.
     if (secondary) text.append(badge(track, secondary));

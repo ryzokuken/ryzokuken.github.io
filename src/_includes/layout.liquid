@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><text y="13" font-family="JetBrains Mono,monospace" font-weight="800" font-size="14" fill="%23fc7c00">&gt;</text></svg>'>
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1217" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><rect width="16" height="16" fill="%230465af"/><text x="8" y="12.5" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="13" fill="%23fff">§</text></svg>'>
   <meta name="description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description | default: "Ujjwal Sharma — Developer Advocate at Igalia, TC39 Co-chair, ECMA-402 Co-editor." }}">
   <meta property="og:type" content="website">
   <title>{{ title }}</title>
-  <link rel="preload" href="/fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <script data-goatcounter="https://ryzokuken.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script>
     (function () {
@@ -29,27 +30,42 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
-  <nav id="navbar" aria-label="Main navigation">
-    <ul>
-      <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
-      <li><a href="/talks/"{% if page.url contains "/talks/" %} aria-current="page"{% endif %}>Talks</a></li>
-      <li><a href="/projects/"{% if page.url contains "/projects/" %} aria-current="page"{% endif %}>Projects</a></li>
-      <li><a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>Blog</a></li>
-      <li><a href="/uses/"{% if page.url contains "/uses/" %} aria-current="page"{% endif %}>Uses</a></li>
-    </ul>
-  </nav>
-  <main id="main-content" class="container">
-    {{ content }}
-  </main>
-  <footer id="footer">
-    <div id="theme-switcher" role="group" aria-label="Color theme">
-      <span class="theme-switcher-label">theme:</span>
-      <button type="button" data-theme-set="auto">auto</button>
-      <button type="button" data-theme-set="light">light</button>
-      <button type="button" data-theme-set="dark">dark</button>
-    </div>
-    <p>Made with ❤️ by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a> · <a href="https://github.com/ryzokuken/ryzokuken.github.io/issues/new">Suggest a change</a></p>
-  </footer>
+  {%- assign section = "" -%}
+  {%- if page.url == "/" %}{% assign section = "home" %}
+  {%- elsif page.url contains "/talks/" %}{% assign section = "talks" %}
+  {%- elsif page.url contains "/projects/" %}{% assign section = "projects" %}
+  {%- elsif page.url contains "/blog/" or page.url contains "/tag/" %}{% assign section = "blog" %}
+  {%- elsif page.url contains "/uses/" %}{% assign section = "uses" %}
+  {%- endif %}
+  <div class="sheet">
+    <header class="toc">
+      <p class="toc-brand"><a href="/">ryzokuken.dev</a> <span>Living Standard</span></p>
+      <details class="toc-contents">
+        <summary>Contents</summary>
+        <nav aria-label="Main navigation">
+          <ol class="toc-list">
+            <li><a href="/"{% if section == "home" %} aria-current="page"{% endif %}><span class="toc-num">1</span> Home</a>{% if section == "home" %}<!--subtoc-->{% endif %}</li>
+            <li><a href="/talks/"{% if section == "talks" %} aria-current="page"{% endif %}><span class="toc-num">2</span> Talks</a>{% if section == "talks" %}<!--subtoc-->{% endif %}</li>
+            <li><a href="/projects/"{% if section == "projects" %} aria-current="page"{% endif %}><span class="toc-num">3</span> Projects</a>{% if section == "projects" %}<!--subtoc-->{% endif %}</li>
+            <li><a href="/blog/"{% if section == "blog" %} aria-current="page"{% endif %}><span class="toc-num">4</span> Blog</a>{% if section == "blog" %}{% if tags contains "post" %}<ol class="toc-sub toc-doc"><li><a href="{{ page.url }}">{{ title }}</a><!--subtoc--></li></ol>{% else %}<!--subtoc-->{% endif %}{% endif %}</li>
+            <li><a href="/uses/"{% if section == "uses" %} aria-current="page"{% endif %}><span class="toc-num">5</span> Uses</a>{% if section == "uses" %}<!--subtoc-->{% endif %}</li>
+          </ol>
+        </nav>
+        <div id="theme-switcher" role="group" aria-label="Color theme">
+          <span class="theme-switcher-label">Theme</span>
+          <button type="button" data-theme-set="auto">Auto</button>
+          <button type="button" data-theme-set="light">Light</button>
+          <button type="button" data-theme-set="dark">Dark</button>
+        </div>
+      </details>
+    </header>
+    <main id="main-content"{% if clause != nil %} data-clause="{{ clause }}"{% endif %}>
+      {{ content }}
+      <footer id="footer" class="colophon">
+        <p>Made with care by <a href="https://mastodon.social/@ryzokuken">Ryzokuken</a> using <a href="https://www.11ty.dev/">11ty</a> · <a href="https://github.com/ryzokuken/ryzokuken.github.io/issues/new">Suggest a change</a></p>
+      </footer>
+    </main>
+  </div>
   {% if flags %}
   <script src="https://unpkg.com/@twemoji/api@15.1.0/dist/twemoji.min.js" integrity="sha384-o28+zJO3/45GHIy+9TFKGaYnbt0KQcFRzyBrb0WSSrz7bPGwGI1d64worBiXPgXw" crossorigin="anonymous" defer></script>
   <script>
@@ -116,5 +132,6 @@
   </script>
   {% endif %}
   <script type="module" src="/js/now-playing.js"></script>
+  <script type="module" src="/js/toc.js"></script>
 </body>
 </html>

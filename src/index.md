@@ -1,57 +1,87 @@
 ---
 layout: layout.liquid
 title: Ujjwal Sharma — Developer Advocate
+clause: 1
 ---
 
-<div class="hero">
-  <picture>
+<header class="title-block">
+  <div class="title-text">
+    <h1 class="doc-title">Ujjwal Sharma</h1>
+    <p class="doc-subtitle">Developer Relations, Programming Languages and Web Standards at <a href="https://www.igalia.com/">Igalia</a></p>
+    <ul class="refs" aria-label="Contact and profiles">
+      <li><span class="ref-key">[GitHub]</span> <a href="https://github.com/ryzokuken">github.com/ryzokuken</a></li>
+      <li><span class="ref-key">[LinkedIn]</span> <a href="https://www.linkedin.com/in/ryzokuken">linkedin.com/in/ryzokuken</a></li>
+      <li><span class="ref-key">[Mastodon]</span> <a href="https://mastodon.social/@ryzokuken" rel="me">@ryzokuken@mastodon.social</a></li>
+      <li><span class="ref-key">[Bluesky]</span> <a href="https://bsky.app/profile/ryzokuken.dev">@ryzokuken.dev</a></li>
+      <li><span class="ref-key">[Email]</span> <a href="mailto:usharma1998@gmail.com">usharma1998@gmail.com</a></li>
+    </ul>
+    <p class="doc-meta">A Coruña, Galiza · Living Standard, updated <time datetime="{{ build.date | date: "%Y-%m-%d" }}">{{ build.date | date: "%-d %B %Y" }}</time></p>
+  </div>
+  <figure class="figure portrait">
+    <picture>
     <source type="image/avif" srcset="/img/photo-360.avif 1x, /img/photo-540.avif 1.5x, /img/photo-720.avif 2x">
     <source type="image/webp" srcset="/img/photo-360.webp 1x, /img/photo-540.webp 1.5x, /img/photo-720.webp 2x">
-    <img src="/photo.jpg" srcset="/photo.jpg 1x, /img/photo-540.jpg 1.5x, /img/photo-720.jpg 2x" alt="Ujjwal Sharma" class="hero-photo" width="180" height="180" fetchpriority="high" decoding="async">
+    <img src="/photo.jpg" srcset="/photo.jpg 1x, /img/photo-540.jpg 1.5x, /img/photo-720.jpg 2x" alt="Ujjwal Sharma" width="180" height="180" fetchpriority="high" decoding="async">
   </picture>
-  <h1>Ujjwal Sharma</h1>
-  <p class="hero-subtitle">Developer Relations, Programming Languages and Web Standards @ <a href="https://www.igalia.com/">Igalia</a></p>
-  <p class="hero-location">📍 A Coruña, Galiza</p>
-  <ul class="hero-roles">
-    <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
-    <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>
-    <li><a href="/talks/">International Speaker</a></li>
-  </ul>
-  <ul class="social-links">
-    <li><a href="https://github.com/ryzokuken" aria-label="GitHub"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
-    <li><a href="https://www.linkedin.com/in/ryzokuken" aria-label="LinkedIn"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
-    <li><a href="https://mastodon.social/@ryzokuken" aria-label="Mastodon" rel="me"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mastodon</title><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg></a></li>
-    <li><a href="https://bsky.app/profile/ryzokuken.dev" aria-label="Bluesky"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bluesky</title><path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/></svg></a></li>
-    <li><a href="mailto:usharma1998@gmail.com" aria-label="Email"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M1.5 3A1.5 1.5 0 0 0 0 4.5v15A1.5 1.5 0 0 0 1.5 21h21a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 22.5 3h-21zm.09 1.5h20.82L12 12.46 1.59 4.5zM1.5 5.85l10.14 7.75a.6.6 0 0 0 .72 0L22.5 5.85V19.5h-21V5.85z"/></svg></a></li>
-  </ul>
-</div>
+    <figcaption>The author</figcaption>
+  </figure>
+</header>
 
 {% assign latest_post = collections.post | last %}
 
 {% assign next_talk = nil %}
+{% assign talk_count = 0 %}
 {% for year_data in talks %}
   {% for talk in year_data.talks %}
-    {% if talk.upcoming and next_talk == nil %}{% assign next_talk = talk %}{% endif %}
+    {% if talk.upcoming %}{% if next_talk == nil %}{% assign next_talk = talk %}{% endif %}{% else %}{% assign talk_count = talk_count | plus: 1 %}{% endif %}
   {% endfor %}
 {% endfor %}
+{% assign first_year = talks | last %}
 
 {% unless next_talk %}
   {% assign latest_year = talks | first %}
   {% assign latest_talk = latest_year.talks | last %}
 {% endunless %}
 
-<div class="recent">
+<h2 id="roles">Roles</h2>
+
+<ol class="steps">
+  <li><a href="https://tc39.es/">TC39</a> Co-chairperson</li>
+  <li><a href="https://tc39.es/ecma402/">ECMA-402</a> Co-editor</li>
+  <li><a href="/talks/">International Speaker</a></li>
+</ol>
+
+<h2 id="current">Current activity</h2>
+
+<div class="note">
+<dl class="recent">
   <div class="recent-item">
-    <p class="flags-label">// latest post</p>
-    <a href="{{ latest_post.url }}" class="recent-link">{{ latest_post.data.title }}</a>
+    <dt>Latest post</dt>
+    <dd><a href="{{ latest_post.url }}">{{ latest_post.data.title }}</a></dd>
   </div>
   <div class="recent-item">
     {%- if next_talk %}
-    <p class="flags-label">// next talk</p>
-    <a href="/talks/#upcoming" class="recent-link">{{ next_talk.title }} — {{ next_talk.event }}</a>
+    <dt>Next talk</dt>
+    <dd><a href="/talks/#upcoming">{{ next_talk.title }}</a> <span class="recent-venue">{{ next_talk.event }}</span></dd>
     {%- else %}
-    <p class="flags-label">// latest talk</p>
-    <a href="/talks/#{{ latest_year.year }}" class="recent-link">{{ latest_talk.title }} — {{ latest_talk.event }}</a>
+    <dt>Latest talk</dt>
+    <dd><a href="/talks/#{{ latest_year.year }}">{{ latest_talk.title }}</a> <span class="recent-venue">{{ latest_talk.event }}</span></dd>
     {%- endif %}
   </div>
+</dl>
 </div>
+
+<h2 id="record">The record</h2>
+
+<table class="index-table">
+  <caption>Where everything else lives</caption>
+  <thead>
+    <tr><th scope="col">Clause</th><th scope="col">Contents</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/talks/"><span class="toc-num">2</span> Talks</a></td><td>{{ talk_count }} talks since {{ first_year.year }}, {{ podcasts.size }} podcasts{% if next_talk %}, and what is next{% endif %}</td></tr>
+    <tr><td><a href="/projects/"><span class="toc-num">3</span> Projects</a></td><td>Specifications and codebases, current and past</td></tr>
+    <tr><td><a href="/blog/"><span class="toc-num">4</span> Blog</a></td><td>{{ collections.post.size }} posts, including the “What even is Ecma?” series</td></tr>
+    <tr><td><a href="/uses/"><span class="toc-num">5</span> Uses</a></td><td>Tools and gear, each with a reason</td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+<tr>
+  <td class="cell-date">{{ talk.date }}</td>
+  <td><span class="talk-title">{% if talk.title contains "*" %}{% assign title_length = talk.title.size | minus: 2 %}{{ talk.title | slice: 0, title_length }}<sup class="table-mark" title="Not delivered">*</sup>{% else %}{{ talk.title }}{% endif %}</span> <span class="talk-event">{{ talk.event }}</span></td>
+  <td class="cell-place">{{ talk.flag }} {{ talk.location }}</td>
+  <td class="cell-links">
+    {%- if talk.links.size > 0 %}
+    <ul class="link-list">
+      {%- for link in talk.links %}<li><a href="{{ link[1] }}">{{ link[0] }}</a></li>{% endfor -%}
+    </ul>
+    {%- endif %}
+  </td>
+</tr>

@@ -15,8 +15,11 @@ importers:
       '@11ty/eleventy':
         specifier: ^3.1.6
         version: 3.1.6
-      '@fontsource/jetbrains-mono':
-        specifier: ^5.3.0
+      '@fontsource-variable/public-sans':
+        specifier: 5.3.0
+        version: 5.3.0
+      '@fontsource-variable/source-serif-4':
+        specifier: 5.3.0
         version: 5.3.0
       '@kevingimbel/eleventy-plugin-mermaid':
         specifier: ^3.0.1
@@ -86,8 +89,11 @@ packages:
     resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
 
-  '@fontsource/jetbrains-mono@5.3.0':
-    resolution: {integrity: sha512-fqDfB5I9f1p1TV486aUgB9t8zP84P0O1FtQR5Ol9vjwPy+S+EIGlVYm1cvj2W5shcZMTg2nZFdVMoH5wFu8a1A==}
+  '@fontsource-variable/public-sans@5.3.0':
+    resolution: {integrity: sha512-AVfkmAt50BMXWpOO21FAntiJFKGX6xTc2dSL8dxtDteONe9IuRXJWGbs0EbG955vAMCq23ENeuopuW87cGWDSQ==}
+
+  '@fontsource-variable/source-serif-4@5.3.0':
+    resolution: {integrity: sha512-9vch9WqxjaaA+1o9Ur8pOgIGbCYLjRReOUel23A6lOpD1syptgjtkORevvNmldJ5kGXQL29onQUqI5Ltz0s3bQ==}
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
@@ -1596,7 +1602,9 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.29.7': {}
 
-  '@fontsource/jetbrains-mono@5.3.0': {}
+  '@fontsource-variable/public-sans@5.3.0': {}
+
+  '@fontsource-variable/source-serif-4@5.3.0': {}
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
 

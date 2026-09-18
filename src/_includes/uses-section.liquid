@@ -1,18 +1,16 @@
 <h2 id="{{ section.title | slugify }}">{{ section.title }}</h2>
 {%- if section.blurb %}
-<blockquote>
-  <p>{{ section.blurb }}</p>
-</blockquote>
+<div class="note"><p>{{ section.blurb }}</p></div>
 {%- endif %}
-<div class="card-grid">
+<dl class="entries">
   {%- for item in section.items %}
-  <div class="card{% unless item.url %} card--plain{% endunless %}">
-    <strong>
+  <div class="entry">
+    <dt>
       {%- if item.url %}<a href="{{ item.url }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif -%}
       {%- assign recent = item.since | isRecent %}
-      {%- if recent %} <span class="uses-badge">new</span>{% endif -%}
-    </strong>
-    <p>{{ item.note }}</p>
+      {%- if recent %} <span class="badge">New</span>{% endif -%}
+    </dt>
+    <dd>{{ item.note }}</dd>
   </div>
   {%- endfor %}
-</div>
+</dl>

@@ -1,21 +1,15 @@
 ---
 layout: layout.liquid
 title: Ryzokuken's Blog
+clause: 4
 ---
-<h1>My Blog</h1>
+<h1>Blog</h1>
 
-<div class="card-grid">
-  {%- for post in collections.post reversed -%}
-  <div class="card">
-    <h2 class="blog-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-    <div class="blog-card-meta">
-      📅 {{ post.date | date: "%B %d, %Y" }}
-      {% assign tags = post.data.tags | reject_exp: "tag", "tag == 'post'" %}
-      {% if tags.size > 0 %}
-      · 🏷 {%- for tag in tags -%} <a href="/tag/{{tag}}" class="blog-card-tag">{{tag}}</a>{%- endfor -%}
-      {% endif %}
-    </div>
-    <p>{{ post.templateContent | strip_html | truncatewords: 40 }}</p>
-  </div>
-  {%- endfor -%}
-</div>
+{%- for post in collections.post reversed %}
+<article class="post-entry">
+  <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+  {%- assign tags = post.data.tags | reject_exp: "tag", "tag == 'post'" %}
+  <p class="post-meta"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d %B %Y" }}</time>{% if tags.size > 0 %} · Tagged {% for tag in tags %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
+  <p class="post-excerpt">{{ post.templateContent | strip_html | truncatewords: 40 }}</p>
+</article>
+{%- endfor %}

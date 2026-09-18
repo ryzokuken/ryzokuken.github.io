@@ -1,78 +1,57 @@
 ---
 layout: layout.liquid
 title: Ryzokuken's Projects
+clause: 3
 ---
 
 # Projects
 
 ## Current
 
-<div class="card-grid card-grid--pair">
-
-<div class="card">
-
-**[tc39/ecma402](https://github.com/tc39/ecma402)** — Status, process, and documents for ECMA-402, the JavaScript Internationalization specification. Co-editor.
-
-</div>
-
-<div class="card">
-
-**[tc39/proposal-temporal](https://github.com/tc39/proposal-temporal)** — Provides standard objects and functions for working with dates and times in JavaScript. Champion.
-
-</div>
-
-<div class="card">
-
-**[Unicode MessageFormat](https://github.com/unicode-org/message-format-wg)** — Working on the next generation of the Unicode MessageFormat specification for localizable messages.
-
-</div>
-
-<div class="card">
-
-**[ietf-wg-sedate](https://github.com/ietf-wg-sedate/draft-ietf-sedate-datetime-extended)** — IETF working group for Serialising Extended Data About Times and Events (RFC 3339 calendar annotations).
-
-</div>
-
-</div>
+<dl class="entries">
+  <div class="entry">
+    <dt><a href="https://github.com/tc39/ecma402">tc39/ecma402</a></dt>
+    <dd>Status, process, and documents for ECMA-402, the JavaScript Internationalization specification. Co-editor.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/tc39/proposal-temporal">tc39/proposal-temporal</a></dt>
+    <dd>Provides standard objects and functions for working with dates and times in JavaScript. Champion.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/unicode-org/message-format-wg">Unicode MessageFormat</a></dt>
+    <dd>Working on the next generation of the Unicode MessageFormat specification for localizable messages.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/ietf-wg-sedate/draft-ietf-sedate-datetime-extended">ietf-wg-sedate</a></dt>
+    <dd>IETF working group for Serialising Extended Data About Times and Events (RFC 3339 calendar annotations).</dd>
+  </div>
+</dl>
 
 ## Past
 
-<div class="card-grid past-projects">
-
-<div class="card">
-
-**[nodejs/node](https://github.com/nodejs/node)** — Node.js JavaScript runtime ✨🐢🚀✨
-
-</div>
-
-<div class="card">
-
-**[v8/v8](https://github.com/v8/v8)** — V8 is Google's open source high-performance JavaScript and WebAssembly engine, written in C++.
-
-</div>
-
-<div class="card">
-
-**[electron/node](https://github.com/electron/node)** — Electron's Node.js fork.
-
-</div>
-
-<div class="card">
-
-**[bytecodealliance/cranelift](https://github.com/bytecodealliance/cranelift)** — Cranelift code generator.
-
-</div>
-
-<div class="card">
-
-**[tc39/test262](https://github.com/tc39/test262)** — Official ECMAScript Conformance Test Suite.
-
-</div>
-
-<div class="card">
-
-**[publiclab/plots2](https://github.com/publiclab/plots2)** — A collaborative knowledge-exchange platform in Rails.
-
-</div>
-
-</div>
+<dl class="entries entries--retired">
+  <div class="entry">
+    <dt><a href="https://github.com/nodejs/node">nodejs/node</a></dt>
+    <dd>Node.js JavaScript runtime ✨🐢🚀✨</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/v8/v8">v8/v8</a></dt>
+    <dd>V8 is Google's open source high-performance JavaScript and WebAssembly engine, written in C++.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/electron/node">electron/node</a></dt>
+    <dd>Electron's Node.js fork.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/bytecodealliance/cranelift">bytecodealliance/cranelift</a></dt>
+    <dd>Cranelift code generator.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/tc39/test262">tc39/test262</a></dt>
+    <dd>Official ECMAScript Conformance Test Suite.</dd>
+  </div>
+  <div class="entry">
+    <dt><a href="https://github.com/publiclab/plots2">publiclab/plots2</a></dt>
+    <dd>A collaborative knowledge-exchange platform in Rails.</dd>
+  </div>
+</dl>

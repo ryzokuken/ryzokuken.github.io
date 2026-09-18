@@ -1,4 +1,7 @@
 {
   "layout": "post.liquid",
-  "tags": ["post"]
+  "tags": [
+    "post"
+  ],
+  "clause": ""
 }

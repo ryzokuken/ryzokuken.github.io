@@ -1,9 +1,10 @@
 ---
 layout: layout.liquid
 title: Ryzokuken Uses
+clause: 5
 ---
 
-# Stuff I Use
+# Uses
 
 Welcome to my `/uses` page. Inspired by folks like [Wes Bos](https://wesbos.com/uses/) and [Kent C. Dodds](https://kentcdodds.com/uses/), it is a living document of what I actually reach for. Over the years I have moved steadily toward open-source, open-protocol and privacy-respecting tools wherever they exist, and made my peace with the handful of places where they do not.
 
@@ -19,13 +20,13 @@ Am I missing something you wanted to know? [Hit me up on Bluesky](https://bsky.a
 
 Things that used to be on this page. Keeping them here felt more honest than quietly deleting them.
 
-<div class="card-grid past-projects">
+<dl class="entries entries--retired">
   {%- for item in uses.retired %}
-  <div class="card">
-    <strong>
+  <div class="entry">
+    <dt>
       {%- if item.url %}<a href="{{ item.url }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif -%}
-    </strong>
-    <p>{{ item.note }}{% if item.replacedBy %} Replaced by {{ item.replacedBy }}.{% endif %}</p>
+    </dt>
+    <dd>{{ item.note }}{% if item.replacedBy %} Replaced by {{ item.replacedBy }}.{% endif %}</dd>
   </div>
   {%- endfor %}
-</div>
+</dl>

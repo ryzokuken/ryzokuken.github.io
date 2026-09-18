@@ -13,3 +13,5 @@ node_modules/
 # Local tool caches
 .impeccable/hook.cache.json
 .impeccable/config.local.json
+.impeccable/review/
+.impeccable/build/

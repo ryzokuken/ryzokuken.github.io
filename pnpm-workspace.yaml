@@ -2,5 +2,7 @@ allowBuilds:
   lightningcss-cli: true
   simple-git-hooks: false
 overrides:
+  # GHSA-w5hq-g745-h8pq: markuplint pins uuid 13.0.0, patched in 13.0.1.
   uuid@13.0.0: '>=13.0.1'
+  # GHSA-rj75-hqrm-r3gf: markuplint pins postcss-selector-parser 7.1.1, patched in 7.1.6.
   postcss-selector-parser@7.1.1: '^7.1.3'

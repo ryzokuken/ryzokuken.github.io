@@ -1,4 +1,10 @@
 {
-  "*.{html,liquid,md}": ["markuplint"],
-  "*.js": ["vitest related --run --passWithNoTests"]
+  "*.{html,liquid,md}": [
+    "markuplint"
+  ],
+  "{eleventy.config.js,vitest.config.js,lib/**/*.js,src/js/**/*.js,test/**/*.js}": [
+    "oxfmt",
+    "oxlint --deny-warnings",
+    "vitest related --run --passWithNoTests"
+  ]
 }

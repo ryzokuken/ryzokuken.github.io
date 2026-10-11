@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["import", "unicorn"],
+  "env": { "browser": true, "node": true },
+  "rules": {
+    "complexity": ["error", { "max": 8 }],
+    "max-lines-per-function": ["error", { "max": 100 }],
+    "max-params": ["error", { "max": 5 }]
+  }
+}

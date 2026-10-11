@@ -57,7 +57,8 @@ developer-advocate site could not truthfully make this claim.
   ListenBrainz "now playing" widget (`src/js/now-playing.js`), Twemoji on pages that set
   `flags: true`, and GoatCounter analytics.
 - CSS is one hand-written file (`src/css/main.css`), bundled and minified by LightningCSS.
-- Gates: markuplint, Vitest unit tests, and linkinator run from the Husky hooks and CI.
+- Gates: `pnpm validate` (unit tests, build, markuplint, oxlint, oxfmt) runs from the git hooks
+  and CI and gates the deploy; linkinator runs weekly.
 - Must work on every popular screen size and in both color schemes.
 - Emoji flags must render on Windows, which lacks native flag glyphs.
 
@@ -76,9 +77,9 @@ developer-advocate site could not truthfully make this claim.
 
 ## Evidence on Hand
 
-- 47 talks from 2018 to 2026, 6 with video links, 1 upcoming (`src/_data/talks.json`).
-- 8 podcast appearances (`src/_data/podcasts.json`).
-- 3 blog posts, including the two-part Ecma series (`src/blog/`).
+- Talks since 2018, some with video links and some upcoming (`src/_data/talks.json`).
+- Podcast appearances (`src/_data/podcasts.json`).
+- Blog posts, including the two-part Ecma series (`src/blog/`).
 - Current and past projects with role notes (`src/projects.md`).
 - Tools and gear, each with a rationale (`src/_data/uses.json`).
 - Portrait photo in several formats (`src/photo.jpg`, `src/img/`).

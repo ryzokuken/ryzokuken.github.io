@@ -12,16 +12,7 @@ If any of these files don't exist, **proceed silently**. Don't flag their absenc
 
 ## File structure
 
-Single-context repo (this repo):
-
-```
-/
-├── CONTEXT.md
-├── docs/adr/
-│   ├── 0001-event-sourced-orders.md
-│   └── 0002-postgres-for-write-model.md
-└── src/
-```
+Single-context repo (this repo): `CONTEXT.md` and `docs/adr/` at the root.
 
 ## Use the glossary's vocabulary
 

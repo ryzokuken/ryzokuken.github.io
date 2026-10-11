@@ -11,6 +11,7 @@
     "lint:js": "oxlint --deny-warnings eleventy.config.js vitest.config.js lib src/js test",
     "fmt": "oxfmt eleventy.config.js vitest.config.js lib src/js test",
     "fmt:check": "oxfmt --check eleventy.config.js vitest.config.js lib src/js test",
+    "lint:actions": "actionlint && zizmor .github",
     "test": "vitest run",
     "test:links": "linkinator _site --recurse --skip \"slides\" --skip \"gc\\.zgo\\.at\" --skip \"meetup\\.com\" --skip \"web\\.archive\\.org\"",
     "validate": "pnpm test && pnpm build && pnpm lint && pnpm lint:js && pnpm fmt:check",
@@ -48,6 +49,6 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
-    "pre-push": "while read -r _ local_sha _ _; do case $local_sha in *[!0]*) exec pnpm validate ;; esac; done"
+    "pre-push": "push=; while read -r _ local_sha _ _; do case $local_sha in *[!0]*) push=1 ;; esac; done; [ -z \"$push\" ] || { pnpm validate && pnpm lint:actions; }"
   }
 }

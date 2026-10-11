@@ -19,11 +19,13 @@ const RELATIVE = new Intl.RelativeTimeFormat("en", {
   style: "narrow",
 });
 
+const firstListen = (response) => response?.payload?.listens?.[0];
+
 export function selectListen(playingNow, listens) {
-  const playing = playingNow?.payload?.listens?.[0];
+  const playing = firstListen(playingNow);
   if (playing) return { listen: playing, isPlaying: true };
 
-  const previous = listens?.payload?.listens?.[0];
+  const previous = firstListen(listens);
   if (previous) return { listen: previous, isPlaying: false };
 
   return null;

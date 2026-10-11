@@ -52,7 +52,11 @@ function heading(tag, isPlaying, track) {
   const suffix = isPlaying
     ? ""
     : ` ${track.listenedAt ? relativeTime(track.listenedAt, Date.now()) : ""}`;
-  const label = element(tag, "now-playing-label", `${isPlaying ? "Now playing" : "Last played"}${suffix}`);
+  const label = element(
+    tag,
+    "now-playing-label",
+    `${isPlaying ? "Now playing" : "Last played"}${suffix}`,
+  );
   if (isPlaying) label.append(bars());
   return label;
 }
@@ -94,6 +98,18 @@ function insert(mount, variant, widget) {
   mount.append(widget);
 }
 
+function textBlock(track, listen, full) {
+  const [primary, secondary] = streamingLinks(listen);
+  const text = element("div", "now-playing-text");
+  text.append(titleNode(track, primary));
+  if (full) {
+    if (track.release) text.append(element("p", "now-playing-release", track.release));
+    // The compact footer variant stays a single line, so no badge there.
+    if (secondary) text.append(badge(track, secondary));
+  }
+  return text;
+}
+
 function render(mount, variant, listen, isPlaying) {
   const track = toTrack(listen);
   if (!track) return;
@@ -108,15 +124,7 @@ function render(mount, variant, listen, isPlaying) {
   const art = full ? artwork(listen) : null;
   if (art) body.append(art);
 
-  const [primary, secondary] = streamingLinks(listen);
-  const text = element("div", "now-playing-text");
-  text.append(titleNode(track, primary));
-  if (full) {
-    if (track.release) text.append(element("p", "now-playing-release", track.release));
-    // The compact footer variant stays a single line, so no badge there.
-    if (secondary) text.append(badge(track, secondary));
-  }
-  body.append(text);
+  body.append(textBlock(track, listen, full));
   widget.append(body);
 
   insert(mount, variant, widget);

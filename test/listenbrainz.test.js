@@ -39,7 +39,10 @@ const RECENT = {
             url_rels: [
               { type: "free streaming", url: "https://www.deezer.com/track/1787299817" },
               { type: "free streaming", url: "https://royksopp.bandcamp.com/track/some-resolve" },
-              { type: "free streaming", url: "https://open.spotify.com/track/7H7RaiZoTNPwjNLygV4fXQ" },
+              {
+                type: "free streaming",
+                url: "https://open.spotify.com/track/7H7RaiZoTNPwjNLygV4fXQ",
+              },
             ],
           },
         },
@@ -171,9 +174,7 @@ describe("streamingLinks host anchoring", () => {
 
   it("matches a host written with a trailing dot", () => {
     const links = streamingLinks(listenWith(["https://open.spotify.com./track/y"]));
-    expect(links).toEqual([
-      { label: "Spotify", url: "https://open.spotify.com./track/y" },
-    ]);
+    expect(links).toEqual([{ label: "Spotify", url: "https://open.spotify.com./track/y" }]);
   });
 
   it("skips a malformed URL without throwing, keeping the valid relations around it", () => {

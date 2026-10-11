@@ -11,7 +11,7 @@
     "test:unit": "vitest run",
     "test:links": "linkinator _site --recurse --skip \"slides\" --skip \"gc\\.zgo\\.at\" --skip \"meetup\\.com\" --skip \"web\\.archive\\.org\"",
     "test": "pnpm run test:unit && pnpm run build && pnpm run lint && pnpm run test:links",
-    "prepare": "husky"
+    "prepare": "simple-git-hooks"
   },
   "packageManager": "pnpm@12.11.2",
   "devEngines": {
@@ -34,11 +34,15 @@
     "@fontsource-variable/public-sans": "5.3.0",
     "@fontsource-variable/source-serif-4": "5.3.0",
     "@kevingimbel/eleventy-plugin-mermaid": "^3.0.1",
-    "husky": "^9.1.7",
     "lightningcss-cli": "^1.33.0",
     "linkinator": "^8.1.0",
     "lint-staged": "^17.5.1",
     "markuplint": "^4.18.3",
+    "simple-git-hooks": "2.14.0",
     "vitest": "^4.1.11"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged",
+    "pre-push": "while read -r _ local_sha _ _; do case $local_sha in *[!0]*) exec pnpm validate ;; esac; done"
   }
 }

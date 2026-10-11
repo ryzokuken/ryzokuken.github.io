@@ -1,4 +1,0 @@
-# A deleted ref arrives with an all-zero local SHA and carries no code to test.
-while read -r _ local_sha _ _; do
-  case $local_sha in *[!0]*) exec pnpm test ;; esac
-done

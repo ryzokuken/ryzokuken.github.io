@@ -182,9 +182,6 @@ importers:
       '@kevingimbel/eleventy-plugin-mermaid':
         specifier: ^3.0.1
         version: 3.0.1
-      husky:
-        specifier: ^9.1.7
-        version: 9.1.7
       lightningcss-cli:
         specifier: ^1.33.0
         version: 1.33.0
@@ -200,6 +197,9 @@ importers:
       node:
         specifier: runtime:>=26
         version: runtime:26.11.1
+      simple-git-hooks:
+        specifier: 2.14.0
+        version: 2.14.0
       vitest:
         specifier: ^4.1.11
         version: 4.1.11(vite@8.2.1(yaml@2.9.0))
@@ -868,11 +868,6 @@ packages:
   http-errors@2.0.1:
     resolution: {integrity: sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==}
     engines: {node: '>= 0.8'}
-
-  husky@9.1.7:
-    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   ignore@7.0.5:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
@@ -1558,6 +1553,10 @@ packages:
 
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
+
+  simple-git-hooks@2.14.0:
+    resolution: {integrity: sha512-kkTORPAuxQz2g1QUuN0J8yGWT28tjGBfPOdJ4xT7Vbeu30veKUZQIoID2qGgCDAakaQn59UeZJJ4cFGB8PVP2A==}
+    hasBin: true
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -2533,8 +2532,6 @@ snapshots:
       statuses: 2.0.2
       toidentifier: 1.0.1
 
-  husky@9.1.7: {}
-
   ignore@7.0.5: {}
 
   import-fresh@3.3.1:
@@ -3024,6 +3021,8 @@ snapshots:
   setprototypeof@1.2.0: {}
 
   siginfo@2.0.0: {}
+
+  simple-git-hooks@2.14.0: {}
 
   slash@3.0.0: {}
 

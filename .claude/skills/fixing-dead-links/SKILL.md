@@ -11,11 +11,13 @@ description: Use when `pnpm run test:links` reports broken URLs (404s or connect
 catches dead links buried in data files, not just templates. Content rot in
 `src/_data/talks.json` (old conference/event URLs) is the most common source.
 Never trust a search result's URL as live — curl it. Never trust a WebFetch
-summary of a status API as ground truth — curl it too.
+summary of a status API as ground truth — curl it too. Curl only candidate
+replacement URLs: never re-check existing links by hand (linkinator already
+does, and bot-walled sites answer curl and WebFetch with false 403/404s).
 
 ## When to Use
 
-- `pnpm run test:links` (or `pnpm test`) fails with `[404]` or `[0]` entries
+- `pnpm run test:links` (or the weekly link-check workflow) fails with `[404]` or `[0]` entries
 - You're asked to clean up stale links in `talks.json` or similar data files
 
 ## Process
@@ -32,8 +34,8 @@ summary of a status API as ground truth — curl it too.
 3. **Find the entry.** Grep the bare domain/slug against `src/_data/talks.json` to
    get full context (title, event, date) — you need this to search accurately.
 4. **Research a replacement**, cross-referencing multiple sources before touching
-   data (conference sites, YouTube, Sessionize, Conffab, devconf.net, GitHub
-   archives of the event). Special case: **FOSDEM** moves past years to
+   data (conference sites, FOSDEM archives, YouTube, Sessionize, Conffab,
+   devconf.net, Igalia speaker pages, GitHub archives of the event). Special case: **FOSDEM** moves past years to
    `archive.fosdem.org/<year>/schedule/event/<slug>/`, and the numeric event ID
    in the slug can differ from the live-schedule ID that's currently in the
    data — search by talk title, don't assume the old ID carries over. Add a
@@ -60,7 +62,7 @@ summary of a status API as ground truth — curl it too.
 8. **`meetup.com` links are skipped by the checker** (bot-blocks CI) — if you
    touch one, check it by hand in a browser.
 9. Validate and verify: `node -e "JSON.parse(require('fs').readFileSync('src/_data/talks.json','utf8'))"`,
-   then `pnpm test` (unit + build + lint + link check) must exit 0.
+   then `pnpm validate` and `pnpm test:links` must both exit 0.
 10. Follow the data conventions in `CLAUDE.md` (date format, location codes,
     `links` keys) for anything you edit.
 
@@ -72,4 +74,4 @@ summary of a status API as ground truth — curl it too.
   (FOSDEM does, between the live schedule and `archive.fosdem.org`).
 - Deleting the whole talk entry instead of leaving it with a reduced `links`
   object when no live replacement exists.
-- Skipping the final `pnpm test` run and declaring victory on the edit alone.
+- Skipping the final `pnpm validate` and `pnpm test:links` runs and declaring victory on the edit alone.

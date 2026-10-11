@@ -18,17 +18,11 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Install pnpm
-      uses: pnpm/action-setup@26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a # v6.0.4
-
-    - name: Setup Node.js
-      uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+    - name: Set up pnpm and Node.js, install dependencies
+      uses: pnpm/setup@a0881977cd8ea73b1ed212236c99ca10dcc80cf4 # v3.1.1
       with:
-        node-version: '22'
-        cache: pnpm
-
-    - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+        cache: true
+        require-lockfile: true
 
     - name: Unit tests
       run: pnpm run test:unit

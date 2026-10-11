@@ -15,3 +15,7 @@ node_modules/
 .impeccable/config.local.json
 .impeccable/review/
 .impeccable/build/
+.impeccable/critique/
+
+# Machine-local Claude Code settings
+.claude/settings.local.json
